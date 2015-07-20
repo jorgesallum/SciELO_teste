@@ -19,7 +19,7 @@ EBOOK-pdf:
 EBOOK-check:
 	epubcheck EBOOK.epub
 clean:
-	-rm *aux *log *tui *toc *.4ct *.4tc *.html *.css *.dvi *.epub *.lg *.ncx *.xref *.tmp *.idv *.opf *.png  
+	-rm *aux *log *tui *toc *.4ct *.4tc *.html *.css *.dvi *.epub *.lg *.ncx *.xref *.tmp *.idv *.opf  
 	-rm -rf EBOOK-epub
 	-rm -rf EBOOK-epub3
 	-rm -rf EBOOK-mobi

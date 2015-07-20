@@ -1,14 +1,24 @@
+\ctable[caption = {CAPTION}, width=0.5\textwidth,  pos = ht, left]
+{c>{\raggedright}Xc>{\raggedright}X}
+{
+	\tnote[ ]{Nota 1}
+	\tnote[*]{Nota 2}
+}
+{ \FL
+	COL1 & COL2 & COL3 & COL4 \NN
+}
+
 % The first character should be within \initial{}
 \textbf{Here is some sample text to show the initial in the introductory paragraph of this template article. The color and lineheight of the initial can be modified in the preamble of this document.}
 
 \section*{Heading on level 1}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo\footnote{Nota a} ligula
+eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis\footnote{Nota b} dis parturient
 montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo\footnote{Nota c},
 fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. 
+imperdiet a, venenatis vitae, justo. Nullam dictum felis\footnote{Nota d} eu pede mollis
+pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi\footnote{Nota e}. 
 
 \par
 \begin{figure}[h]
