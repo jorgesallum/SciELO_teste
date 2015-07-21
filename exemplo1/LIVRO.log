@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  21 JUL 2015 11:08
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  21 JUL 2015 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1306,7 +1306,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
 Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 22.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 23.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
@@ -1320,31 +1320,31 @@ Package microtype Info: Loading generic settings for font family
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 52--58
+Underfull \hbox (badness 1436) in paragraph at lines 53--59
 []\EU1/LinuxLibertineO(0)/m/n/10.95 Type I collagen fibers contain three polype
 ptide
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 58--64
+Underfull \hbox (badness 1655) in paragraph at lines 59--65
 \EU1/LinuxLibertineO(0)/m/it/10.95 COL1A2 \EU1/LinuxLibertineO(0)/m/n/10.95 (ht
 tp://www.le.ac.uk/ge/collagen/; Dalgleish,
  []
 
 
-Underfull \hbox (badness 3954) in paragraph at lines 73--79
+Underfull \hbox (badness 3954) in paragraph at lines 74--80
 []\EU1/LinuxLibertineO(0)/m/n/10.95 Clinical diagnosis of osteogenesis imperfec
 ta is
  []
 
 File: 1415-4757-gmb-38-1-1-gf01.png Graphic file (type QTm)
 <use  "1415-4757-gmb-38-1-1-gf01.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 94--96
+Overfull \hbox (5.0pt too wide) in paragraph at lines 95--97
  [][] 
  []
 
@@ -1353,37 +1353,37 @@ Unknown feature `expansion=default' in font `Linux Libertine O Semibold'.
 Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
 Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
 [2]
-Underfull \hbox (badness 1478) in paragraph at lines 119--125
+Underfull \hbox (badness 1478) in paragraph at lines 120--126
 []\EU1/LinuxLibertineO(0)/m/n/10.95 Open reading frame analysis of the mutated 
 se-
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 119--125
+Underfull \hbox (badness 1259) in paragraph at lines 120--126
 \EU1/LinuxLibertineO(0)/m/n/10.95 quence was performed by the ORF Finder, part 
 of
  []
 
 File: 1415-4757-gmb-38-1-1-gf02.png Graphic file (type QTm)
 <use  "1415-4757-gmb-38-1-1-gf02.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 157--164
+Overfull \hbox (5.0pt too wide) in paragraph at lines 158--165
  [][] 
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 143--167
+Underfull \hbox (badness 2173) in paragraph at lines 144--168
 \EU1/LinuxLibertineO(0)/m/n/10.95 family members (two sisters, father, and mate
 rnal
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 143--167
+Underfull \hbox (badness 1540) in paragraph at lines 144--168
 \EU1/LinuxLibertineO(0)/m/n/10.95 the osteogenesis imperfecta and Ehlers-Danlos
  syn-
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 143--167
+Underfull \hbox (badness 1062) in paragraph at lines 144--168
 \EU1/LinuxLibertineO(0)/m/n/10.95 drome variant databases (Dalgleish, 1997, 199
 8 and
  []
@@ -1391,7 +1391,7 @@ Underfull \hbox (badness 1062) in paragraph at lines 143--167
 [3]
 File: 1415-4757-gmb-38-1-1-gf03.png Graphic file (type QTm)
  <use  "1415-4757-gmb-38-1-1-gf03.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 187--197
+Overfull \hbox (5.0pt too wide) in paragraph at lines 188--198
  [][] 
  []
 
@@ -1404,7 +1404,7 @@ Unknown feature `expansion=default' in font `Linux Libertine O'.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 285.
+LaTeX Font Info:    Try loading font information for U+msa on input line 286.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1412,7 +1412,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 285.
+LaTeX Font Info:    Try loading font information for U+msb on input line 286.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1425,7 +1425,7 @@ Unknown feature `expansion=default' in font `Linux Libertine O'.
 Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
 Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 285--285
+Overfull \hbox (5.0pt too wide) in paragraph at lines 286--286
 []$[][][]$  
  []
 
@@ -1440,11 +1440,11 @@ AED: lastpage setting LastPage
 
 ] (./LIVRO.aux) ) 
 Here is how much of TeX's memory you used:
- 24017 strings out of 493727
- 456045 string characters out of 6147891
- 674772 words of memory out of 5000000
- 26877 multiletter control sequences out of 15000+600000
- 20537 words of font info for 98 fonts, out of 8000000 for 9000
+ 24015 strings out of 493727
+ 456004 string characters out of 6147891
+ 674755 words of memory out of 5000000
+ 26875 multiletter control sequences out of 15000+600000
+ 20001 words of font info for 97 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  65i,16n,79p,10378b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
 

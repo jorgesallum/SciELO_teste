@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1437487714 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1437487716
+["pdflatex"] 1437488714 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1437488716
   "/etc/texmf/web2c/texmf.cnf" 1430923412 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/hipatia/texmf/tex/hifensextras.sty" 1420914985 354 2ad7563e4b3dac59bee3b502851cb894 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -168,14 +168,14 @@
   "1415-4757-gmb-38-1-1-gf01.png" 1437482767 91588 4129e9e39db8cab9e974932917d9f251 ""
   "1415-4757-gmb-38-1-1-gf02.png" 1437482767 3697636 7b9a6c3cda84d71f2657b7af3b4bfeac ""
   "1415-4757-gmb-38-1-1-gf03.png" 1437482767 1299730 dfb044b5c3ed2a0b44155760e0a3a7de ""
-  "LIVRO.aux" 1437487716 2033 e48a87d90c1cf6d1fd6c5025bdb70931 ""
-  "LIVRO.tex" 1437487075 3294 d1d5cbeaf66d5d228ba45a01528da698 ""
-  "ORIGINAL.tex" 1437487637 41255 b12cf80c5c18d4a28fc82691a084710a ""
+  "LIVRO.aux" 1437488716 2199 cc868b1ef7bd60cc3906a1e144961327 ""
+  "LIVRO.tex" 1437488686 3295 a2c0086f72a2ddcf8e5e26f060511b4e ""
+  "ORIGINAL.tex" 1437488604 41265 78e9340f12df8d21ae97d0b9fbe3e600 ""
   "biblio.sty" 1437487712 1104 2199017e1f3f067b2c40fc5c41a93d25 ""
   "metadados.sty" 1437482767 1003 719b1eeed933eefb5eae26d7a5250061 ""
   "penalidades.sty" 1437482767 5285 18e80aeaf88f978c2e3015ab1691a5e2 ""
   "tipografia.sty" 1437482767 9784 4f9239ffbdc694bd731423aa2df80673 ""
   (generated)
-  "LIVRO.pdf"
   "LIVRO.aux"
   "LIVRO.log"
+  "LIVRO.pdf"
