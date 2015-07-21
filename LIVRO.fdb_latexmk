@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1437489024 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1437489025
+["pdflatex"] 1437491671 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1437491673
   "/etc/texmf/web2c/texmf.cnf" 1430923412 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/hipatia/texmf/tex/hifensextras.sty" 1420914985 354 2ad7563e4b3dac59bee3b502851cb894 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -26,6 +26,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm" 1136768653 1524 d89e2d087a9828407a196f428428ef4a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
@@ -56,6 +57,7 @@
   "/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty" 1338588421 23756 854c01b779030ff5b2aad88ba7a119f2 ""
   "/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex" 1403829539 19288 82f5295269b2b68c9d1e18112ec34443 ""
   "/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex" 1403829539 7677 6f5ce7c1124cad7ec57d05b2562bd8fe ""
+  "/usr/share/texlive/texmf-dist/tex/latex/abstract/abstract.sty" 1252025310 5128 640a4c0ff76b3e578a4c5482af27ec14 ""
   "/usr/share/texlive/texmf-dist/tex/latex/adforn/adforn.sty" 1285345476 3515 42ba585eb48f4ba49c9fb50e9c4e1a30 ""
   "/usr/share/texlive/texmf-dist/tex/latex/adforn/uornementsadf.fd" 1286577920 1012 28e04c3dbc344e1850e2e6c72b13f7ef ""
   "/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty" 1407448611 12000 16e1adce4eb018ecdb67341d45e04c43 ""
@@ -150,10 +152,10 @@
   "/usr/share/texmf/tex/latex/tipa/t3enc.def" 1414244106 26483 c461a68c34040cb0d96c43e86c012a6d ""
   "/usr/share/texmf/web2c/texmf.cnf" 1424169028 31088 8e088e958dd0258cc5414842768a3a00 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1430923819 3443264 3ddffc3ace6908757499220f375f22af ""
-  "LIVRO.aux" 1437489024 1202 0d5f4453bc7b76dea7d34dfe0cd43ac6 ""
-  "LIVRO.tex" 1437488794 3288 38dd82381094151ee19c0f7f357f36d8 ""
-  "ORIGINAL.tex" 1437489021 7321 d0ed1bce1758513dad5e14d4239e4bc5 ""
-  "metadados.sty" 1437483164 825 77ebf354a3e959f819f1a080ef6e5d3d ""
+  "LIVRO.aux" 1437491672 1360 c46b70cebf7637f2efe0174a048fcd39 ""
+  "LIVRO.tex" 1437491569 3746 f812f0916cf61db26b4d889456ac1008 ""
+  "ORIGINAL.tex" 1437491612 7417 afdd50fe7312978c0c206fbb9ee1dd93 ""
+  "metadados.sty" 1437491663 1056 a254cdf35ea73d834f728c6396f5a560 ""
   "penalidades.sty" 1437135505 5285 18e80aeaf88f978c2e3015ab1691a5e2 ""
   "scrartcl.cls" 1437483429 127355 a7fdf27ceac23f5cd35029e19ee5ae8e ""
   "temp.png" 1437482767 33011 1dfcdbc9f562518aa0a25bf896ba56da ""

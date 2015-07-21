@@ -11,9 +11,12 @@
 							twocolumn]{scrartcl}	 					% KOMA-article class
 
 \usepackage{lipsum}													% Package to create dummy text
+\usepackage{abstract}												% Package to create dummy text
 \usepackage{penalidades}
 \usepackage[xetex,chicagofootnotes]{tipografia}
 \usepackage{metadados}
+
+
 
 \usepackage{amsmath,amsfonts,amsthm}					% Math packages
 %\usepackage[pdftex]{graphicx}									% Enable pdflatex
@@ -33,6 +36,33 @@
 \allsectionsfont{%															% Change font of al section commands
 	\usefont{OT1}{phv}{b}{n}%										% bch-b-n: CharterBT-Bold font
 	}
+
+
+
+\makeatletter
+\renewcommand*{\@fnsymbol}[1]{%
+  % Änderungen:
+  % * Symbol "**" an Position 2 verschoben.
+  % * Symbol "***" eingefügt.
+  % * Symbole mit \dagger entfernt.
+  \ensuremath{%
+    \ifcase#1%
+    \or
+      {*}%
+    \or
+      \ddagger
+    \or
+      \mathsection
+    \or
+      \mathparagraph
+    \or
+      \ddagger\ddagger
+    \else
+      \@ctrerr
+    \fi
+  }%
+}
+
 
 \sectionfont{%																% Change font of \section command
 %	\usefont{OT1}{phv}{b}{n}%										% bch-b-n: CharterBT-Bold font
@@ -73,7 +103,10 @@
 										}
 
 \pretitle{\vspace{-30pt} \begin{flushleft} \HorRule 
-				\fontsize{50}{50} \usefont{OT1}{phv}{b}{n} \color{DarkRed} \selectfont 
+				\fontsize{50}{50} 
+				\usefont{OT1}{phv}{b}{n} 
+				\color{DarkRed} 
+				\selectfont 
 				}
 \title{\scieloArticleTitle}					% Title of your article goes here
 \posttitle{\par\end{flushleft}\vskip 0.5em}
@@ -93,7 +126,6 @@
 %
 %%%% Begin document
 \begin{document}
-
 
 \maketitle
 \thispagestyle{fancy} 			% Enabling the custom headers/footers for the first page 

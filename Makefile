@@ -1,5 +1,6 @@
 all:
 	latexmk -xelatex LIVRO.tex
+	evince LIVRO.pdf
 lua:
 	lualatex  LIVRO.tex
 	lualatex  LIVRO.tex
