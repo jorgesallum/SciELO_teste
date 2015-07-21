@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  21 JUL 2015 10:58
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  21 JUL 2015 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1429,31 +1429,23 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 285--285
 []$[][][]$  
  []
 
-[5] [6]
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
+[5] [6] [7
+
+]
 Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
 Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
-
-Overfull \hbox (178.70374pt too wide) in paragraph at lines 344--348
-[]
- []
-
-
-Overfull \hbox (126.34174pt too wide) in paragraph at lines 348--490
-[]
- []
-
 ) 
 AED: lastpage setting LastPage
-[7] (./LIVRO.aux) ) 
+[8
+
+] (./LIVRO.aux) ) 
 Here is how much of TeX's memory you used:
- 24021 strings out of 493727
- 456356 string characters out of 6147891
- 674776 words of memory out of 5000000
- 26879 multiletter control sequences out of 15000+600000
- 20602 words of font info for 99 fonts, out of 8000000 for 9000
+ 24017 strings out of 493727
+ 456045 string characters out of 6147891
+ 674772 words of memory out of 5000000
+ 26877 multiletter control sequences out of 15000+600000
+ 20537 words of font info for 98 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  65i,16n,79p,10378b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on LIVRO.pdf (7 pages).
+Output written on LIVRO.pdf (8 pages).
