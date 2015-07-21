@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  21 JUL 2015 11:26
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  21 JUL 2015 11:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1227,7 +1227,7 @@ Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
 Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
 Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 9--9
+Overfull \hbox (5.0pt too wide) in paragraph at lines 14--14
 []$[][][]$  
  []
 
@@ -1241,12 +1241,12 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 File: temp.png Graphic file (type QTm)
 <use  "temp.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 26--27
+Overfull \hbox (5.0pt too wide) in paragraph at lines 31--32
  [][] 
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 27--27
+Underfull \hbox (badness 3138) in paragraph at lines 32--32
 [][]|\EU1/LinuxLibertineO(0)/m/it/10 Eletrocardiograma da admissão: supradesniv
 ela-
  []
@@ -1256,14 +1256,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: temp.png Graphic file (type QTm)
 <use  "temp.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 39--40
+Overfull \hbox (5.0pt too wide) in paragraph at lines 44--45
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 63.
+
+Overfull \vbox (11.47844pt too high) has occurred while \output is active []
+
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 68.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1279,25 +1283,26 @@ Package microtype Info: Loading generic settings for font family
 File: temp.png Graphic file (type QTm)
 
 <use  "temp.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 129--130
+Overfull \hbox (5.0pt too wide) in paragraph at lines 134--135
  [][] 
  []
 
+[2]
 File: temp.png Graphic file (type QTm)
-<use  "temp.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 154--155
+ <use  "temp.png" >
+Overfull \hbox (5.0pt too wide) in paragraph at lines 159--160
  [][] 
  []
 
-) [2] 
+) 
 AED: lastpage setting LastPage
 [3] (./LIVRO.aux) ) 
 Here is how much of TeX's memory you used:
- 23676 strings out of 493727
- 451303 string characters out of 6147891
+ 23673 strings out of 493727
+ 451232 string characters out of 6147891
  660634 words of memory out of 5000000
- 26567 multiletter control sequences out of 15000+600000
- 16960 words of font info for 90 fonts, out of 8000000 for 9000
+ 26565 multiletter control sequences out of 15000+600000
+ 16952 words of font info for 89 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  65i,15n,79p,10378b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 
