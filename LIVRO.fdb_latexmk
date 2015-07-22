@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1437589080 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1437589081
+["pdflatex"] 1437602662 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1437602663
   "/etc/texmf/web2c/texmf.cnf" 1430923412 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/hipatia/texmf/tex/hifensextras.sty" 1420914985 354 2ad7563e4b3dac59bee3b502851cb894 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -54,6 +54,7 @@
   "/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf" 1396131330 11067 8c8876b93edd923daff1c88610e8c408 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf" 1367878976 6605 2bd2937f1ce929b4a1367cc2d320364e ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf" 1413931695 21104 6c1cfe5336fff26d414cc931170e4feb ""
+  "/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1398372902 24879 4d08f01016eec5dd44388e707b6076d7 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def" 1411763270 49725 b40154b767b0073ee42b35911042b793 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty" 1411763270 13212 dc56c11a26f3ea97bcf005eeda274583 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def" 1395780385 3934 577e02bcc6234170e152394e81c082c3 ""
@@ -168,16 +169,16 @@
   "/usr/share/texmf/tex/latex/tipa/t3enc.def" 1414244106 26483 c461a68c34040cb0d96c43e86c012a6d ""
   "/usr/share/texmf/web2c/texmf.cnf" 1424169028 31088 8e088e958dd0258cc5414842768a3a00 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1430923819 3443264 3ddffc3ace6908757499220f375f22af ""
-  "LIVRO.aux" 1437589081 1360 c46b70cebf7637f2efe0174a048fcd39 ""
+  "LIVRO.aux" 1437602663 1422 8d82d28acf8f4c6f6788761083becbaf ""
   "LIVRO.tex" 1437589078 3703 97bbef71f185bf96b5dac61f45f4ca94 ""
-  "ORIGINAL.tex" 1437588964 7417 5439e7e3010c4d6e75ec3ddb569fecba ""
+  "ORIGINAL.tex" 1437602661 7847 b4fc4dfe73854792ab6033ce04c3ef17 ""
   "biblio.sty" 1437588896 1104 2199017e1f3f067b2c40fc5c41a93d25 ""
   "metadados.sty" 1437589030 1084 a6bfa96b12e207257b04be424b0606aa ""
   "penalidades.sty" 1437135505 5285 18e80aeaf88f978c2e3015ab1691a5e2 ""
   "scrartcl.cls" 1437483429 127355 a7fdf27ceac23f5cd35029e19ee5ae8e ""
   "temp.png" 1437482767 33011 1dfcdbc9f562518aa0a25bf896ba56da ""
-  "tipografia.sty" 1437135505 9784 4f9239ffbdc694bd731423aa2df80673 ""
+  "tipografia.sty" 1437602063 9841 300f08c5adde1ccc60f388cbc90b1a64 ""
   (generated)
-  "LIVRO.aux"
   "LIVRO.pdf"
+  "LIVRO.aux"
   "LIVRO.log"

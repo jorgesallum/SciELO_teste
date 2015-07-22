@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  22 JUL 2015 15:18
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  22 JUL 2015 19:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -365,6 +365,15 @@ File: lgrenc.def 2013/12/02 v0.11.2 LGR Greek font encoding definitions
 File: greek-fontenc.def 2013/11/28 v0.11 Common Greek font encoding definitions
 
 )))
+(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2014/04/24 v5.0n Spanish support from the babel system
+\es@quottoks=\toks17
+\es@quotdepth=\count105
+Package babel Info: Making " an active character on input line 516.
+Package babel Info: Making . an active character on input line 617.
+Package babel Info: Making < an active character on input line 662.
+Package babel Info: Making > an active character on input line 662.
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 \l@canadian = a dialect from \language\l@american 
@@ -373,10 +382,10 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2014/03/29 v1.3k Italian support from the babel system
-\it@lettering=\count105
-\it@doublequoteactive=\count106
-\it@ISOcompliance=\count107
-\Virgola=\count108
+\it@lettering=\count106
+\it@doublequoteactive=\count107
+\it@ISOcompliance=\count108
+\Virgola=\count109
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 2013/12/13 v2.7 German support for babel (new orthography)
@@ -385,7 +394,6 @@ Language: ngerman 2013/12/13 v2.7 German support for babel (new orthography)
 Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 \l@naustrian = a dialect from \language\l@ngerman 
 \l@nswissgerman = a dialect from \language\l@ngerman 
-Package babel Info: Making " an active character on input line 88.
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
 Language: frenchb 2014/09/16 v3.1b French support from the babel system
@@ -393,7 +401,7 @@ Language: frenchb 2014/09/16 v3.1b French support from the babel system
 \l@canadien = a dialect from \language\l@french 
 \FBcolonskip=\skip58
 \FBthinskip=\skip59
-\FB@interchartokenstateORI=\count109
+\FB@interchartokenstateORI=\count110
 Package frenchb.ldf Info: No need for active punctuation characters
 (frenchb.ldf)             with this version of XeTeX!
 (frenchb.ldf)             reported on input line 264.
@@ -404,11 +412,11 @@ Package frenchb.ldf Info: No need for active punctuation characters
 \FB@guilf=\XeTeXintercharclass8
 \FB@guilnul=\XeTeXintercharclass9
 \FBguillskip=\skip60
-\FBguill@level=\count110
+\FBguill@level=\count111
 \FB@Mht=\dimen126
 LaTeX Info: Redefining \degres on input line 745.
-\std@mcc=\count111
-\dec@mcc=\count112
+\std@mcc=\count112
+\dec@mcc=\count113
 \listindentFB=\skip61
 \labelwidthFB=\skip62
 \leftmarginFB=\skip63
@@ -435,12 +443,12 @@ Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks17
-\MT@count=\count113
+\MT@toks=\toks18
+\MT@count=\count114
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen128
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count114
+\MT@listname@count=\count115
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-xetex.def
 File: microtype-xetex.def 2013/05/23 v2.5a Definitions specific to xetex (RS)
@@ -467,24 +475,24 @@ L3 Module: l3tl 2014/08/24 v5359 L3 Token lists
 L3 Module: l3str 2014/08/24 v5368 L3 Strings
 L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
 L3 Module: l3int 2014/09/14 v5421 L3 Integers
-\c_max_int=\count115
-\l_tmpa_int=\count116
-\l_tmpb_int=\count117
-\g_tmpa_int=\count118
-\g_tmpb_int=\count119
+\c_max_int=\count116
+\l_tmpa_int=\count117
+\l_tmpb_int=\count118
+\g_tmpa_int=\count119
+\g_tmpb_int=\count120
 L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
 L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
-\g__prg_map_int=\count120
+\g__prg_map_int=\count121
 L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
 L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
 L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
 L3 Module: l3msg 2014/08/24 v5358 L3 Messages
 L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
-\l_iow_line_count_int=\count121
-\l__iow_target_count_int=\count122
-\l__iow_current_line_int=\count123
-\l__iow_current_word_int=\count124
-\l__iow_current_indentation_int=\count125
+\l_iow_line_count_int=\count122
+\l__iow_target_count_int=\count123
+\l__iow_current_line_int=\count124
+\l__iow_current_word_int=\count125
+\l__iow_current_indentation_int=\count126
 L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
 \c_zero_dim=\dimen129
 \c_max_dim=\dimen130
@@ -505,18 +513,18 @@ L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
 L3 Module: l3keys 2014/08/23 v5354 L3 Key-value interfaces
-\g__keyval_level_int=\count126
-\l_keys_choice_int=\count127
+\g__keyval_level_int=\count127
+\l_keys_choice_int=\count128
 L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
-\c__fp_leading_shift_int=\count128
-\c__fp_middle_shift_int=\count129
-\c__fp_trailing_shift_int=\count130
-\c__fp_big_leading_shift_int=\count131
-\c__fp_big_middle_shift_int=\count132
-\c__fp_big_trailing_shift_int=\count133
-\c__fp_Bigg_leading_shift_int=\count134
-\c__fp_Bigg_middle_shift_int=\count135
-\c__fp_Bigg_trailing_shift_int=\count136
+\c__fp_leading_shift_int=\count129
+\c__fp_middle_shift_int=\count130
+\c__fp_trailing_shift_int=\count131
+\c__fp_big_leading_shift_int=\count132
+\c__fp_big_middle_shift_int=\count133
+\c__fp_big_trailing_shift_int=\count134
+\c__fp_Bigg_leading_shift_int=\count135
+\c__fp_Bigg_middle_shift_int=\count136
+\c__fp_Bigg_trailing_shift_int=\count137
 L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
 \c_empty_box=\box33
 \l_tmpa_box=\box34
@@ -570,15 +578,15 @@ File: l3xdvidpfmx.def 2014/08/24 v5366 L3 Experimental driver: xdvipdfmx
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2014/09/15 v5423 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count137
-\l__xparse_m_args_int=\count138
-\l__xparse_mandatory_args_int=\count139
-\l__xparse_processor_int=\count140
-\l__xparse_v_nesting_int=\count141
+\l__xparse_current_arg_int=\count138
+\l__xparse_m_args_int=\count139
+\l__xparse_mandatory_args_int=\count140
+\l__xparse_processor_int=\count141
+\l__xparse_v_nesting_int=\count142
 )
-\l_fontspec_script_int=\count142
-\l_fontspec_language_int=\count143
-\l_fontspec_strnum_int=\count144
+\l_fontspec_script_int=\count143
+\l_fontspec_language_int=\count144
+\l_fontspec_strnum_int=\count145
 \l__fontspec_tmpa_dim=\dimen160
 \l__fontspec_tmpb_dim=\dimen161
 \l__fontspec_tmpc_dim=\dimen162
@@ -630,9 +638,9 @@ LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd
 File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-\tipaTiiicode=\count145
-\tipasavetokens=\toks18
-\tipachecktokens=\toks19
+\tipaTiiicode=\count146
+\tipasavetokens=\toks19
+\tipachecktokens=\toks20
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -757,7 +765,7 @@ File: xetex.def 2014/07/25 v4.03 LaTeX color/graphics driver for XeTeX (RRM/JK)
 .................................................
 Variant \prop_gput:cnV already defined; not changing it on line 662
 Variant \prop_gput:cnx already defined; not changing it on line 663
-\l__fontspec_tmp_int=\count146
+\l__fontspec_tmp_int=\count147
 LaTeX Info: Redefining \itshape on input line 2193.
 LaTeX Info: Redefining \slshape on input line 2198.
 LaTeX Info: Redefining \scshape on input line 2203.
@@ -765,7 +773,7 @@ LaTeX Info: Redefining \upshape on input line 2208.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
 \g__file_internal_ior=\read1
-\g__fontspec_family_LinuxLibertineO_int=\count147
+\g__fontspec_family_LinuxLibertineO_int=\count148
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -816,7 +824,7 @@ LaTeX Info: Redefining \upshape on input line 2208.
 .................................................
 Unknown feature `protrusion=default' in font `Linux Libertine O'.
 Unknown feature `expansion=default' in font `Linux Libertine O'.
-\g__fontspec_family_WenQuanYiMicroHei_int=\count148
+\g__fontspec_family_WenQuanYiMicroHei_int=\count149
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -862,7 +870,7 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks20
+\@emptytoks=\toks21
 \ex@=\dimen165
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -873,13 +881,13 @@ LaTeX Info: Redefining \boldsymbol on input line 39.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count149
+\inf@bad=\count150
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count150
-\leftroot@=\count151
+\uproot@=\count151
+\leftroot@=\count152
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count152
-\DOTSCASE@=\count153
+\classnum@=\count153
+\DOTSCASE@=\count154
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -888,26 +896,26 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen167
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count154
-\c@MaxMatrixCols=\count155
+\macc@depth=\count155
+\c@MaxMatrixCols=\count156
 \dotsspace@=\muskip16
-\c@parentequation=\count156
-\dspbrk@lvl=\count157
-\tag@help=\toks21
-\row@=\count158
-\column@=\count159
-\maxfields@=\count160
-\andhelp@=\toks22
+\c@parentequation=\count157
+\dspbrk@lvl=\count158
+\tag@help=\toks22
+\row@=\count159
+\column@=\count160
+\maxfields@=\count161
+\andhelp@=\toks23
 \eqnshift@=\dimen168
 \alignsep@=\dimen169
 \tagshift@=\dimen170
 \tagwidth@=\dimen171
 \totwidth@=\dimen172
 \lineht@=\dimen173
-\@envbody=\toks23
+\@envbody=\toks24
 \multlinegap=\skip71
 \multlinetaggap=\skip72
-\mathdisplay@stack=\toks24
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -920,15 +928,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2009/07/02 v2.20.1
-\thm@style=\toks25
-\thm@bodyfont=\toks26
-\thm@headfont=\toks27
-\thm@notefont=\toks28
-\thm@headpunct=\toks29
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
 \thm@preskip=\skip73
 \thm@postskip=\skip74
 \thm@headsep=\skip75
-\dth@everypar=\toks30
+\dth@everypar=\toks31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
@@ -966,7 +974,7 @@ Package caption Info: The definition of \@makecaption has been changed,
 (caption)             frenchb will NOT customize it.
 )
 Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count161
+\c@ContinuedFloat=\count162
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
@@ -1023,17 +1031,17 @@ Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
 
 )) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count162
+\c@KVtest=\count163
 \sf@farskip=\skip76
 \sf@captopadj=\dimen181
 \sf@capskip=\skip77
 \sf@nearskip=\skip78
-\c@subfigure=\count163
-\c@subfigure@save=\count164
-\c@lofdepth=\count165
-\c@subtable=\count166
-\c@subtable@save=\count167
-\c@lotdepth=\count168
+\c@subfigure=\count164
+\c@subfigure@save=\count165
+\c@lofdepth=\count166
+\c@subtable=\count167
+\c@subtable@save=\count168
+\c@lotdepth=\count169
 \sf@top=\skip79
 \sf@bottom=\skip80
 )
@@ -1049,12 +1057,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen189
 \cmidrulekern=\dimen190
 \defaultaddspace=\dimen191
-\@cmidla=\count169
-\@cmidlb=\count170
+\@cmidla=\count170
+\@cmidlb=\count171
 \@aboverulesep=\dimen192
 \@belowrulesep=\dimen193
-\@thisruleclass=\count171
-\@lastruleclass=\count172
+\@thisruleclass=\count172
+\@lastruleclass=\count173
 \@thisrulewidth=\dimen194
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
@@ -1073,17 +1081,17 @@ Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks31
-\XKV@tempa@toks=\toks32
+\XKV@toks=\toks32
+\XKV@tempa@toks=\toks33
 )
-\XKV@depth=\count173
+\XKV@depth=\count174
 File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen195
 \extrarowheight=\dimen196
-\NC@list=\toks33
+\NC@list=\toks34
 \extratabsurround=\skip81
 \backup@length=\skip82
 )
@@ -1094,16 +1102,16 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@old@col=\dimen199
 \TX@target=\dimen200
 \TX@delta=\dimen201
-\TX@cols=\count174
-\TX@ftn=\toks34
+\TX@cols=\count175
+\TX@ftn=\toks35
 )
 (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count175
+\c@r@tfl@t=\count176
 \rotFPtop=\skip83
 \rotFPbot=\skip84
 \rot@float@box=\box50
-\rot@mess@toks=\toks35
+\rot@mess@toks=\toks36
 )
 
 Package ctable Warning: 
@@ -1342,12 +1350,21 @@ Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
  (./ORIGINAL.tex
 Unknown feature `protrusion=default' in font `Linux Libertine O Semibold'.
 Unknown feature `expansion=default' in font `Linux Libertine O Semibold'.
+Unknown feature `protrusion=default' in font `WenQuanYi Micro Hei'.
+Unknown feature `expansion=default' in font `WenQuanYi Micro Hei'.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `WenQuanYiMicroHei' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 Unknown feature `protrusion=default' in font `Linux Libertine O'.
 Unknown feature `expansion=default' in font `Linux Libertine O'.
+
+Overfull \vbox (6.59966pt too high) has occurred while \output is active []
+
 Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
 Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 16--16
+Overfull \hbox (5.0pt too wide) in paragraph at lines 19--19
 []$[][][]$  
  []
 
@@ -1363,20 +1380,17 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 File: temp.png Graphic file (type QTm)
 <use  "temp.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 33--34
+Overfull \hbox (5.0pt too wide) in paragraph at lines 36--37
  [][] 
  []
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 34--34
+Underfull \hbox (badness 3250) in paragraph at lines 37--37
 [][]|\EU1/LinuxLibertineO(0)/m/it/10 Eletrocardiograma da admissão: supradesniv
 ela-
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 43.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1392,30 +1406,34 @@ Package microtype Info: Loading generic settings for font family
 File: temp.png Graphic file (type QTm)
 
 <use  "temp.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 46--47
+Overfull \hbox (5.0pt too wide) in paragraph at lines 49--50
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
 [][]|\EU1/LinuxLibertineO(0)/m/it/10 Caption 2 Eletrocardiograma da admissão:
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 47--47
+Underfull \hbox (badness 2932) in paragraph at lines 50--50
 \EU1/LinuxLibertineO(0)/m/it/10 supradesnivelamento do segmento ST de 1 mm
  []
 
-[2]
+
+Overfull \vbox (6.089pt too high) has occurred while \output is active []
+
+ [2]
 File: temp.png Graphic file (type QTm)
- <use  "temp.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 136--137
+
+<use  "temp.png" >
+Overfull \hbox (5.0pt too wide) in paragraph at lines 139--140
  [][] 
  []
 
 File: temp.png Graphic file (type QTm)
 <use  "temp.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 161--162
+Overfull \hbox (5.0pt too wide) in paragraph at lines 164--165
  [][] 
  []
 
@@ -1426,11 +1444,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 AED: lastpage setting LastPage
 [3] (./LIVRO.aux) ) 
 Here is how much of TeX's memory you used:
- 24245 strings out of 493727
- 461325 string characters out of 6147891
- 662855 words of memory out of 5000000
- 27091 multiletter control sequences out of 15000+600000
- 38711 words of font info for 178 fonts, out of 8000000 for 9000
+ 24571 strings out of 493727
+ 466151 string characters out of 6147891
+ 668623 words of memory out of 5000000
+ 27410 multiletter control sequences out of 15000+600000
+ 38719 words of font info for 179 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  65i,15n,79p,10378b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
 
