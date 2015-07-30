@@ -1,0 +1,114 @@
+
+% usando {cc} ==> nao quebra linha nas colunas com muito texto (tem que especificar o width)
+% mesmo setando o width da tabela para a largura do texto, a tabela ultrapassa as margens
+% footer do table nao funciona, tive que fazer manual
+% alinhamento a direita possui uma margem extra
+
+\lipsum
+
+\onecolumn
+
+\noindent
+\ctable[ 
+	caption = {Distribution of \textit{MTR}, \textit{MTRR} and \textit{Fluorescence data after 40 PCR cyclesMTHFR} gene variants in infertile patients and control group.}, 
+	width=\textwidth, pos = ht, left,long 
+] 
+{p{0.5\textwidth}p{0.5\textwidth}}  
+{ \tnote[*]{ Calculated by means of Fisher’s exact test.} } % footnote nao funciona
+{ \FL 
+{C1  lorem ipsum dolor 1234567890} & {C2}
+\\\hline {C1} & {Lorem ipsum dolor sit amet, consectetuer 2p Lorem ipsum dolor sit amet, consectetuer}  % NAO quebra linha
+\\\hline {C1} & {C2}
+\\\hline \multicolumn{2}{p\textwidth}{Lorem ipsum dolor sit amet, consectetuer 2p Lorem ipsum dolor sit amet, consectetue Lorem ipsum dolor sit amet, consectetuer 2p Lorem ipsum dolor sit amet, consectetue}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline \multicolumn{2}{p\textwidth}{\centering Lorem consectetuer 2p Lorem ipsum dolor sit amet, consectetue Lorem ipsum dolor sit amet, consectetuer 2p Loremconsectetuer 2p Lorem ipsum dolor sit amet, consectetue Lorem ipsum ipsum dolor sit amet, consectetue}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline \multicolumn{2}{p\textwidth}{\raggedleft  Lorem consectetuer 2p Lorem ipsum dolor sit amet, consectetue Lorem ipsum dolor sit amet, consectetuer 2p Loremconsectetuer 2p Lorem ipsum dolor sit amet, consectetue Lorem ipsum ipsum dolor sit amet, consectetue}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline {C1} & {C2}
+\\\hline
+\\
+%footer manual
+\multicolumn{2}{p\textwidth}{\textsuperscript{1} \footnotesize{footer manual}}
+\\ \multicolumn{2}{p\textwidth}{\textsuperscript{2} \footnotesize{footer manual}}
+}
+
+\twocolumn
+
+\lipsum
+
+\onecolumn
+
+\noindent
+
+\ctable[ 
+	caption = {Table 2}, 
+	width=0.98\textwidth, pos = ht, left,long 
+] 
+{p{0.14\textwidth}p{0.14\textwidth}p{0.14\textwidth}p{0.14\textwidth}p{0.14\textwidth}p{0.14\textwidth}p{0.14\textwidth}}  
+%{cc}
+%{ p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.1\textwidth}p{0.4\textwidth} }  
+{ \tnote[*]{ Calculated by means of Fisher’s exact test.} }
+{ \FL 
+{C1} & {C2} & {C3} & {C4} & {C5} & {C6} & {C7}
+\\\hline {C1} & {Lorem ipsum dolor sit amet, consectetuer 2p Lorem ipsum dolor sit amet, consectetuer}  & {C3} & {C4} & {C5} & {C6} & {C7}
+\\\hline {C1} & {C2} & {C3} & {C4} & {C5} & {C6} & {C7}
+\\\hline \multicolumn{4}{p{0.57\textwidth}}{Lorem ipsum dolor sit amet, consectetuer 2p Lorem ipsum dolor sit amet, consectetue Lorem ipsum dolor sit amet, consectetuer 2p Lorem ipsum dolor sit amet, consectetue} & {C5} & {C6} & {C7}
+\\\hline {C1} & {C2} & {C3} & {C4} & {C5} & {C6} & {C7}
+\\\hline {C1} & {C2} & {C3} & {C4} & {C5} & {C6} & {C7}
+\\\hline {C1} & {C2} & {C3} & {C4} & {C5} & \multicolumn{2}{p{0.28\textwidth}}{\centering Lorem consectetuer 2p Lorem ipsum dolor sit amet, consectetue Lorem ipsum dolor sit amet, consectetuer 2p Loremconsectetuer 2p Lorem ipsum dolor sit amet, consectetue Lorem ipsum ipsum dolor sit amet, consectetue}
+\\\hline {C1} & {C2} & {C3} & {C4} & {C5} & {C6} & {C7}
+\\\hline {C1} & {C2} & {C3} & {C4} & {C5} & {C6} & {C7}
+\\\hline \multicolumn{7}{p\textwidth}{\raggedleft  Lorem consectetuer 2p Lorem ipsum dolor sit amet, consectetue Lorem ipsum dolor sit amet, consectetuer 2p Loremconsectetuer 2p Lorem ipsum dolor sit amet, consectetue Lorem ipsum ipsum dolor sit amet, consectetue}
+\\\hline {C1} & {C2} & {C3} & {C4} & {C5} & {C6} & {C7}
+\\\hline {C1} & {C2} & {C3} & {C4} & {C5} & {C6} & {C7}
+\\\hline
+\\
+%footer manual
+\multicolumn{7}{p\textwidth}{\textsuperscript{1} \footnotesize{footer manual}}
+\\ \multicolumn{7}{p\textwidth}{\textsuperscript{2} \footnotesize{footer manual}}
+}
+
+\twocolumn
+
+\lipsum

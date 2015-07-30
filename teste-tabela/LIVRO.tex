@@ -1,0 +1,200 @@
+%%% LaTeX Template: Two column article
+%%%
+%%% Source: http://www.howtotex.com/
+%%% Feel free to distribute this template, but please keep to referal to http://www.howtotex.com/ here.
+%%% Date: February 2011
+
+%%% Preamble
+\documentclass[DIV=calc,%
+              paper=a4,%
+              fontsize=11pt,%
+              twocolumn]{scrartcl}            % KOMA-article class
+
+\usepackage{lipsum}                         % Package to create dummy text
+\usepackage{abstract}                       % Package to create dummy text
+\usepackage{penalidades, biblio}
+\usepackage[xetex,chicagofootnotes]{tipografia}
+\usepackage{metadados}
+
+
+
+\usepackage{amsmath,amsfonts,amsthm}          % Math packages
+%\usepackage[pdftex]{graphicx}                  % Enable pdflatex
+\usepackage[svgnames]{xcolor}                 % Enabling colors by their 'svgnames'
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption}  % Custom captions under/above floats
+\usepackage{epstopdf}                       % Converts .eps to .pdf
+\usepackage{subfig}                         % Subfigures
+\usepackage{booktabs}                       % Nicer tables
+\usepackage{fix-cm}                         % Custom fontsizes
+%
+%% scielo graphics
+\usepackage{graphicx}
+\usepackage{ctable}
+
+% START packages do ctable + longtable
+% http://tex.stackexchange.com/questions/88304/multipage-tables-with-ctable-package
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[backend=bibtex8, style=authoryear]{biblatex}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{pbox}
+\usepackage{longtable}
+% END packages do ctable + longtable
+
+%
+%%% Custom sectioning (sectsty package)
+\usepackage{sectsty}                          % Custom sectioning (see below)
+\allsectionsfont{%                              % Change font of al section commands
+  \usefont{OT1}{phv}{b}{n}%                   % bch-b-n: CharterBT-Bold font
+  }
+
+
+
+\makeatletter
+
+% START ctable + longtable
+% http://tex.stackexchange.com/questions/88304/multipage-tables-with-ctable-package
+\newif\if@ctbl@long
+\define@key{ctbl}{long}[]{\@ctbl@longtrue}
+
+\long\def\foo#1\sbox#2!!{%
+\long\expandafter\def\csname\string\ctable\endcsname[##1]##2##3##4{%
+#1\if@ctbl@long\ctbl@long\fi\sbox#2}}
+
+
+
+\expandafter\expandafter\expandafter\foo
+\csname\string\ctable\endcsname[#1]{#2}{#3}{#4}!!
+
+
+\def\ctbl@long\fi\sbox#1#2#3\@ctblend{\fi
+\ctbl@@long#2%
+}
+
+
+\long\def\ctbl@@long#1#2#3#4#5#6{%
+\ctbl@@@long#6%
+}
+
+\def\ctbl@@@long#1\begin#2#3#4\end#5{%
+\def\@tempa{#5}%
+\def\@tempb{tabular}%
+\ifx\@tempa\@tempb\else\show\@tempa\ERROR\fi
+\begin{longtable}{#3}%
+\caption{\@ctblcaption\ifx\@ctbllabel\empty\else\label{\@ctbllabel}\fi}%
+\endfirsthead
+\caption*{\@ctblcaption\space(continued)}%
+\endhead
+#4\end{longtable}}
+% END ctable + longtable
+
+
+
+% includegraphics maxwidth
+\def\maxwidth#1{\ifdim\Gin@nat@width>#1 #1\else\Gin@nat@width\fi}
+
+\renewcommand*{\@fnsymbol}[1]{%
+  % Änderungen:
+  % * Symbol "**" an Position 2 verschoben.
+  % * Symbol "***" eingefügt.
+  % * Symbole mit \dagger entfernt.
+  \ensuremath{%
+    \ifcase#1%
+    \or
+      {*}%
+    \or
+      \ddagger
+    \or
+      \mathsection
+    \or
+      \mathparagraph
+    \or
+      \ddagger\ddagger
+    \else
+      \@ctrerr
+    \fi
+  }%
+}
+
+
+\sectionfont{%                                % Change font of \section command
+% \usefont{OT1}{phv}{b}{n}%                   % bch-b-n: CharterBT-Bold font
+  }
+
+%%% Headers and footers
+\usepackage{fancyhdr}                       % Needed to define custom headers/footers
+  \pagestyle{fancy}                           % Enabling the custom headers/footers
+\usepackage{lastpage} 
+
+% Header (empty)
+\lhead{}
+\chead{}
+\rhead{}
+% Footer (you may change this to your own needs)
+\lfoot{\footnotesize \texttt{\scieloAbbrevJournalTitle } \textbullet ~2014;\scieloVolume(\scieloIssue):\scieloFpage-\scieloLpage}
+\cfoot{}
+\rfoot{\footnotesize page \thepage\ of \pageref{LastPage}}  % "Page 1 of 2"
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+
+%%% Creating an initial of the very first character of the content
+\usepackage{lettrine}
+\newcommand{\initial}[1]{%
+     \lettrine[lines=3,lhang=0.3,nindent=0em]{
+            \color{DarkGoldenrod}
+            {\textsf{#1}}}{}}
+
+
+
+%%% Title, author and date metadata
+\usepackage{titling}                              % For custom titles
+
+\newcommand{\HorRule}{\color{DarkGoldenrod}%      % Creating a horizontal rule
+                      \rule{\linewidth}{1pt}%
+                    }
+
+\pretitle{\vspace{-30pt} \begin{flushleft} \HorRule 
+        \fontsize{\scieloTitleFontSize}{\scieloTitleFontSize} 
+        \usefont{\encodingdefault}{phv}{b}{n} 
+        \color{DarkRed} 
+        \selectfont 
+        }
+\title{\scieloArticleTitle}         % Title of your article goes here
+\posttitle{\par\end{flushleft}\vskip 0.5em}
+
+\preauthor{\begin{flushleft}
+          \large \lineskip 0.5em \color{DarkRed}}
+\author{\scieloContributorNames}                      % Author name goes here
+\postauthor{\footnotesize \color{Black} 
+
+\scieloContributorNotes
+\scieloArticleId - Editorial %University of Examples % Institution of author
+\par\end{flushleft}\HorRule}
+
+\date{}                                       % No date
+
+%
+%
+%%%% Begin document
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}       % Enabling the custom headers/footers for the first page 
+
+\input{ORIGINAL.tex}
+
+\end{document}

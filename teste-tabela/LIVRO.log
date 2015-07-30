@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.2)  27 JUL 2015 13:33
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.2)  30 JUL 2015 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -11,14 +11,18 @@ Document Class: scrartcl 2013/12/19 v3.12 KOMA-Script document class (article)
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
+
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
 Package: scrbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2013/12/19 v3.12 KOMA-Script package (loading files)
+
 Package scrlfile, 2013/12/19 v3.12 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
@@ -42,11 +46,14 @@ Package scrbase Info: Unknown processing state.
 (scrbase)             as \FamilyKeyStateProcessed on input line 1150.
 Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
 ine 1531.
+
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
 File: scrsize11pt.clo 2013/12/19 v3.12 KOMA-Script font size class option (11pt
 )
-) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2013/12/19 v3.12 KOMA-Script package (type area)
+
 Package typearea, 2013/12/19 v3.12 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
@@ -98,15 +105,17 @@ Package typearea Info: These are the values describing the layout:
 ) (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count89
-) (/usr/share/texlive/texmf-dist/tex/latex/abstract/abstract.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/abstract/abstract.sty
 Package: abstract 2009/06/08 v1.2a configurable abstracts
 \abstitleskip=\skip48
 \absleftindent=\skip49
 \absrightindent=\skip50
 \absparindent=\skip51
 \absparsep=\skip52
-) (./penalidades.sty) (./biblio.sty (/usr/share/texlive/texmf-dist/tex/latex/ba
-se/textcomp.sty
+)
+(./penalidades.sty) (./biblio.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -120,6 +129,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
@@ -185,28 +195,34 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
-) (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
 LaTeX Info: Redefining \bm on input line 203.
-) (/usr/share/texlive/texmf-dist/tex/latex/fix2col/fix2col.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fix2col/fix2col.sty
 Package: fix2col 1998/08/17 v0.03 Output Routine fixes for two column mode (DPC
 ,FMi)
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2014/09/29 v1.1s fixes to LaTeX
 LaTeX Info: Redefining \em on input line 430.
 LaTeX Info: Redefining \textsubscript on input line 434.
-) (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
-) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)) (./tipografia.sty (/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine
-.sty
+)) (./tipografia.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2014/09/16 v1.70 (Daniel Flipo)
 \c@DefaultLines=\count90
 \c@DefaultDepth=\count91
@@ -228,9 +244,10 @@ File: lettrine.sty 2014/09/16 v1.70 (Daniel Flipo)
 \LettrineWidth=\dimen114
 \LettrineHeight=\dimen115
 \LettrineDepth=\dimen116
+
 Loading lettrine.cfg
-(/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.cfg)) (/usr/share/te
-xlive/texmf-dist/tex/generic/ulem/ulem.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box29
 \UL@hyphenbox=\box30
 \UL@skip=\skip53
@@ -241,33 +258,41 @@ xlive/texmf-dist/tex/generic/ulem/ulem.sty
 \ULC@box=\box31
 Package: ulem 2012/05/18
 \ULdepth=\dimen119
-) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
-Excluding comment 'comment') (/usr/share/texlive/texmf-dist/tex/latex/adforn/ad
-forn.sty
+
+Excluding comment 'comment')
+(/usr/share/texlive/texmf-dist/tex/latex/adforn/adforn.sty
 Package: adforn 2010/07/25 v1.0 adforn CFR
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 LaTeX Font Info:    Try loading font information for U+OrnementsADF on input li
 ne 4.
-(/usr/share/texlive/texmf-dist/tex/latex/adforn/uornementsadf.fd)) (/home/alexa
-ndre/texmf/tex/hifensextras.sty) (/usr/share/texlive/texmf-dist/tex/latex/nccto
-ols/manyfoot.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/adforn/uornementsadf.fd))
+(/home/alexandre/texmf/tex/hifensextras.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/ncctools/manyfoot.sty
 Package: manyfoot 2005/09/11 v1.10 Many Footnote Levels Package (NCC)
+
 (/usr/share/texlive/texmf-dist/tex/latex/ncctools/nccfoots.sty
 Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
 )
 \MFL@columnwidth=\dimen120
 \footglue=\skip54
-) (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks16
 \footnotemargin=\dimen121
@@ -280,17 +305,22 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
 Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
-) (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count96
 )
 \etb@tempcnta=\count97
-) (/usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2009/04/17 v1.3 Extended ifthen features
+
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count98
@@ -303,30 +333,39 @@ LaTeX Info: Redefining \setlength on input line 75.
 LaTeX Info: Redefining \addtolength on input line 76.
 \calc@Ccount=\count100
 \calc@Cskip=\skip57
-) (/usr/share/texlive/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
-)) (/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box32
 \fn@width=\dimen124
-)) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2014/09/25 3.9l The Babel package
+
 (/usr/share/texlive/texmf-dist/tex/generic/babel-greek/greek.ldf
 Language: greek 2014/10/21 v1.9c Greek support for the babel system
+
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count101
 \U@D=\dimen125
+
 (/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def))
 \bbl@monogreek=\count102
 \bbl@polygreek=\count103
 \bbl@ancientgreek=\count104
+
 (/usr/share/texlive/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
 File: lgrenc.def 2013/12/02 v0.11.2 LGR Greek font encoding definitions
+
 (/usr/share/texlive/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
 File: greek-fontenc.def 2013/11/28 v0.11 Common Greek font encoding definitions
 
-))) (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2014/04/24 v5.0n Spanish support from the babel system
 \es@quottoks=\toks17
 \es@quotdepth=\count105
@@ -334,24 +373,29 @@ Package babel Info: Making " an active character on input line 516.
 Package babel Info: Making . an active character on input line 617.
 Package babel Info: Making < an active character on input line 662.
 Package babel Info: Making > an active character on input line 662.
-) (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-) (/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2014/03/29 v1.3k Italian support from the babel system
 \it@lettering=\count106
 \it@doublequoteactive=\count107
 \it@ISOcompliance=\count108
 \Virgola=\count109
-) (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 2013/12/13 v2.7 German support for babel (new orthography)
+
 (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
 Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 \l@naustrian = a dialect from \language\l@ngerman 
 \l@nswissgerman = a dialect from \language\l@ngerman 
-)) (/usr/share/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
 Language: frenchb 2014/09/16 v3.1b French support from the babel system
 \l@acadian = a dialect from \language\l@french 
 \l@canadien = a dialect from \language\l@french 
@@ -377,8 +421,10 @@ LaTeX Info: Redefining \degres on input line 745.
 \labelwidthFB=\skip62
 \leftmarginFB=\skip63
 \parindentFFN=\dimen127
-) (/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
 Language: russianb 2014/10/21 1.3f Russian support for the Babel system
+
 
 Package babel Warning: No Cyrillic font encoding has been loaded so far.
 (babel)                A font encoding should be declared before babel.
@@ -389,11 +435,13 @@ Package babel Warning: No Cyrillic font encoding has been loaded so far.
 File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
 )
 Package babel Info: \cyrdash is defined on input line 147.
-) (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 \l@brazilian = a dialect from \language\l@portuges 
-)) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty) (/usr/share/
-texlive/texmf-dist/tex/latex/microtype/microtype.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks18
 \MT@count=\count114
@@ -401,17 +449,22 @@ LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen128
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 \MT@listname@count=\count115
+
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-xetex.def
 File: microtype-xetex.def 2013/05/23 v2.5a Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 254.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
+
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
-)) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLaTeX
+
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2014/09/15 v5423 L3 programming layer (loader) 
+
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2014/09/15 v5423 L3 programming layer (code) 
 L3 Module: l3bootstrap 2014/08/23 v5354 L3 Bootstrap code
@@ -516,11 +569,14 @@ L3 Module: l3candidates 2014/08/24 v5366 L3 Experimental additions to l3kernel
 \l__coffin_top_corner_dim=\dimen157
 \l__coffin_scaled_total_height_dim=\dimen158
 \l__coffin_scaled_width_dim=\dimen159
-) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
 File: l3unicode-data.def 2014/08/12 v5276 L3 Unicode data
-) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
 File: l3xdvidpfmx.def 2014/08/24 v5366 L3 Experimental driver: xdvipdfmx
-)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2014/09/15 v5423 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count138
 \l__xparse_m_args_int=\count139
@@ -535,6 +591,7 @@ Package: xparse 2014/09/15 v5423 L3 Experimental document command parser
 \l__fontspec_tmpb_dim=\dimen161
 \l__fontspec_tmpc_dim=\dimen162
 Variant \tl_gset:cV already defined; not changing it on line 71
+
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
 Package: fontspec-patches 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLa
 TeX
@@ -551,42 +608,54 @@ LaTeX Info: Redefining \- on input line 49.
 . 
 . Defining command \liningnums with sig. 'm' on line 148.
 .................................................
-) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2014/06/21 v2.4a Font selection for XeLaTeX and LuaLaTe
 X
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def
 File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
 LaTeX Font Info:    Redeclaring font encoding EU1 on input line 17.
 )
 LaTeX Font Info:    Try loading font information for EU1+lmr on input line 100.
 
+
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd
 File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) (/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
 File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
 other characters in Unicode lower plane
+
 (/usr/share/texmf/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
 LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
 .
+
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd
 File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
 \tipaTiiicode=\count146
 \tipasavetokens=\toks19
 \tipachecktokens=\toks20
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: xetex.def on input line 91.
+
 (/usr/share/texlive/texmf-dist/tex/xelatex/xetex-def/xetex.def
 File: xetex.def 2014/07/25 v4.03 LaTeX color/graphics driver for XeTeX (RRM/JK)
 
@@ -701,6 +770,7 @@ LaTeX Info: Redefining \itshape on input line 2193.
 LaTeX Info: Redefining \slshape on input line 2198.
 LaTeX Info: Redefining \scshape on input line 2203.
 LaTeX Info: Redefining \upshape on input line 2208.
+
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
 \g__file_internal_ior=\read1
 \g__fontspec_family_LinuxLibertineO_int=\count148
@@ -789,21 +859,26 @@ Unknown feature `expansion=default' in font `Linux Libertine O'.
 . and font adjustment code:
 . 
 .................................................
+
 (./metadados.sty) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip70
+
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks21
 \ex@=\dimen165
-)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 LaTeX Info: Redefining \boldsymbol on input line 39.
 \pmbraise@=\dimen166
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count150
@@ -843,13 +918,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup7
 \symAMSb=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2009/07/02 v2.20.1
 \thm@style=\toks26
 \thm@bodyfont=\toks27
@@ -860,8 +937,10 @@ Package: amsthm 2009/07/02 v2.20.1
 \thm@postskip=\skip74
 \thm@headsep=\skip75
 \dth@everypar=\toks31
-) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
@@ -874,10 +953,13 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
-)) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
@@ -893,24 +975,34 @@ Package caption Info: The definition of \@makecaption has been changed,
 )
 Package caption Info: KOMA-Script document class.
 \c@ContinuedFloat=\count162
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-))) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
@@ -919,9 +1011,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-))) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is not detected.
@@ -950,7 +1044,8 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@lotdepth=\count169
 \sf@top=\skip79
 \sf@bottom=\skip80
-) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen182
 \lightrulewidth=\dimen183
@@ -969,31 +1064,38 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count172
 \@lastruleclass=\count173
 \@thisrulewidth=\dimen194
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2014/09/29 v1.1s fixes to LaTeX
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 42.
-)) (/usr/share/texlive/texmf-dist/tex/latex/ctable/ctable.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/ctable/ctable.sty
 Package: ctable 2014/04/25 v1.29 ctable package for \ flexible typesetting of t
 able and figure floats using key/value directives
+
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texl
-ive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks32
 \XKV@tempa@toks=\toks33
 )
 \XKV@depth=\count174
 File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
-)) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen195
 \extrarowheight=\dimen196
 \NC@list=\toks34
 \extratabsurround=\skip81
 \backup@length=\skip82
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@col@width=\dimen197
 \TX@old@table=\dimen198
@@ -1002,7 +1104,8 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@delta=\dimen201
 \TX@cols=\count175
 \TX@ftn=\toks35
-) (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \c@r@tfl@t=\count176
 \rotFPtop=\skip83
@@ -1036,7 +1139,354 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \@ctbloldrule=\dimen273
 \ctbl@t=\box51
 \@ctblcurftwidth=\dimen274
-) (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2014/04/30 v1.2b Input encoding file
+\inpenc@prehook=\toks37
+\inpenc@posthook=\toks38
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)
+LaTeX Font Info:    Try loading font information for T1+LinuxLibertineO(0) on i
+nput line 100.
+LaTeX Font Info:    No file T1LinuxLibertineO(0).fd. on input line 100.
+
+
+LaTeX Font Warning: Font shape `T1/LinuxLibertineO(0)/m/n' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 100.
+
+) (/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
+\csq@reset=\count177
+\csq@gtype=\count178
+\csq@glevel=\count179
+\csq@qlevel=\count180
+\csq@maxlvl=\count181
+\csq@tshold=\count182
+\csq@ltx@everypar=\toks39
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Option 'babel' depreciated.
+(csquotes)             Using 'autostyle'.
+Package csquotes Info: Enabling multilingual quotes.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2014/06/25 v2.9a programmable bibliographies (PK/JW/AB)
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex1.sty
+Package: biblatex1 2014/06/25 v2.9a programmable bibliographies (bibtex) (PK/JW
+/AB)
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count183
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count184
+\c@listtotal=\count185
+\c@listcount=\count186
+\c@liststart=\count187
+\c@liststop=\count188
+\c@citecount=\count189
+\c@citetotal=\count190
+\c@multicitecount=\count191
+\c@multicitetotal=\count192
+\c@instcount=\count193
+\c@maxnames=\count194
+\c@minnames=\count195
+\c@maxitems=\count196
+\c@minitems=\count197
+\c@citecounter=\count198
+\c@savedcitecounter=\count199
+\c@uniquelist=\count200
+\c@uniquename=\count201
+Normal \count register pool exhausted, switching to extended pool.
+\c@refsection=\count277
+\c@refsegment=\count278
+\c@maxextrayear=\count279
+\c@maxextraalpha=\count280
+\c@abbrvpenalty=\count281
+\c@highnamepenalty=\count282
+\c@lownamepenalty=\count283
+\c@maxparens=\count284
+\c@parenlevel=\count285
+\blx@tempcnta=\count286
+\blx@tempcntb=\count287
+\blx@tempcntc=\count288
+\blx@maxsection=\count289
+\blx@maxsegment=\count290
+\blx@notetype=\count291
+\blx@parenlevel@text=\count292
+\blx@parenlevel@foot=\count293
+\labelnumberwidth=\skip85
+\labelalphawidth=\skip86
+\shorthandwidth=\skip87
+\biblabelsep=\skip88
+\bibitemsep=\skip89
+\bibnamesep=\skip90
+\bibinitsep=\skip91
+\bibparsep=\skip92
+\bibhang=\skip93
+\blx@auxin=\read2
+\blx@auxout=\write4
+\c@mincomprange=\count294
+\c@maxcomprange=\count295
+\c@mincompwidth=\count296
+\c@labelname=\count297
+\c@savedlabelname=\count298
+\c@author=\count299
+\c@savedauthor=\count300
+\c@shortauthor=\count301
+\c@savedshortauthor=\count302
+\c@editor=\count303
+\c@savededitor=\count304
+\c@editora=\count305
+\c@savededitora=\count306
+\c@editorb=\count307
+\c@savededitorb=\count308
+\c@editorc=\count309
+\c@savededitorc=\count310
+\c@shorteditor=\count311
+\c@savedshorteditor=\count312
+\c@bookauthor=\count313
+\c@savedbookauthor=\count314
+\c@translator=\count315
+\c@savedtranslator=\count316
+\c@annotator=\count317
+\c@savedannotator=\count318
+\c@commentator=\count319
+\c@savedcommentator=\count320
+\c@introduction=\count321
+\c@savedintroduction=\count322
+\c@foreword=\count323
+\c@savedforeword=\count324
+\c@afterword=\count325
+\c@savedafterword=\count326
+\c@holder=\count327
+\c@savedholder=\count328
+\c@namea=\count329
+\c@savednamea=\count330
+\c@nameb=\count331
+\c@savednameb=\count332
+\c@namec=\count333
+\c@savednamec=\count334
+\c@institution=\count335
+\c@savedinstitution=\count336
+\c@language=\count337
+\c@savedlanguage=\count338
+\c@location=\count339
+\c@savedlocation=\count340
+\c@organization=\count341
+\c@savedorganization=\count342
+\c@origlocation=\count343
+\c@savedoriglocation=\count344
+\c@origpublisher=\count345
+\c@savedorigpublisher=\count346
+\c@pageref=\count347
+\c@savedpageref=\count348
+\c@publisher=\count349
+\c@savedpublisher=\count350
+\c@lista=\count351
+\c@savedlista=\count352
+\c@listb=\count353
+\c@savedlistb=\count354
+\c@listc=\count355
+\c@savedlistc=\count356
+\c@listd=\count357
+\c@savedlistd=\count358
+\c@liste=\count359
+\c@savedliste=\count360
+\c@listf=\count361
+\c@savedlistf=\count362
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2014/06/25 v2.9a biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 
+\c@textcitecount=\count363
+\c@textcitetotal=\count364
+\c@textcitemaxnames=\count365
+\c@biburlnumpenalty=\count366
+\c@biburlucpenalty=\count367
+\c@biburllcpenalty=\count368
+\c@smartand=\count369
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count370
+\c@bbx:relatedtotal=\count371
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2014/06/25 v2.9a biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count372
+\Gm@cntv=\count373
+\c@Gm@tempcnt=\count374
+\Gm@bindingoffset=\dimen275
+\Gm@wd@mp=\dimen276
+\Gm@odd@mp=\dimen277
+\Gm@even@mp=\dimen278
+\Gm@layoutwidth=\dimen279
+\Gm@layoutheight=\dimen280
+\Gm@layouthoffset=\dimen281
+\Gm@layoutvoffset=\dimen282
+\Gm@dimlist=\toks40
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2014/07/16 v1.15 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count375
+\l_MT_multwidth_dim=\dimen283
+\origjot=\skip94
+\l_MT_shortvdotswithinadjustabove_dim=\dimen284
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen285
+\l_MT_above_intertext_sep=\dimen286
+\l_MT_below_intertext_sep=\dimen287
+\l_MT_above_shortintertext_sep=\dimen288
+\l_MT_below_shortintertext_sep=\dimen289
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip95
+\enit@outerparindent=\dimen290
+\enit@toks=\toks41
+\enit@inbox=\box52
+\enitdp@description=\count376
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen291
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pbox/pbox.sty
+Package: pbox 2011/12/07 v1.2 Dynamic parboxes
+\pb@xlen=\skip96
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip97
+\LTright=\skip98
+\LTpre=\skip99
+\LTpost=\skip100
+\LTchunksize=\count377
+\LTcapwidth=\dimen292
+\LT@head=\box53
+\LT@firsthead=\box54
+\LT@foot=\box55
+\LT@lastfoot=\box56
+\LT@cols=\count378
+\LT@rows=\count379
+\c@LT@tables=\count380
+\c@LT@chunks=\count381
+\LT@p@ftn=\toks42
+)
+Class scrartcl Info: longtable captions redefined on input line 55.
+
+(/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
@@ -1046,707 +1496,351 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              I'd suggest to use 
 (scrartcl)              package `scrpage2' or `scrlayer-scrpage'.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 73.
+(scrartcl)              package `fancyhdr' on input line 138.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip85
-\f@ncyO@elh=\skip86
-\f@ncyO@erh=\skip87
-\f@ncyO@olh=\skip88
-\f@ncyO@orh=\skip89
-\f@ncyO@elf=\skip90
-\f@ncyO@erf=\skip91
-\f@ncyO@olf=\skip92
-\f@ncyO@orf=\skip93
-) (/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty
+\fancy@headwidth=\skip101
+\f@ncyO@elh=\skip102
+\f@ncyO@erh=\skip103
+\f@ncyO@olh=\skip104
+\f@ncyO@orh=\skip105
+\f@ncyO@elf=\skip106
+\f@ncyO@erf=\skip107
+\f@ncyO@olf=\skip108
+\f@ncyO@orf=\skip109
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip94
-\thanksmargin=\skip95
-\droptitle=\skip96
-) (./LIVRO.aux)
+\thanksmarkwidth=\skip110
+\thanksmargin=\skip111
+\droptitle=\skip112
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package biblatex Info: Trying to load language 'brazilian'...
+Package biblatex Info: ... file 'brazilian.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
+File: brazilian.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
+)
+(./LIVRO.aux)
 \openout1 = `LIVRO.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 128.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 128.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 193.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 193.
 
-(/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2013/09/01 v1.0 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 128.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 128.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 193.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 193.
+
 (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 193.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 128.
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
-LaTeX Info: Redefining \dots on input line 128.
-LaTeX Info: Redefining \up on input line 128.
-LaTeX Info: Redefining \microtypecontext on input line 128.
+(lastpage)             ! on input line 193.
+LaTeX Info: Redefining \it@ocap on input line 193.
+LaTeX Info: Redefining \it@ccap on input line 193.
+LaTeX Info: Redefining \dots on input line 193.
+LaTeX Info: Redefining \up on input line 193.
+LaTeX Info: Redefining \microtypecontext on input line 193.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `LinuxLibertineO' (encoding: EU1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-.................................................
-. fontspec info: "setup-math"
-. 
-. Adjusting the maths setup (use [no-math] to avoid this).
-.................................................
-\symlegacymaths=\mathgroup9
-LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 128.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 128.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 128.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 128.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 128.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 128.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 128.
-LaTeX Font Info:    Redeclaring math accent \check on input line 128.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 128.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 128.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 128.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 128.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 128.
-LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 128.
-
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/LinuxLibertineO(0)/m/n on input lin
-e 128.
-LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 128.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/LinuxLibertineO(0)/m/n on input li
-ne 128.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/LinuxLibertineO(0)/m/n --> EU1/LinuxLibertineO(0)/m
-/n on input line 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/LinuxLibertineO(0)/m/it on input l
-ine 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/LinuxLibertineO(0)/bx/n on input l
-ine 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 128.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/LinuxLibertineO(0)/m/n --> EU1/LinuxLibertineO(0)/b
-x/n on input line 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/LinuxLibertineO(0)/bx/it on input
- line 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 128.
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: rotating package is loaded.
-Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for EU1+phv on input line 130.
-
-LaTeX Font Info:    No file EU1phv.fd. on input line 130.
-
-LaTeX Font Warning: Font shape `EU1/phv/b/n' undefined
-(Font)              using `EU1/lmr/m/n' instead on input line 130.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmr' (encoding: EU1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `phv' (encoding: EU1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
-(./ORIGINAL.tex
-Unknown feature `protrusion=default' in font `Linux Libertine O Semibold'.
-Unknown feature `expansion=default' in font `Linux Libertine O Semibold'.
-Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
-Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
-
-Underfull \hbox (badness 1122) in paragraph at lines 3--4
-[]\EU1/LinuxLibertineO(0)/m/n/10 Spermatogenesis is a process where an im-
- []
-
-Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
-Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmss' (encoding: EU1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 4303) in paragraph at lines 10--10
-[][]\EU1/LinuxLibertineO(0)/m/n/10.95 permatogenesis is a multistep development
-al
- []
+*** you should *not* be loading the inputenc package
+*** XeTeX expects the source to be in UTF8 encoding
+*** some features of other encodings may conflict, resulting in poor output.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
 
 
-Underfull \hbox (badness 3590) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 process coordinated by sequential expression
- []
+Package biblatex Warning: Data encoding is 'utf8'.
+(biblatex)                Use backend=biber.
 
-Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
-Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 10.
+\openout4 = `LIVRO-blx.bib'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
-File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'LIVRO.bbl' found.
+(./LIVRO.bbl)
+Package biblatex Info: Reference section=0 on input line 193.
+Package biblatex Info: Reference segment=0 on input line 193.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.6271pt, 418.25372pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.53027pt, 152.11002pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=418.25372pt
+* \textheight=591.53027pt
+* \oddsidemargin=17.35712pt
+* \evensidemargin=17.35712pt
+* \topmargin=-8.26335pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=31.44778pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Try loading font information for T1+phv on input line 195.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 Package microtype Info: Loading generic settings for font family
-(microtype)             `lmtt' (encoding: EU1).
+(microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Unknown feature `protrusion=default' in font `Linux Libertine O Semibold'.
-Unknown feature `expansion=default' in font `Linux Libertine O Semibold'.
+ (./ORIGINAL.tex
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 8.
 
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 10.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 8.
 
-[1
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [1
 
 
 ]
-Underfull \hbox (badness 1348) in paragraph at lines 10--10
-[]\EU1/LinuxLibertineO(0)/m/n/10.95 The available information on associations o
-f the
+Underfull \hbox (badness 2922) in paragraph at lines 8--8
+[]\T1/lmr/m/n/10.95 Quisque ul-lam-cor-per pla-ce-rat ip-sum.
+ []
+
+[2] [3
+
+]
+Overfull \hbox (24.0pt too wide) in alignment at lines 74--74
+ [] [] 
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 above mentioned SNPs in \EU1/LinuxLibertineO(
-0)/m/it/10.95 MTHFR\EU1/LinuxLibertineO(0)/m/n/10.95 , \EU1/LinuxLibertineO(0)/
-m/it/10.95 MTR \EU1/LinuxLibertineO(0)/m/n/10.95 and \EU1/LinuxLibertineO(0)/m/
-it/10.95 MTRR
+Overfull \hbox (24.0pt too wide) in alignment at lines 74--74
+ [] [] 
  []
 
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
-LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 74--74
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 74
+ []
+
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 74--74
+ [] [] 
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 74.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 74.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 74.
+
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 74.
+
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 74.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 74.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 74.
+LaTeX Font Info:    Try loading font information for U+msa on input line 74.
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+LaTeX Font Info:    Try loading font information for U+msb on input line 74.
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \hbox (badness 4621) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 consecutive men accompanying their female par
-t-
+Overfull \hbox (24.0pt too wide) in alignment at lines 74--74
+ [] [] 
  []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 (rs1801131, rs1801133), \EU1/LinuxLibertineO(
-0)/m/it/10.95 MTR \EU1/LinuxLibertineO(0)/m/n/10.95 (rs1805087) and \EU1/LinuxL
-ibertineO(0)/m/it/10.95 MTRR
- []
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 10.
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 OR
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 0.91 (0.78–
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 1.77 (0.74–
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 (AG+GG)
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 0.97 (0.70–
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 (AA+AG)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 0.55(0.23–
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 1.12 (0.73–
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 1.16 (0.74–
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 (AG+GG)
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 1.13 (0.76–
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 (AA+AG)
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 0.93 (0.77–
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 0.87 (0.63–
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 0.90 (0.52–
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 (CT+TT)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 0.880
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 (CC+CT)
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 1.04 (0.62–
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 1.02 (0.73–
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 0.79 (0.46–
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 (AC+CC)
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 0.97 (0.71–
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 (AA+AC)
- []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 1.27 (0.76–
- []
-
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
-Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
-Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
-
-LaTeX Warning: Float too large for page by 179.98624pt on input line 10.
-
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 10.
-
-[3]
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 10.
 
 [4
 
-
-
-]
-! Missing } inserted.
-<inserted text> 
-                }
-l.10 ...ish Caucasians} & {present study} \NN \LL}
-                                                   \twocolumn \par In contra...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-<argument> ...receptor) rs173665 with infertility}
-                                                   & {153 infertile men and ...
-l.10 ...ish Caucasians} & {present study} \NN \LL}
-                                                   \twocolumn \par In contra...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.10 ...ish Caucasians} & {present study} \NN \LL}
-                                                   \twocolumn \par In contra...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.10 ...ish Caucasians} & {present study} \NN \LL}
-                                                   \twocolumn \par In contra...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.10 ...ish Caucasians} & {present study} \NN \LL}
-                                                   \twocolumn \par In contra...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.10 ...ish Caucasians} & {present study} \NN \LL}
-                                                   \twocolumn \par In contra...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 Genetic polymorphism
+] [5]
+Underfull \hbox (badness 2922) in paragraph at lines 79--79
+[]\T1/lmr/m/n/10.95 Quisque ul-lam-cor-per pla-ce-rat ip-sum.
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 controls, ethnicity not
- []
-
-
-Underfull \hbox (badness 2980) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 113 fertile and 77 sub-
- []
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.10 ...ish Caucasians} & {present study} \NN \LL}
-                                                   \twocolumn \par In contra...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 no association of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 folate-related gene
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 polymorphisms with
- []
-
-
-Underfull \hbox (badness 2065) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 infertility; \EU1/LinuxLibertineO(0)/m/it/10.
-95 PEMT \EU1/LinuxLibertineO(0)/m/n/10.95 (phos-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 N-methyltransferase)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 rs7946 and CD320
- []
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.10 ...ish Caucasians} & {present study} \NN \LL}
-                                                   \twocolumn \par In contra...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 controls, ethnicity not
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 controls, ethnicity not
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/it/10.95 MTHFD\EU1/LinuxLibertineO(0)/m/n/10.95 1 
-1958G>Aand
- []
-
-
-Underfull \hbox (badness 1292) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 fertility (without correc-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 275 infertile men and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 349 controls, Russian
- []
-
-
-Underfull \hbox (badness 3323) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 no association with re-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 oligozoospermia cases,
- []
-
-
-Underfull \hbox (badness 4940) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 114 normospermic con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 trols, “French ethnic
- []
-
-
-Underfull \hbox (badness 3568) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/it/10.95 MTHFR \EU1/LinuxLibertineO(0)/m/n/10.95 6
-77C > T and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 > C, 215GA; \EU1/LinuxLibertineO(0)/m/it/10.9
-5 MTRR
- []
-
-
-Underfull \hbox (badness 5607) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 association with sperm
- []
-
-
-Underfull \hbox (badness 2538) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 522 men, mixed ethnic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/it/10.95 MTHFR \EU1/LinuxLibertineO(0)/m/n/10.95 6
-77C > T
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 with non-obstructive
- []
-
-
-Underfull \hbox (badness 1845) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 azoospermia and severe
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 controls, mixed ethnic
- []
-
-
-Underfull \hbox (badness 1675) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/it/10.95 MTHFR \EU1/LinuxLibertineO(0)/m/n/10.95 6
-77C > T with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 metaanalysis of previ-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/it/10.95 MTHFR \EU1/LinuxLibertineO(0)/m/n/10.95 1
-298A > C
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 with infertility and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 azoospermia (metaanal-
- []
-
-
-Underfull \hbox (badness 3746) in paragraph at lines 10--10
-\EU1/LinuxLibertineO(0)/m/n/10.95 ysis included only one
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\EU1/LinuxLibertineO(0)/m/n/10.95 metaanalysis of previ-
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 10--10
-[][]
- []
-
-
-LaTeX Warning: Float too large for page by 283.21907pt on input line 10.
-
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 10.
-
-[5]
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 14.
 
 [6
 
+] [7
+
+]
+Overfull \hbox (75.63304pt too wide) in alignment at lines 110--110
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (75.63304pt too wide) in alignment at lines 110--110
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]|\T1/lmr/m/n/10.95 Lorem ip-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+\T1/lmr/m/n/10.95 sum do-lor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+\T1/lmr/m/n/10.95 sit amet,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+\T1/lmr/m/n/10.95 con-sec-te-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+\T1/lmr/m/n/10.95 rem ip-sum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+\T1/lmr/m/n/10.95 do-lor sit
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 110--110
+\T1/lmr/m/n/10.95 amet, con-
+ []
+
+
+Overfull \hbox (75.63304pt too wide) in alignment at lines 110--110
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 110
+ []
+
+[8
 
 ])
+Underfull \hbox (badness 2922) in paragraph at lines 198--198
+[]\T1/lmr/m/n/10.95 Quisque ul-lam-cor-per pla-ce-rat ip-sum.
+ []
 
-Package lastpage Warning: Rerun to get the references right on input line 135.
+[9
 
-
+] 
 AED: lastpage setting LastPage
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 135.
-
-[7
+[10
 
 ] (./LIVRO.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package logreq Info: Writing requests to 'LIVRO.run.xml'.
+\openout1 = `LIVRO.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24334 strings out of 493727
- 461204 string characters out of 6147891
- 726694 words of memory out of 5000000
- 27188 multiletter control sequences out of 15000+600000
- 17265 words of font info for 96 fonts, out of 8000000 for 9000
+ 31025 strings out of 493727
+ 573300 string characters out of 6147891
+ 1032496 words of memory out of 5000000
+ 33778 multiletter control sequences out of 15000+600000
+ 45784 words of font info for 71 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
- 65i,15n,79p,21241b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,11n,90p,10378b,1361s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on LIVRO.pdf (7 pages).
+Output written on LIVRO.pdf (10 pages).
