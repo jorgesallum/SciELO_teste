@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.2)  31 JUL 2015 10:24
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  31 JUL 2015 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -221,7 +221,12 @@ Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)) (./tipografia.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
+\@enLab=\toks15
+))
+(./tipografia.sty
 (/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2014/09/16 v1.70 (Daniel Flipo)
 \c@DefaultLines=\count90
@@ -251,7 +256,7 @@ Loading lettrine.cfg
 \UL@box=\box29
 \UL@hyphenbox=\box30
 \UL@skip=\skip53
-\UL@hook=\toks15
+\UL@hook=\toks16
 \UL@height=\dimen117
 \UL@pe=\count94
 \UL@pixel=\dimen118
@@ -282,7 +287,7 @@ LaTeX Font Info:    Try loading font information for U+OrnementsADF on input li
 ne 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/adforn/uornementsadf.fd))
-(/home/alexandre/texmf/tex/hifensextras.sty)
+(/home/hipatia/texmf/tex/hifensextras.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/ncctools/manyfoot.sty
 Package: manyfoot 2005/09/11 v1.10 Many Footnote Levels Package (NCC)
 
@@ -294,7 +299,7 @@ Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks16
+\FN@temptoken=\toks17
 \footnotemargin=\dimen121
 \c@pp@next@reset=\count95
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
@@ -367,7 +372,7 @@ File: greek-fontenc.def 2013/11/28 v0.11 Common Greek font encoding definitions
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2014/04/24 v5.0n Spanish support from the babel system
-\es@quottoks=\toks17
+\es@quottoks=\toks18
 \es@quotdepth=\count105
 Package babel Info: Making " an active character on input line 516.
 Package babel Info: Making . an active character on input line 617.
@@ -443,7 +448,7 @@ Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks18
+\MT@toks=\toks19
 \MT@count=\count114
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen128
@@ -639,8 +644,8 @@ LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
 File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
 \tipaTiiicode=\count146
-\tipasavetokens=\toks19
-\tipachecktokens=\toks20
+\tipasavetokens=\toks20
+\tipachecktokens=\toks21
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -870,7 +875,7 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks21
+\@emptytoks=\toks22
 \ex@=\dimen165
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -901,21 +906,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \dotsspace@=\muskip16
 \c@parentequation=\count157
 \dspbrk@lvl=\count158
-\tag@help=\toks22
+\tag@help=\toks23
 \row@=\count159
 \column@=\count160
 \maxfields@=\count161
-\andhelp@=\toks23
+\andhelp@=\toks24
 \eqnshift@=\dimen168
 \alignsep@=\dimen169
 \tagshift@=\dimen170
 \tagwidth@=\dimen171
 \totwidth@=\dimen172
 \lineht@=\dimen173
-\@envbody=\toks24
+\@envbody=\toks25
 \multlinegap=\skip71
 \multlinetaggap=\skip72
-\mathdisplay@stack=\toks25
+\mathdisplay@stack=\toks26
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -928,15 +933,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2009/07/02 v2.20.1
-\thm@style=\toks26
-\thm@bodyfont=\toks27
-\thm@headfont=\toks28
-\thm@notefont=\toks29
-\thm@headpunct=\toks30
+\thm@style=\toks27
+\thm@bodyfont=\toks28
+\thm@headfont=\toks29
+\thm@notefont=\toks30
+\thm@headpunct=\toks31
 \thm@preskip=\skip73
 \thm@postskip=\skip74
 \thm@headsep=\skip75
-\dth@everypar=\toks31
+\dth@everypar=\toks32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
@@ -1081,8 +1086,8 @@ Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks32
-\XKV@tempa@toks=\toks33
+\XKV@toks=\toks33
+\XKV@tempa@toks=\toks34
 )
 \XKV@depth=\count174
 File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
@@ -1091,7 +1096,7 @@ File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen195
 \extrarowheight=\dimen196
-\NC@list=\toks34
+\NC@list=\toks35
 \extratabsurround=\skip81
 \backup@length=\skip82
 )
@@ -1103,7 +1108,7 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@target=\dimen200
 \TX@delta=\dimen201
 \TX@cols=\count175
-\TX@ftn=\toks35
+\TX@ftn=\toks36
 )
 (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
@@ -1111,7 +1116,7 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \rotFPtop=\skip83
 \rotFPbot=\skip84
 \rot@float@box=\box50
-\rot@mess@toks=\toks36
+\rot@mess@toks=\toks37
 )
 
 Package ctable Warning: 
@@ -1145,8 +1150,8 @@ Package: balance 1999/02/23 4.3 (PWD)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2014/04/30 v1.2b Input encoding file
-\inpenc@prehook=\toks37
-\inpenc@posthook=\toks38
+\inpenc@prehook=\toks38
+\inpenc@posthook=\toks39
 
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
@@ -1209,7 +1214,7 @@ Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
 \csq@qlevel=\count180
 \csq@maxlvl=\count181
 \csq@tshold=\count182
-\csq@ltx@everypar=\toks39
+\csq@ltx@everypar=\toks40
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
@@ -1430,7 +1435,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen281
 \Gm@layouthoffset=\dimen282
 \Gm@layoutvoffset=\dimen283
-\Gm@dimlist=\toks40
+\Gm@dimlist=\toks41
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -1459,7 +1464,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip95
 \enit@outerparindent=\dimen291
-\enit@toks=\toks41
+\enit@toks=\toks42
 \enit@inbox=\box52
 \enitdp@description=\count376
 )
@@ -1486,7 +1491,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LT@rows=\count379
 \c@LT@tables=\count380
 \c@LT@chunks=\count381
-\LT@p@ftn=\toks42
+\LT@p@ftn=\toks43
 )
 Class scrartcl Info: longtable captions redefined on input line 56.
 
@@ -1772,8 +1777,11 @@ Underfull \hbox (badness 1057) in paragraph at lines 163--174
 LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 174.
 
 [5]
+Overfull \vbox (1.92914pt too high) has occurred while \output is active []
 
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 177.
+
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 180.
 
 [6]
 
@@ -1805,10 +1813,10 @@ Package logreq Info: Writing requests to 'LIVRO.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30906 strings out of 493727
- 570984 string characters out of 6147891
- 1036281 words of memory out of 5000000
- 33701 multiletter control sequences out of 15000+600000
+ 30935 strings out of 493727
+ 571430 string characters out of 6147891
+ 1036676 words of memory out of 5000000
+ 33728 multiletter control sequences out of 15000+600000
  33333 words of font info for 47 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  65i,11n,67p,10378b,1547s stack positions out of 5000i,500n,10000p,200000b,80000s

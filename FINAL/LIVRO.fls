@@ -1,4 +1,4 @@
-PWD /home/alexandre/scielo/70ccc20b-25e7-460b-bdc8-bf959f338470
+PWD /home/hipatia/Desktop/TEMPORARIOS/SCIELO/TEMPLATE_1/FINAL
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -47,6 +47,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 INPUT tipografia.sty
 INPUT tipografia.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.sty
@@ -71,8 +73,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/adforn/uornementsadf.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/adforn/uornementsadf.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/arkandis/adforn/OrnementsADF.tfm
-INPUT /home/alexandre/texmf/tex/hifensextras.sty
-INPUT /home/alexandre/texmf/tex/hifensextras.sty
+INPUT /home/hipatia/texmf/tex/hifensextras.sty
+INPUT /home/hipatia/texmf/tex/hifensextras.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/ncctools/manyfoot.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/ncctools/manyfoot.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/ncctools/nccfoots.sty
