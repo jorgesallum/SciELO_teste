@@ -5,16 +5,18 @@
 \RequirePackage{fixltx2e}
 \RequirePackage{lastpage}
 \RequirePackage{ifthen}
+\RequirePackage{enumerate}
 
-\newcommand{\tit}[1]{\item[#1]~}%\MakeTextLowercase{\textsc{#1}}]}
+\newcommand{\tit}[1]{\item #1~}%\MakeTextLowercase{\textsc{#1}}]}
 \newcommand{\titidem}{\item[\line(1,0){25}].\ }
 
+
+
 \newenvironment{biblio}[1][Bibliografia]{%
-  \pagebreak\onecolumn
   \frenchspacing\footnotesize
 	\ifthenelse{\equal{#1}{}}%
         {\relax}{\section*{{#1}}\vspace{2ex}}
-		\begin{list}{}{
+        \begin{enumerate}{}{
 				\setlength\leftmargin{4mm}	% identação do texto principal em
 								% relação à margem da 'página'
 				\setlength\rightmargin{0mm}
@@ -30,4 +32,4 @@
 				\setlength\lineskip{0mm}	% espaçamento entre linhas
 		}
 	}%
-	{\end{list}}
+	{\end{enumerate}}

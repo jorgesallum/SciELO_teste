@@ -1,4 +1,6 @@
 all:
+	-rm LIVRO.pdf
+	make clean
 	latexmk -xelatex LIVRO.tex
 scielo:
 	latexmk -quiet -interaction=nonstopmode -xelatex LIVRO.tex
