@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:semantics xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mstyle mathcolor="#000000" mathsize="12.0pt" mathvariant="normal"><mml:msubsup><mml:mi mathvariant="italic">c</mml:mi><mml:mrow><mml:mi mathsize="50.0%" mathvariant="italic">k</mml:mi><mml:mi mathsize="50.0%" mathvariant="italic">,</mml:mi><mml:mi mathsize="50.0%" mathvariant="italic">j</mml:mi></mml:mrow><mml:mrow><mml:mi mathsize="50.0%" mathvariant="italic">inv</mml:mi><mml:mo mathsize="50.0%">−</mml:mo><mml:mi mathsize="50.0%" mathvariant="italic">cust</mml:mi></mml:mrow></mml:msubsup></mml:mstyle></mml:semantics>
+</mml:math>

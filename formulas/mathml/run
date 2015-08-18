@@ -1,0 +1,9 @@
+#!/bin/bash
+# seleciona todos os arquivos xml da pasta mathml ($1)
+# converte usando xml para tex usando o xsl
+# escape dos caracteres #, $, %, _ para \#, \$. \%, \_
+for file in `find $1 -type f -name "*.xml"`
+do
+	texname=`echo $file | sed -r "s/\.xml$/\.tex/gi"`
+	java -jar ~/scielo/template/mathml/saxon9he.jar "$file" ~/scielo/template/mathml/pmml2tex.xsl | sed -r "s/(%|\\\$|#|_)/\\\\\1/gi" > "$texname"
+done

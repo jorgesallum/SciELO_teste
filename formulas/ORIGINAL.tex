@@ -1,0 +1,1003 @@
+\selectlanguage{english}
+\begin{abstract}
+\par Keen competition and increasingly demanding customers have forced companies to use
+ their resources more efficiently and to integrate production and transportation
+ planning. In the last few years more and more researchers have also focused on this
+ challenging problem by trying to determine the complexity of the individual problems
+ and then developing fast and robust algorithms to solve them. This paper reviews
+ existing literature on integrated production and distribution decisions at the
+ tactical and operational level, where the distribution part is modelled as some
+ variation of the well-known Vehicle Routing Problem (VRP). The focus is thereby on
+ problems that explicitly consider deliveries to multiple clients in a
+ less-than-truckload fashion. In terms of the production decisions we distinguish in
+ our review between tactical and operational production problems by considering
+ lot-sizing/capacity allocation and scheduling models, respectively.
+
+\end{abstract}
+\section*{INTRODUCTION}1\par Since the mid-1980s integrated production-distribution systems (IPDS) have been the
+ subject of an active research area in Operations Research (OR). According to Sarmiento
+ \& Nagi [\textit{45}] IPDS are models that jointly
+ optimize decision variables of different production and distribution functions in a
+ single optimization model. The optimization is carried out simultaneously (cf. [\textit{45}]) and possibly involves additional functions,
+ such as inventory (cf. [\textit{21}]). The practical needs
+ and recent theoretical results regarding techniques for the integrated planning of
+ production and distribution are highlighted in the specialized literature (cf. [\textit{46}], [\textit{21}]).\par One driving force behind supply chain integration is the fierce competition companies
+ have to face in today's global market. As a consequence, they are forced to utilize
+ their resources efficiently by, among other things, reducing lead times and safety
+ stocks. This reduction of safety stocks is supposed to break up the traditional
+ procedure of developing production and distribution plans separately (i.e., in different
+ departments) and sequentially. Reduced inventory leads to a closer linkage between
+ production and distribution operations, which makes the joint planning inevitable.\par Another reason for the necessity of an integrated consideration is the increased
+ customers' pressure on companies to offer individual products quickly, as well as the
+ rising number of companies which have adopted direct-sell e-business models as their way
+ of doing business. Consequently, many of them have implemented make-to-order production,
+ meaning that custom-made products are manufactured and delivered within very short lead
+ times. Due to the fact that these companies can only start producing the products after
+ they have received an order and supply them directly to the customer after their
+ completion, they only have little or no inventory at all. In order to maintain a desired
+ on-time delivery performance at minimum total cost the operations must be jointly
+ scheduled.\par Apart from that, the integration is also indispensable in supply chains with
+ time-sensitive products that have a very short life-cycle. Such products cannot be
+ stored but must be supplied to the customers immediately after their production.
+ Examples include perishable goods, industrial adhesive materials, or newspapers and
+ mailing.\par As per Chen [\textit{22}] a joint consideration of
+ production and delivery schedules is also advantageous at the operational level when
+ taking higher level decisions in a supply chain. First of all, supply chain planning can
+ benefit since the results of production-delivery scheduling can be used as estimates for
+ input data that are needed in working out production-distribution plans. In addition,
+ due date or lead time setting decisions, which have a direct effect on customer service,
+ can be made more accurately if the interdependency of order due dates, production
+ schedule, and delivery schedule is considered. In spite of this fact, most of the
+ existing lead time setting models do not involve distribution scheduling decisions.\par Due to the closer linkage of production and distribution coordinated planning has become
+ inevitable, which is supported by integrated optimization models in OR. A large body of
+ literature on IPDS can be found at the strategic and tactical planning level. Strategic
+ IPDS concern longterm decisions, such as facility allocation, outsourcing (cf. [\textit{32}]), plant capacities, and transport channels (cf.
+ [\textit{21}]). For reviews of these models refer to
+ [\textit{28}], [\textit{43}] and [\textit{49}], for obtaining an insight
+ into the modeling and possible solution methods see, for instance, the works by [\textit{6}], [\textit{34}], or
+ [\textit{35}]. Those at the tactical level relate to
+ models dealing with production, shipping and inventory quantities as well as the
+ duration of the production/distribution cycle and can be found, for instance, in [\textit{21}] and [\textit{45}].
+ The recently published review by Mula et al. [\textit{42}]
+ especially contains solving methods for tactical and/or operational problems as well as
+ their combination with strategic ones (cf. [\textit{42}]).
+ In another fairly recent review, Chen [\textit{22}] has
+ dealt with integrated production and outbound distributions scheduling. Surprisingly,
+ many of the reviewed approaches presented by [\textit{22}]
+ use a rather simplified distribution process of direct shipments, whereas in real
+ industrial applications less-than-truckload settings are far more common than
+ full-truckload settings.\par The main aim of this paper is thus to provide a state-of-the-art review of those
+ integrated production-distribution problems which include routing decisions. On the
+ production side we will distinguish between tactical models of lot-sizing or capacity
+ allocation and operational models of production scheduling. The paper's target is to
+ offer an insight into the problems already considered, their interrelations, the
+ solution methods used as well as blank spots identified in the research landscape, and
+ directions for future research.\par The remainder of this paper is organized as follows. In the next section the methodology
+ used in the literature research and the classification process is presented. Section 3
+ gives an overview of the existing models. Concluding comments and directions for future
+ research are given in the final section.\section*{METHODOLOGY}2\par In this chapter the methodology concerning the literature research as well as the
+ classification of existing and relevant IPDS are introduced.\subsection*{Literature Research}2.1\par The search process was conducted in two steps. In the first step all the articles
+ citing the reviews by Chen ([\textit{21}], [\textit{22}]) were retrieved. Next, scientific-technical
+ bibliographic databases, including e-journal portals such as EBSCO, Emerald,
+ ScienceDirect, and Springer Link, were searched. In the second step the references
+ listed in the papers found served as a continuous search reference.\par The search terms included several versions of \textit{production-distribution
+ system} , such as \textit{production distribution model, problem and
+ planning,} as well as some alternatives to the term
+ \textit{integrated} , for example \textit{synchronized,
+ coordinated} and \textit{combined}. Moreover, the keywords
+ \textit{routing, vehicle routing} and \textit{VRP} were used.
+ Finally, wildcard characters and asterisks were employed to find additional
+ variations. Further restrictions, such as published dates or science(s), were not
+ made.\par The papers found during that search were then analyzed with respect to their content
+ and papers not dealing with the actual problem solving of specific IPDS were filtered
+ out. This approach led to 37 papers which are characterized by the fact that the
+ problem studied is described, the optimization model as well as the solving method
+ (i.e., in most of the cases the algorithms) are presented, the experiments introduced
+ and the results evaluated. Each of these papers will be discussed in the main part of
+ the paper below.\par Four of these papers were published either in conference proceedings or as a PhD
+ thesis; for the remaining 33 papers, Table 1
+ shows the distribution of references according to the journals used in the
+ review.\onecolumn \noindent
+\ctable[
+ caption = {Distribution of References.}, 
+ width=\textwidth, pos = ht, left, long
+]
+{p{0.33\textwidth}p{0.33\textwidth}p{0.33\textwidth}}
+{
+}{ \\\hline
+{\textbf{Distribution of Journals}}
+ & {\centering \textbf{Number}}
+ & {\centering \textbf{[\%]}} \\\hline 
+{Annals of Operations Research} & {\centering 1} & {\centering 3} \\\hline {Computers and Chemical Engineering} & {\centering 1} & {\centering 3} \\\hline {Computers and Industrial Engineering} & {\centering 2} & {\centering 6} \\\hline {Computers and Operations Research} & {\centering 4} & {\centering 12} \\\hline {European Journal of Operations Research} & {\centering 8} & {\centering 24} \\\hline {Flexible Services and Manufacturing} & {\centering 1} & {\centering 3} \\\hline {IIE Transactions} & {\centering 2} & {\centering 6} \\\hline {INFORMS Journal on Computing} & {\centering 1} & {\centering 3} \\\hline {International Journal of Production Economics} & {\centering 3} & {\centering 9} \\\hline {Journal of Business Logistics} & {\centering 1} & {\centering 3} \\\hline {Journal of Scheduling} & {\centering 1} & {\centering 3} \\\hline {Latin America Applied Research} & {\centering 1} & {\centering 3} \\\hline {Management Science} & {\centering 1} & {\centering 3} \\\hline {Mathematical and Computer Modeling} & {\centering 1} & {\centering 3} \\\hline {Naval Research Logistics} & {\centering 1} & {\centering 3} \\\hline {Operations Research Letters} & {\centering 1} & {\centering 3} \\\hline {Production Planning and Control} & {\centering 1} & {\centering 3} \\\hline {Transportation Science} & {\centering 2} & {\centering 6} \\\hline 
+}
+\twocolumn 
+\par From Table 1 we observe the expected result,
+ i.e., that there is a \textit{core} of journals including the
+ \textit{European Journal of Operations Research} and \textit{Computers and
+ Operations Research} , where a significant portion of this research is
+ published. However, besides this core which does not even account for 50\% of the
+ volume of research in this area there is a wide distribution of articles in journals
+ ranging from engineering to computer science to business. This wide distribution
+ reflects the heterogeneity and the interdisciplinarity of the research area very
+ well. However, it also shows that the area has not yet matured and there is still
+ much need to classify the existing approaches and the blank spots where more research
+ is needed.\subsection*{Classification}2.2\par The classification process can be divided into two steps. First, the relevant 37
+ publications were categorized according to the characteristics of their production
+ processes. Thirteen papers deal with joint lot sizing/capacity allocation + vehicle
+ routing problems, while the remaining 24 papers consider joint production scheduling
+ + vehicle routing problems.\par The first problem class links medium-term production decisions (i.e., lasting from
+ two weeks to six months) with the operational VRP, and comprises topics such as
+ production/distribution planning, capacity and inventory allocation as well as safety
+ stock planning (cf. [\textit{32}]). Typical questions
+ involve the lot-sizing as well as the batching of product deliveries, the clustering
+ of clients and the timing of deliveries over multiple periods (see [\textit{21}]). Hence, the main decisions of this category
+ of problems can be translated as: what and how much (and where, in the case of
+ multi-facility problems) must be produced, when to produce it, how much to deliver to
+ the different customers and which routes to use for serving these customers. Figure 1 shows a generic structure of this
+ category.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\maxwidth{0.5\textwidth}]{not-found.png}
+\caption{A generic structure of a tactical IPDS problem.} 
+\label{Figure 1} 
+\end{figure} 
+
+\par The second problem class focuses on short-term decisions (i.e., daily events) and
+ considers detailed production and transportation scheduling problems (cf. [\textit{32}]). Typical questions involve when and on which
+ machine a job should be processed, when and in which vehicle the products should be
+ delivered and which route each vehicle should choose (see [\textit{21}]). A generic structure of this category of problems is shown
+ in Figure 2.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\maxwidth{0.5\textwidth}]{not-found.png}
+\caption{A generic structure of an operational IPDS problem.} 
+\label{Figure 2} 
+\end{figure} 
+
+\par In the second step, within each class the papers found were then grouped according to
+ the characteristics of the production process and the vehicles, as shown in Table 2. Vehicle characteristics correspond to
+ the fleet size and its composition. On the production side different criteria are
+ used for tactical and operational models. For the former, the number of products and
+ the planning horizon are considered; single product models typically focus on
+ multiple period settings and deal with lot-sizing decisions, while multiple product
+ models relate to capacity allocation settings in a single or multiple periods. In
+ terms of the latter, the scheduling environment can be characterized by a single
+ machine, parallel machines or flowshop setting. Finally, Table 2 also lists the Modeling/Solution approaches that are
+ utilized in the various papers.\onecolumn \noindent
+\ctable[
+ caption = {Classification Criteria within each Problem Class.}, 
+ width=\textwidth, pos = ht, left, long
+]
+{p{0.33\textwidth}p{0.33\textwidth}p{0.33\textwidth}}
+{
+}{ \\\hline
+{\textbf{Upper Criterion}}
+ & {\textbf{Lower Criterion}}
+ & {\textbf{Alternatives}} \\\hline 
+{\centering Number of Products (Tactical models)} & {\centering } & {\centering Single; Multiple} \\\hline {\centering Time Period(s) (Tactical models)} & {\centering } & {\centering Single; Multiple} \\\hline {\centering Machine Configuration (Operational Models)} & {\centering } & {\centering Single; Parallel; Flowshop} \\\hline {\centering Vehicle Characteristics} & {\centering number of vehicles type of fleet} & {\centering One; Limited; Unlimited Homogeneous; Heterogeneous} \\\hline {\centering Modeling/Solution Approach} & {\centering } & {\centering (Mixed) Integer Linear
+ Programming ((M)ILP);} \\\hline {\centering Integer Non Linear
+ Programming (INLP);} \\\hline {\centering Lagrangean Relaxation
+ (LR);} \\\hline {\centering Dynamic Programming
+ (DP);} \\\hline {\centering Branch \& Bound
+ (B\&B);} \\\hline {\centering (Meta- )Heuristics (HEU)} \\\hline 
+}
+\twocolumn 
+\par During the analysis of each paper, the information about the problem instances used
+ in each paper is also gathered. The results are summarized in Table 3 (to simplify the visualization, only papers with
+ numerical experiments that provided the data used or indicated a publicly available
+ data source are shown).\onecolumn \noindent
+\ctable[
+ caption = {Information about data sources used in IPDS research.}, 
+ width=\textwidth, pos = ht, left, long
+]
+{p{0.50\textwidth}p{0.50\textwidth}}
+{
+}{ \\\hline
+{\textbf{Reference}}
+ & {\textbf{Data source}} \\\hline 
+{Adulyasak et al. (2012) [\textit{1}]} & {} \\\hline {Boudia \& Prins (2009) [\textit{12}]} & {Modified version of: Solomon MM. Algorithms
+ for the vehicle} \\\hline {Boudia et al. (2007) [\textit{13}]} & {routing and scheduling problems with time
+ windows constraints.} \\\hline {Boudia et al. (2008) [\textit{14}]} & {\textit{Operations Research,} 35:
+ 254-265,1987.} \\\hline {Chern \& Hsieh (2007) [\textit{24}]} & {Source: https://sites.google.com/site/yossiriadulyasak/publications} \\\hline {Lei et al. (2006) [\textit{36}]} & {} \\\hline {Méndez et al. (2005) [\textit{41}]} & {Data provided by the paper} \\\hline 
+}
+\twocolumn 
+\section*{REVIEW OF IPDS MODELS INCLUDING ROUTING DECISIONS}3\par The review consists of two parts and is organized as follows. In the first part tactical
+ problems are treated. The second part of the survey is dedicated to operational problems
+ dealing with joint production scheduling and vehicle routing. Overview tables
+ summarizing the existing results are presented for each class.\subsection*{Tactical IPD problems}3.1\par The existing models involve the integration of lot sizing or capacity allocation
+ problems with distribution problems to customers (i.e., end customers, distribution
+ centers, retailers). When comparing the papers to be reviewed, the first group deals
+ with an integrated production-inventory-distribution routing problem (PIDRP)
+ determining the production quantities of a single product, the inventory and delivery
+ quantities as well as the routes ([\textit{1}], [\textit{7}], [\textit{8}],
+ [\textit{9}], [\textit{12}], [\textit{13}], [\textit{14}], and [\textit{36}]). In
+ contrast to that multi-product capacity allocation problems are studied in the second
+ group of papers ([\textit{5}], [\textit{15}], [\textit{17}], [\textit{20}], and [\textit{30}]). In this latter group the paper by Chen et al. [\textit{20}] stands out in that it is the only approach dealing with a
+ stochastic setting.\par Strictly speaking, all of the models in the first group are based, at least to a
+ certain extent, on the work by Lei et al. [\textit{36}]
+ in dealing with a single-product capacitated lot-sizing problem (CLSP) in their
+ production and an allocation and vehicle routing problem (VRP) in their distribution
+ part. On the other hand, in the second group the model presented in [\textit{17}] describes a basic model setting which is also
+ expanded in [\textit{30}]. Below, we show an exemplary
+ formulation of a basic model for tactical IPD problems which combines the features of
+ the models in [\textit{36}] and [\textit{17}].\par The following notation is used:\par Sets:\par \textit{H}... set of production facilities\par \textit{J}... set of customers/distribution centers (DC)\par \textit{K}... set of products\par \textit{P}... set of periods in the planning horizon\par \textit{V}... set of vehicles\par Indexes:\par \textit{h}... production facility index\par \textit{j, j \textsuperscript{' }}... customer/DC indexes\par \textit{k}... product index\par \textit{p}... period index\par ν ... vehicle index\par Parameters:\par \textit{d \textsubscript{k, j, p}}... demand of product \textit{k} at
+ customer \textit{j} in period \textit{p}\par \input{mathml/math1.tex} ... per-unit capacity consumption of product
+ \textit{k} in production facility \textit{h}\par \input{mathml/math2.tex} ... capacity consumption for setup of product
+ \textit{k} in production facility \textit{h}\par \input{mathml/math3.tex} ... total available capacity in production facility
+ \textit{h}\par \textit{t \textsubscript{ν,j, j' }}... travel time of vehicle v between customer
+ locations \textit{j} and \textit{j'}\par \textit{T \textsubscript{ν}}... maximum admissible travel time of vehicle ν\par \input{mathml/math4.tex} ... capacity of vehicle ν\par \input{mathml/math5.tex} ... safety stock of product \textit{k} at
+ production facility \textit{h}\par \input{mathml/math6.tex} ... safety stock of product \textit{k} at
+ customer \textit{j}\par \input{mathml/math7.tex} ... maximum inventory level of product \textit{k
+ } at production facility \textit{h}\par \input{mathml/math8.tex} ... maximum inventory level of product \textit{k
+ } at customer \textit{j}\par \textit{M}... a sufficiently large number\par \input{mathml/math9.tex} ... setup cost for product \textit{k} at
+ production facility \textit{h}\par \input{mathml/math10.tex} ... per-unit production cost for product \textit{k
+ } at production facility \textit{h}\par \input{mathml/math11.tex} ... per-unit holding cost for product \textit{k
+ } at production facility \textit{h}\par \input{mathml/math12.tex} ... per-unit holding cost for product \textit{k
+ } at customer \textit{j}\par \input{mathml/math13.tex} ... fixed cost for vehicle v located at production
+ facility \textit{h}\par \input{mathml/math14.tex} ... per-unit cost for outsourced transportation of
+ product \textit{k} delivered from production facility \textit{h} to
+ customer \textit{j}\par \input{mathml/math15.tex} ... travel cost of vehicle v travelling directly from
+ \textit{j} to \textit{j'}\par Variables:\par \textit{x \textsubscript{k, h, p}}... production quantity of product \textit{k
+ } in production facility \textit{h} in period \textit{p}\par \textit{y \textsubscript{k, h, p}}... binary decision variable indicating whether
+ or not a setup for product \textit{k} in production facility \textit{h
+ } in period \textit{p} is necessary\par \textit{q \textsubscript{h, j, k, p}}... shipping quantity of product \textit{k
+ } from production facility \textit{h} to customer \textit{j
+ } in period \textit{p}\par \textit{Q \textsubscript{h, j, k, p}}... outsourced shipping quantity of product
+ \textit{k} from production facility \textit{h} to customer
+ \textit{j} in period \textit{p}\par \textit{Z \textsubscript{v,h, j, j', p}}... binary decision variable indicating
+ whether or not vehicle ν, located at production facility \textit{h} travels
+ directly from \textit{j} to \textit{j \textsuperscript{'}} in period
+ \textit{p}\par \textit{L \textsubscript{ν,h, j, j', p}}... load of vehicle ν, located at
+ production facility \textit{h} when traveling between \textit{j} and
+ \textit{j'} in period \textit{p}\input{mathml/math16.tex}\par subject to\input{mathml/math17.tex}\input{mathml/math18.tex}\input{mathml/math19.tex}\input{mathml/math20.tex}\input{mathml/math21.tex}\input{mathml/math22.tex}\input{mathml/math23.tex}\input{mathml/math24.tex}\input{mathml/math25.tex}\input{mathml/math26.tex}\input{mathml/math27.tex}\input{mathml/math28.tex}\input{mathml/math29.tex}\input{mathml/math30.tex}\input{mathml/math31.tex}\par Objective (1) minimizes the total
+ cost consisting of setup, production and inventory cost at the production facilities
+ (first line), cost for outsourced transportation (second line), fixed and variable
+ cost for in-house operated transportation (third line) and inventory cost at the
+ customers (fourth line).\par Constraints (2) and (3) are the inventory balance constraints
+ at the production facilities and customers, respectively. Constraints (4) and (5) impose safety stock and maximum inventory levels at the
+ production facilities and customers, respectively. Constraints (6) make sure that the available capacity
+ at each production facility is not violated. The fact that production of a product
+ can only take place when the facility is set up for this product is modelled by
+ constraints (7). Constraints (8) are the flow conservation
+ constraints, implying that a vehicle entering a customer node also needs to leave
+ this customer node. Constraints (9)
+ account for the utilization of vehicles by modelling the first trip of a vehicle
+ leaving its production facility. Constraints (10) make sure that the maximum admissible travel time of any
+ vehicle is not violated. Constraints (11)-(13) account for the
+ vehicle capacity and impose that there can not be any subtours among customer nodes
+ not connected to any production facility. Finally, constraints (14)-(16) set the domains of the decision variables.\par As mentioned above, this model combines features of the models presented in [\textit{36}] and [\textit{17}]. While all of the single product models in Table 4 are based on the model by Lei et al. [\textit{36}] they also feature some important differences.
+ Multiple plants and heterogeneous vehicles are only considered by Lei et al. [\textit{36}], setup costs are included in all papers
+ except for [\textit{36}], and different solution
+ approaches are presented. In short, a two-phase methodology is proposed in [\textit{36}], which means that the routes are determined
+ separately in the second phase of the approach. The model presented and solved in
+ [\textit{13}] has also been used for the solution
+ methodologies proposed in [\textit{1}] (adaptive large
+ neighborhood search), [\textit{12}] (reactive greedy
+ randomized adaptive search procedure) and [\textit{14}]
+ (memetic algorithm with population management). On the basis of [\textit{13}] and the two-phase solution approach of [\textit{36}] Bard \& Nananukul developed a reactive
+ tabu search procedure in [\textit{7}]. The idea of
+ coupling heuristics with decomposition methods and branch-and-price respectively to
+ efficiently solve the PIDRP is presented in [\textit{8}] and [\textit{9}]. More details about these
+ paper are now presented.\onecolumn \noindent
+\ctable[
+ caption = {Tactical IPDS Problems.}, 
+ width=\textwidth, pos = ht, left, long
+]
+{p{0.16\textwidth}p{0.16\textwidth}p{0.16\textwidth}p{0.16\textwidth}p{0.16\textwidth}p{0.16\textwidth}}
+{
+}{ \\\hline
+{\textbf{Number of Products}}
+ & {\textbf{Time Period(s)}}
+ & \multicolumn{2}{p{0.16\textwidth}}{\textbf{Vehicle Characteristics}}
+ & {\textbf{Modelling Approach}}
+ & {\textbf{References}} \\\hline 
+{\textbf{Number}}
+ & {\textbf{Type}} \\\hline 
+{\centering Single} & {\centering Multiple} & {\centering Limited} & {\centering Homogeneous} & {\centering MIP, HEU} & {\centering \textit{Bard \& Nananukul
+ (2009a)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering } & {\centering MIP, HEU} & {\centering \textit{Bard \& Nananukul
+ (2009b)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering } & {\centering MIP, HEU} & {\centering \textit{Bard \& Nananukul
+ (2010)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering } & {\centering ILP, HEU} & {\centering \textit{Boudia et al.
+ (2007)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering } & {\centering ILP, HEU} & {\centering \textit{Boudia et al.
+ (2008)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering } & {\centering ILP, HEU} & {\centering \textit{Adulyasak et al.
+ (2012)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering Heterogeneous} & {\centering MIP, HEU} & {\centering \textit{Lei et al.
+ (2006)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering } & {\centering HEU} & {\centering \textit{Boudia \& Prins
+ (2009)}} \\\hline {\centering Multiple} & {\centering Single} & {\centering Limited} & {\centering Heterogeneous} & {\centering MIP} & {\centering \textit{Aydinel et al.
+ (2008)}} \\\hline {\centering } & {\centering } & {\centering Limited} & {\centering Homogeneous} & {\centering INLP, HEU} & {\centering \textit{Chen et al.
+ (2009)}} \\\hline {\centering } & {\centering Multiple} & {\centering Limited,} & {\centering } & {\centering MIP, HEU} & {\centering \textit{Bredström \& Ronnqvist
+ (2002)}} \\\hline {\centering } & {\centering } & {\centering Unlimited} & {\centering } & {\centering } & {\centering } \\\hline {\centering } & {\centering } & {\centering Unlimited} & {\centering } & {\centering MIP, HEU} & {\centering \textit{Chandra \& Fisher
+ (1994)}} \\\hline {\centering } & {\centering } & {\centering Limited} & {\centering } & {\centering MIP, LR} & {\centering \textit{Fumero \& Vercellis
+ (1999)}} \\\hline 
+}
+\twocolumn 
+\par Lei et al. [\textit{36}] consider a two-stage PIDRP
+ involving multiple production plants and customer demand centers, which both have
+ limited inventory capacities. The production part of the model is characterized by a
+ single-item, single-level CLSP without backlogging and is solved in the first phase
+ of a two-phase solution approach. By contrast, the dissolving of the distribution
+ part comprises both phases. At first, a transportation problem formulated as
+ mixed-integer programming (MIP) model is solved by determining the optimal delivery
+ quantities and trips per transporter. In order to find optimal routes, a delivery
+ consolidation problem formulated in a similar way to the CVRP with the multiple use
+ of vehicles is solved in the second phase. The solution is found by a heuristic
+ transporter routing algorithm based on an extended optimal partitioning
+ procedure.\par Heterogeneous in-house as well as chartered transporters, which can be used for
+ several trips per period, and their traveling times (independent of the quantities
+ delivered) are also incorporated in the model. The objective function minimizes
+ production costs, inventory holding costs of the plants and demand centers, and total
+ transportation costs. The computational performance of the solution approach was
+ tested using 49 randomly generated test problems and a real-life supply network
+ problem of a chemical company shipping products by water transportation. The
+ solutions of the proposed approach were compared to those obtained by the MIP CPLEX
+ solver. It has been shown that in 34 out of 49 cases CPLEX solver either could not
+ find a feasible solution within the given time limit or produced a solution of worse
+ quality than the proposed approach. With respect to the application, 2 plants, 13
+ demand centres, 3 types of vessel, and 12 time periods were considered. Interplant
+ distribution for the shipment of raw materials and maintenance schedules were also
+ included.\par Boudia et al. [\textit{13}] and Boudia \& Prins
+ [\textit{12}] developed similar MIP models for the
+ problem described above but considered a single-plant case. Also, setup costs are
+ included in the production part of the models. The distribution parts deals with the
+ CVRP assuming a homogeneous fleet. The aim of the models is the minimization of the
+ sum of setup, inventory holding and transportation costs. They propose a reactive
+ greedy randomized adaptive search procedure (GRASP) in [\textit{13}] and a memetic algorithm with population management and
+ path-relinking in [\textit{12}]. In the former work the
+ problem is formulated as an integer linear program and solved by a GRASP
+ metaheuristic which was either improved by a reactive mechanism or a path-relinking
+ process. The algorithm was tested on 90 randomly generated instances with 50, 100, or
+ 200 customers and 20 time periods. Four metaheuristics (basic GRASP, reactive
+ version, interleaved path relinking, and path relinking at the end) were compared
+ with two earlier heuristics, namely a two-phase decoupled approach and a weakly
+ coupled approach (also considered in [\textit{14}]). It
+ has been shown that the best results are obtained by using GRASP but higher savings
+ are achievable when using the reactive and path relinking version. In [\textit{12}] several versions of a memetic algorithm with
+ population management were considered and compared with the results obtained either
+ by using GRASP or the sequential two-phase heuristic from [\textit{13}]. The tests have shown that large-scale problems can be solved
+ within a reasonable time and significant savings are achievable.\par In [\textit{1}] a deterministic single product, single
+ plant, multiple customer problem with limited storage capacity at both the plant and
+ the customers is considered. An adaptive large neighborhood search algorithm (ALNS)
+ is proposed which is based on a problem decomposition approach. For each 200-client
+ instance, different setup schedules are generated for which production quantities and
+ delivery schedules are determined. Each of the solutions (with a different setup
+ schedule) is then improved using the ALNS which considers customer-period
+ combinations and tries to reschedule the shipment to a customer and the routing
+ associated with that shipment. Computational results are presented with regard to the
+ performance relative to some competing algorithms while no analysis is done
+ concerning the integration value of the decisions.\par The production part of the model presented in [\textit{7}] is characterized by a single-plant, single-item CLSP including setup
+ costs and the distribution part comprises a transportation problem and a CVRP
+ assuming a homogeneous fleet that deliveries to 50, 100 or 200 clients. A similar
+ solution approach to the one by Lei et al. [\textit{36}] is presented and tested with three data sets provided by Boudia et al.
+ [\textit{13}]. The objective function minimizes the
+ sum of production setup costs, a surrogate for the routing costs (fixed and variable
+ costs) as well as inventory holding costs at the plant and customer sites. The
+ researchers propose a reactive tabu search algorithm, using a dynamic tabu list, that
+ comprises two-phases, of which the first is divided into two parts. Part one deals
+ with determining the production and delivery quantities on each day (formulated as a
+ MIP) and part two with finding solutions to the routing problem. In order to achieve
+ these objectives the values obtained in the first part are used as demand data for
+ the CVRP subroutine (based on the tabu search technique) treated in the second part.
+ A neighborhood search is performed in the second phase of the solution approach to
+ improve the current results. For quality reasons, lower bounds are also determined by
+ solving a modified version of the lot-sizing distribution model (phase one).
+ Additionally, path-relinking is used in a post-processing phase to achieve marginal
+ cost reductions. It has been shown that, compared to the results obtained in [\textit{13}] (by using GRASP), improvements could be
+ achieved but the run time was three to five times longer. The researchers have also
+ concluded that path relinking is not very effective.\par In [\textit{8}] Bard \& Nananukul present the
+ results of coupling heuristics with decomposition methods to find solutions to the
+ 50, 100 and 200 clients-size PIDRP instances examined in [\textit{7}]. For the computations, a previously developed branch-and-price
+ (B\&P) algorithm is used that requires the solution of multiple inventory routing
+ problems to generate columns for the master problem in each period. In order to
+ improve the results, the researchers developed three heuristics for solving the
+ inventory-routing problem component along with a model for determining periods in
+ which at least one customer requires a delivery. Several experiments were carried out
+ to evaluate the performances of the proposed solution approaches and to find out the
+ most effective algorithm configuration. Computational results obtained by the usage
+ of heuristics with different column generation strategies (adding one or multiple
+ columns in each iteration) at the root node of the B\&P search tree as well as
+ incorporating them into the B\&P algorithm are provided. Results are also given
+ for solving the problem using CPLEX and the tabu search proposed in [\textit{7}] or the exact B\&P algorithm.\par Bard \& Nananukul's recently published paper [\textit{9}] provides another similar solution approach for the problem studied in
+ [\textit{8}]. Methodological contributions of the
+ proposed decomposition algorithm based on B\&P comprise a new branching rule to
+ deal with the degeneracy characteristics of the master problem and a new approach for
+ handling symmetry. Apart from that, a column generation and rounding heuristic were
+ combined to improve the algorithm's efficiency. Extensive testing was carried out to
+ compare the results achieved by the exact B\&P algorithm with those when using the
+ suggested B\&P heuristic with different features. It has been observed that for
+ instances with up to 50 customers and eight time periods the latter approach obtained
+ high quality solutions within one hour and outperfromed both CPLEX and the exact
+ B\&P algorithm alone.\par Differing from the models described above, multi-product problems have been studied
+ in [\textit{5}], [\textit{15}], [\textit{17}], [\textit{20}], and [\textit{30}]. In contrast
+ to the last three papers, the first two papers deal with real-life problems, multiple
+ production facilities, deterministic demands, and multi-period planning horizon.
+ Besides, they both do not consider delivery time windows. However, they differ in the
+ extent of the production part studied. In [\textit{5}]
+ only the allocation of up to 500 orders in 16 shipments is considered, while
+ sequencing considerations are included in [\textit{15}]. In contrast to the other models, the paper by Chen et al. [\textit{20}] is the only one that deals with stochastic
+ assumptions, a single time period, and delivery time windows. The models and solution
+ methodologies are described in more detail below.\par Chandra \& Fisher [\textit{17}] consider a 2-stage,
+ multi-product problem with a single production facility and multiple customers.
+ Demand for each product in each period is deterministic and has to be satisfied
+ without backlog. There is a setup cost for producing a product in each period.
+ Inventory is allowed at both the plant and the customers. Transportation cost
+ consists of a fixed part and a variable part which is determined by the routes of the
+ vehicles, and hence vehicle routing is one of the decisions of the problem. The
+ problem is formulated as a MIP and the authors compare sequential (first production,
+ then transportation) and integrated approaches to instance sets of up to 10 products
+ and 50 clients. They make the following observations based on computational tests on
+ randomly generated data sets on various parameters: (i) Value of
+ production-distribution coordination (measured as average cost reduction achieved by
+ the coordination) increases with production capacity, vehicle capacity, number of
+ customers, number of products, and number of time periods; (ii) value of coordination
+ increases with relatively high distribution costs (fixed and variable) compared to
+ production cost; and (iii) cost reduction varies from 3\% to 20\%. In some cases (e.g.
+ when vehicle capacity is small), there is no value in coordination because in this
+ case all deliveries will be made as full truckloads and hence no consolidation is
+ necessary.\par A similar problem is studied by Fumero \& Vercellis ([\textit{30}]). They additionally assume that there is a limited number of
+ vehicles available for product delivery in each time period. Based on a different MIP
+ formulation they solve the problem using Langrangean relaxation. Also, by comparing
+ coordination with the sequential production-distribution approach they obtain similar
+ results to [\textit{17}].\par Aydinel et al. [\textit{5}] consider a real-life
+ multi-plant problem of a forest products company which receives orders from multiple
+ customers and ships their products either by train or a truck-railcar combination.
+ Two mixed integer models differing in the assumptions concerning the distribution
+ part are presented. The production part is given by a multi-plant order allocation
+ problem and does not include any lot-sizing in the strict sense. In both models the
+ distribution part comprises the determination of the carriers, the shipment sizes,
+ and the routes. However, the supplier strictly chooses one of the transportation
+ modes (open-mode model). The models were solved by CPLEX and tested using real order
+ files of the company comprising two weeks, of which 309 railcar and 16 truck
+ shipments were considered in the first week followed by 208 railcar and 21 truck
+ shipments in the second. The results were compared to those of the company's current
+ approach and revealed that cost savings ranging from 1.9\% to 2.4\% could be
+ achieved.\par In [\textit{15}] Bredström \& Rönnqvist study a
+ real-life problem of a Swedish paper mill company consisting of a three-stage supply
+ chain: suppliers of raw materials (logs and wood chips) or imported materials,
+ production sites (mills), and customers (domestic and foreign ones). The researchers
+ provide two mixed-integer-linear-programming (MILP) models, one for the production
+ and one for the distribution problem, but do not actually solve them in an integrated
+ manner. The production plan problem is divided into two subproblems determining the
+ sequence and the products to be produced and the recipe to be used in each time
+ period. The distribution plan model comprises a multi-period, multi-commodity
+ transportation problem and a CVRP with heterogeneous vehicles. It is assumed that the
+ shipments of foreign logs to the production mills are carried out by cargo-ships, the
+ distribution to foreign customers either by cargo-ships hired on a long-term basis or
+ a rented boat for short trips. Deliveries are made by train or truck. A time
+ discretization (weeks, days, periods) is also included. The objective function of the
+ production model includes transportation, storage, and production plan costs, whereas
+ the linear objective function of the distribution covers the sum of flow, storage,
+ and boat usage costs. Concerning the solution approach, column generation together
+ with a heuristic including constrained branching is used in the production plan
+ model, whereas the distribution model is divided into subproblems that are solved
+ repeatedly using B\&B on the integer variables. For the integration of the
+ production and ship scheduling, the researchers propose two methods, either the
+ sequential resolving of the subproblems or a two-phase approach. The latter
+ proposition is similar to the methodology used in [\textit{36}]. Computational results are not provided.\par The last tactical-operational model found in the literature is the one by Chen et
+ al., also a multiproduct model but with stochastic demands (cf. [\textit{20}]). A two-stage, single-period problem
+ involving a supplier who produces perishable goods and delivers them to multiple
+ retailers within an allowed time window is considered in this paper. The production
+ part of the model is characterized by a single-machine scheduling problem, which
+ determines the production quantities of the products as well as the time of starting
+ the production of the first commodity per vehicle. Shortage costs, delay penalties,
+ and decay rates are also incorporated in the model. A CVRP with soft time windows is
+ given in its distribution part. A mixed integer non linear programming model is
+ formulated with the aim of maximizing the supplier's total profit (i.e., the sum of
+ the expected revenue if the demand is less than the quantity supplied or the expected
+ revenue minus goodwill loss if the demand is higher than the supplied quantity minus
+ production and transportation costs as well as a penalty in case of exceeding the
+ allowed time window for delivery). For the problem solving, the problems are
+ decomposed into two subproblems and solved by the Nelder-Mead method with boundary
+ constraints (first problem) and by a heuristic algorithm (second problem)
+ respectively. Several tests were carried out with the result that the problem can be
+ solved within ten minutes for a maximum of 75 retailers. As opposed to the former
+ solution process, in most cases, it takes a few hours to find a local optimal
+ solution when using LINGO 10.0. Additionally, various sensitivity analyses
+ (determining the correlation between the rate of decay and the supply quantity ratio,
+ between the different time windows and numbers of vehicles, and between the average
+ loading ratio and the number of vehicles) were conducted. The results have shown that
+ the fleet size is an important factor leading to a trade-off between deterioration
+ and increased transportation costs.\subsection*{Operational IPD problems}3.2\par The problems described in this section involve detailed scheduling of both production
+ and distribution operations. As already stated by Chen [\textit{22}] only a very limited number of papers in the literature deal
+ with detailed integrated production-distribution scheduling problems. The
+ characteristics of these papers are summarized in Table 5.\onecolumn \noindent
+\ctable[
+ caption = {Operational IPD Problems.}, 
+ width=\textwidth, pos = ht, left, long
+]
+{p{0.20\textwidth}p{0.20\textwidth}p{0.20\textwidth}p{0.20\textwidth}p{0.20\textwidth}}
+{
+}{ \\\hline
+{\textbf{Machine Configuration}}
+ & \multicolumn{2}{p{0.20\textwidth}}{\textbf{Vehicle Characteristics}}
+ & {\textbf{Modeling Approach}}
+ & {\textbf{References}} \\\hline 
+{\textbf{Number}}
+ & {\textbf{Type}} \\\hline 
+{\centering Single} & {\centering One} & {\centering -} & {\centering DP} & {\centering \textit{Li et al.
+ (2005)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering MIP, B\&B} & {\centering \textit{Armstrong et al.
+ (2008)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering HEU} & {\centering \textit{Averbakh \& Xue
+ (2007)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering } & {\centering \textit{Averbakh
+ (2010)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering HEU} & {\centering \textit{Geismar et al.
+ (2008)}} \\\hline {\centering } & {\centering Two} & {\centering Homogeneous} & {\centering HEU} & {\centering \textit{Dondo et al.
+ (2003)}} \\\hline {\centering } & {\centering } & {\centering Heterogeneous} & {\centering HEU+MIP} & {\centering \textit{Mendez et al.
+ (2005)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering HEU} & {\centering \textit{Bonfill et al.
+ (2008)}} \\\hline {\centering } & {\centering Limited} & {\centering Homogeneous} & {\centering MIP, HEU} & {\centering \textit{Mantel \& Fontein
+ (1993)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering MIP} & {\centering \textit{Van Buer et al.
+ (1999)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering HEU} & {\centering \textit{Russell et al.
+ (2008)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering } & {\centering \textit{Leung \& Chen
+ (2013)}} \\\hline {\centering } & {\centering Unlimited} & {\centering Homogeneous} & {\centering HEU} & {\centering \textit{Hurter \& Buer
+ (1996)}} \\\hline {\centering } & {\centering } & {\centering Heterogeneous} & {\centering HEU} & {\centering \textit{Chen \& Lee
+ (2008)}} \\\hline {\centering } & {\centering } & {\centering Heterogeneous} & {\centering HEU} & {\centering \textit{Wang \& Lee
+ (2005)}} \\\hline {\centering Single, Flowshop} & {\centering Limited} & {\centering Homogeneous,} & {\centering MIP, HEU} & {\centering \textit{Bonfill et al.
+ (2008)}} \\\hline {\centering } & {\centering } & {\centering Heterogeneous} & {\centering } & {\centering } \\\hline {\centering Single, Parallel} & {\centering One} & {\centering -} & {\centering HEU} & {\centering \textit{Chang \& Lee
+ (2004)}} \\\hline {\centering } & {\centering Unlimited} & {\centering Homogeneous} & {\centering HEU} & {\centering \textit{Chen \& Vairaktarakis
+ (2005)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering HEU} & {\centering \textit{Devapriya
+ (2008)}} \\\hline {\centering Parallel} & {\centering Limited} & {\centering Homogeneous} & {\centering HEU} & {\centering \textit{Böhnlein et al.
+ (2011)}} \\\hline {\centering } & {\centering Unlimited} & {\centering Homogeneous} & {\centering HEU} & {\centering \textit{Farahani et al.
+ (2012)}} \\\hline {\centering } & {\centering Limited} & {\centering Heterogeneous} & {\centering MIP, HEU} & {\centering \textit{Ulrich (2013)}} \\\hline {\centering Flowshop} & {\centering Limited} & {\centering Heterogeneous} & {\centering MIP, HEU} & {\centering \textit{Méndez et al.
+ (2006)}} \\\hline {\centering } & {\centering Unlimited} & {\centering Homogeneous} & {\centering HEU} & {\centering \textit{Li \& Vairaktarakis
+ (2007)}} \\\hline {\centering } & {\centering } & {\centering } & {\centering MIP, HEU} & {\centering \textit{Chiang et al.
+ (2009)}} \\\hline 
+}
+\twocolumn 
+\par While the explicit models studied in these papers differ significantly due to their
+ operational nature and practical application there are some basic concepts that
+ define integrated production distribution models on the operational level. A recent
+ example nicely highlighting these concepts is the MIP model described by [\textit{47}]. In this problem, the goal is to minimize the
+ total tardiness of all jobs in an IPD system, where the production site is modeled as
+ a parallel machine environment and the distribution is performed by \textit{t
+ } routes from ν vehicles. The model is based on the following notation:\par Sets:\par \textit{V}... set of vehicles\par \textit{J}... set of customers/jobs, tours\par \textit{K}... set of machines\par Indexes:\par 0 ... production facility index\par \textit{i, j}... customer/job indexes\par ν ... vehicle index\par \textit{k}... machine index\par \textit{t}... vehicle tour index\par Parameters:\par \input{mathml/math32.tex} ... capacity of vehicle ν\par \textit{d \textsubscript{j}}... due date of job \textit{j}\par \textit{q \textsubscript{j}}... size of job \textit{j}\par \textit{p \textsubscript{j}}... processing time of job \textit{j}\par \textit{M}... a sufficiently large number\par \textit{r \textsubscript{k}}... ready time for machine \textit{k}\par 
+{
+\centering
+\includegraphics[width=\maxwidth{0.5\textwidth}]{not-found.png}
+} \textsubscript{ν} ... ready
+ time for vehicle ν\par \textit{s \textsubscript{0}}... service time at the production facility\par \textit{s \textsubscript{j}}... service time at destination of job
+ \textit{j}\par \textit{t \textsubscript{i, j}}... travel time between delivery sites for jobs
+ \textit{i} and \textit{j}\par w\textit{\textsubscript{j}} , w \textit{\textsubscript{j }}... lower and upper bound of the delivery time window of job
+ \textit{j}\par Variables:\par \textit{C \textsubscript{j}}... Completion time of job \textit{j}\par D\textit{\textsubscript{j }}... Delivery time of job \textit{j}\par \textit{S \textsubscript{ν,t}}... Start time of tour \textit{t} of
+ vehicle ν\par T\textit{\textsubscript{j }}... Tardiness of job \textit{j}\par \textit{g \textsubscript{j,ν,t}}... binary variable that is 1 when job \textit{j
+ } is delivered by tour \textit{t} of vehicle ν\par \textit{x \textsubscript{i,j}}... binary variable that is 1 when job \textit{j
+ } is processed after job \textit{i}\par \textit{y \textsubscript{k,j}}... binary variable that is 1 when job \textit{j
+ } is the first one to be processed on machine \textit{m}\par \textit{z \textsubscript{i,j,v,t}}... binary variable that is 1 when job
+ \textit{j} is delivered after immediately after job \textit{i} on
+ the tour \textit{t} of vehicle ν\par The first block of constraints (18)-(21) is related to the
+ manufacturing process. The second one is related to the distribution site and shown
+ in constraints (22)-(35). The objective function is presented
+ in equation (17).\input{mathml/math33.tex}\input{mathml/math34.tex}\input{mathml/math35.tex}\input{mathml/math36.tex}\input{mathml/math37.tex}\input{mathml/math38.tex}\input{mathml/math39.tex}\input{mathml/math40.tex}\input{mathml/math41.tex}\input{mathml/math42.tex}\input{mathml/math43.tex}\input{mathml/math44.tex}\input{mathml/math45.tex}\input{mathml/math46.tex}\input{mathml/math47.tex}\input{mathml/math48.tex}\input{mathml/math49.tex}\input{mathml/math50.tex}\input{mathml/math51.tex}\par Constraints (18) assure that only one
+ job is the first one to be processed on each machine. Constraints (19) state that a
+ job is sequenced either on the first position of a machine or after some already
+ sequenced job. Constraints (20)-(21) state the
+ boundaries for the completion times of each job on the manufacturing stage.\par Constraints (22) state that a tour
+ will include the processing site ( \textit{j} = 0) if it performs any
+ delivery. Constraints (23) guarantee
+ that each job is assigned to a unique tour of a single vehicle. Constraints (24) assure that there are no empty tours
+ before an active tour. Constraints (25)-(26) assure that a
+ vehicle that delivers a job \textit{j} travels from another customer or from
+ the processing site. Constraints (27)
+ limit the vehicles capacity. Constraints (28)-(30) limit the minimum
+ value of the starting time of each route. Constraints (31)-(33) limit
+ the minimum value of the delivery time of each job \textit{j}. The tardiness
+ is bounded by constraints (34)-(35).\par As mentioned above thismodel does not cover all practical characteristics studied in
+ the different papers shown in Table 5. Rather
+ it gives a flavor of some of the main issues that form the basis of operational IPD
+ systems. Below we will now review the specifics of the existing papers in this
+ area.\par A practical well known motivation for the study on joint production
+ scheduling/vehicle routing problems is the newspaper production and distribution
+ problem. This problem usually comprehends one or more facilities where different
+ sections of the daily version of the newspaper are printed. Production has to take
+ place within a very short time period (e.g., Russell et al. [\textit{44}] indicates a scenario where production occurs between midnight
+ and 3 a.m.). Different geographic regions, containing different clients, can compose
+ the daily versions with different sets of sections. The goal is to deliver the
+ different newspaper compositions to the different clients respecting some time
+ window-like constraints (e.g., in the case of the problem studied by [\textit{44}], the last delivery must occur by 4 a.m.),
+ minimizing some fitness function (such as distribution cost). One possible expansion
+ of this problem is to consider the loading docks as a scarce resource, allowing just
+ a limited number of simultaneous vehicle loadings. This problem is described by
+ Hurter and Buer [\textit{33}] as the problem of
+ distributing highly perishable products under severe time constraints.\par To address the newspaper production and distribution problem, the literature offers
+ some different approaches. The first approach found is the one proposed by Mantel
+ \& Fontein [\textit{40}], which presents an MILP
+ formulation for the problem, as well as heuristics based on Floyd's method and Clarke
+ \& Wright's method to plan the newspaper deliveries to up to 60 delivery sites.
+ Hurter \& Buer [\textit{33}] also approach this
+ problem by presenting a two-stage algorithm. A single-vector representation of the
+ problem is proposed by Van Buer et al. [\textit{48}].
+ Combined with some definitions of different neighborhoods, a Simulated Annealing and
+ a Tabu Search approach to the problem are proposed. The proposed methods were applied
+ to a dataset generated based on real data originating from a medium-size newspaper
+ company. A similar production system is studied by Chiang et al. [\textit{25}]. In their case, the problem is characterized
+ by three different daily editions ("class of products"), to be produced in two
+ identical production lines. There are seven distinct delivery zones. To solve this
+ problem, the authors present a mathematical model and a two-phase heuristic approach,
+ that incorporates a reactive tabu search to refine the results obtained by the
+ application of an integer programming model in a generalized version of the original
+ problem. To evaluate the effectiveness of the heuristic, Chiang et al. [\textit{25}] use a simulation model. This simulation model
+ also allows the authors to analyze the effects of the variability on the results
+ provided by the heuristic. A tabu search is also used by Russell et al. [\textit{44}] to optimize the existing company's operations
+ of an American newspaper company. In this case, there are six different geographic
+ zones supplied by 47 vehicles that deliver to 818 carriers. The carriers cover more
+ than 200 zip codes. The application of the proposed heuristic generates savings of
+ more than \$60,000 a year. Significant savings on practical scenarios are also
+ presented by Böhnlein et al. [\textit{10}], who apply a
+ 5-type multi-agent system to real data from one of the largest German newspaper
+ companies, and allow about 17\% of reduction on the variable costs on the planning of
+ the utilization of a 61-vehicle fleet.\par Besides newspaper production scenarios, another practical motivation for integrating
+ scheduling and distribution is presented by Geismar et al. [\textit{31}]. In this case, the authors present a problem encountered in
+ chemical adhesive materials manufacturing. This problem is similar to the newspaper
+ planning problem in the sense that both products (chemical adhesives and newspapers)
+ are products with a relatively short lifespan (hours in the case of newspapers, seven
+ days in the adhesive case presented by [\textit{31}]).
+ In their approached problem, Geismar et al. present a production system composed of a
+ single plant, a single capacitated vehicle and an uncorrelated set of up to 50
+ clients dispersed randomly, aiming to minimize the total arrival date of the orders.
+ Although the paper does not present data provided from a specific company, the
+ random-generated instances allow the authors to present some interesting results: a
+ lower bound for the problem considering makespan, as well as genetic and memetic
+ algorithms to solve it. In both cases, the developed heuristic is a 2-stage algorithm
+ designed as follows: in the first stage, a genetic/memetic algorithm generates a
+ sequence of orders; the second stage uses a shortest path algorithm to allocate and
+ sequence the orders in routes. The authors report statistical evidence that, with a
+ ρ-value= 0.0005, the genetic algorithm performed better than the memetic
+ algorithm.\par Another practical relevance of integrated production and transportation decisions in
+ the operational level is presented by Farahani et al. [\textit{29}]. In their paper, the authors analyze how the quality of
+ catering foods can be improved by minimizing the time that the produced orders wait
+ to be shipped. Their claim is that, for this category of food products, the quality
+ of a delivered order decreases according to the time spent in transit after
+ production. The authors develop an iterative solution procedure based on a Large
+ Neighborhood Search algorithm and successfully apply it to 50, 100 and 200-order
+ instances. The results shows that the planning technique proposed allows a better
+ quality of the delivered food without a considerable increase in total costs.\par Beyond direct practical applications, one can find in the literature studies that
+ deal with different scenarios of integrated production-transportation problems. A
+ single-machine production stage, now allowing preemption, is approached by Averbakh
+ [\textit{3}] and Averbakh \& Xue [\textit{4}]. Starting with a single-client scenario and
+ then moving to a multi-client scenario, both [\textit{3}] and [\textit{4}] present a set of
+ different theoretical analyses and algorithms related to the problem of minimizing
+ the sum of total weighted flowtime and delivery costs.\par Chang \& Lee [\textit{18}] analyze random-generated
+ scenarios by considering a production system where a set of jobs is performed on a
+ single machine or two identical machines, and then grouped in batches for
+ transportation by a single capacitated vehicle to one or two client areas. Some
+ properties of those problems are derived. For the single machine/single client
+ problem, an NP-Hardness proof is derived. To minimize makespan in a single
+ machine/single vehicle/single vehicle area problem, Chang \& Lee state a property
+ of this problem, where there is an optimal schedule in which: (i) jobs are processed
+ without idle time; (ii) all jobs that are allocated to a vehicle are processed
+ sequentially in the production stage; (iii) there is no order precedence between each
+ production order belonging to the same route; (iv) each distribution batch is
+ delivered according to the well-known Short Processing Time (SPT) rule. This property
+ allows Chang \& Lee to derive a heuristic that uses the well-known First Fit
+ Decreasing (FDD) bin-packing rule for the stated problem. The previous problem is
+ then expanded into a two identical parallel machines production environment, stated
+ as being NP-hard in the strong sense. To solve this problem, a heuristic is also
+ proposed. Another extension presented by the authors is regarding the one machine/one
+ vehicle/two customers area, also stated as NP-Hard in the strong sense. Using results
+ from the FDD rule and the well-known Johnson's rule (used to solve the
+ \textit{F} 2//\textit{C \textsubscript{max}} problem), a heuristic is
+ also proposed. All the proposed heuristics are followed by proofs of worst-case
+ performance.\par As with Averbakh \& Xue [\textit{4}], Chen \& Lee
+ [\textit{19}] are devoted to presenting theoretical
+ analysis to an integrated production-transportation problem. They approach the
+ problem of producing a set of orders on a single machine. Once produced, the orders
+ must be delivered by a multi-mode (¿2) distribution system. Multiple client sites are
+ considered. The goal is to minimize a weighted function between job delivery time and
+ transportation costs. A multi-mode distribution system is also approached by Wang
+ \& Lee [\textit{50}]. This latter paper deals with
+ two transportation modes that can be used to transport orders produced by a single
+ machine environment. The due dates are strongly considered in this paper, which
+ presents strategies to: (i) minimize transportation costs in a zero-tardiness
+ solution and (ii) minimize the weighted sum of total tardiness and transportation
+ costs. A B\&B algorithm is presented and, in the instances presented (up to 20
+ clients), solves the problem more efficiently.\par Following this line of research, Méndez et al. [\textit{41}] consider a comprehensive multi-stage production and transport
+ scheduling problem. The production part of the proposed model deals with identifying
+ the batches to be produced, their assignment to the lines, the sequencing, and the
+ timing. The distribution part provides a delivery schedule comprising the loads, the
+ assignment of orders to the capacitated vehicles, the routes, and the timing of the
+ deliveries. Regarding the transport scheduling, it is assumed that the transport time
+ includes the travel time, a discharge time depending on the amount delivered, and a
+ fixed stop time. Delivery due dates, slack times, and average speeds of the vehicles
+ are also considered. The objective is to minimize weighted total costs including
+ weight values for the travel time, the number of routes, as well as the earliness and
+ tardiness of the orders. In order to reduce the computational effort, different
+ heuristic rules (earliest due date rule, minimum slack time rule, clustering of
+ distribution centres) are combined and embedded in the proposed continuous time-based
+ MILP model. A case study is provided assuming that two products are manufactured in a
+ single batch production facility and distributed among eight retail outlets by two
+ vehicles with different capacities. The production recipe for both products comprises
+ three production stages and eight operations. Also, various weight values, ranging
+ from 5 to 100, are included in the objective function. The computational results of
+ the MILP are compared with those of eight hybrid MILP-heuristic approaches, stating
+ that better solutions with modest computational effort can be obtained in the latter
+ case.\par The work by Bonfill et al. [\textit{11}] is based on
+ the paper by Méndez et al. [\textit{41}], and provides
+ different heuristic-based solution approaches to the problems examined therein. The
+ production scheduling part uses a rule-based heuristic algorithm suggested in [\textit{16}], whereas in the transport scheduling part an
+ own rule-based heuristic algorithm for the order selection, vehicle assignment,
+ loading, and timing is developed. A two-stage sequential approach (with the
+ production part being solved first) and an integrated strategy (i.e., production
+ orders and due dates are updated in accordance, containing temporal requirements
+ implied by the transport schedule) are provided. Several versions of the proposed
+ solving methods with different combinations of the priority rules are tested in two
+ case studies. The first is very similar to the case study presented in [\textit{41}] and is solved by the integrated approach with
+ three criteria (i.e., minimum summed lateness, minimum flow time, and minimum
+ multiple cost). Due to its structure, the second problem, an adapted version of the
+ problem treated in [\textit{27}], is tested by the
+ sequential approach only. This study comprises a single-product, single-stage
+ facility problem, in which the finished product has to be delivered to ten
+ destinations by two homogeneous vehicles. The results have also been compared to
+ those achieved by the approach used in [\textit{41}].
+ The researchers have concluded that the application of the presented integrated
+ algorithm leads to better performances in various aspects (e.g., material flow
+ management).\par Chen \& Vairaktarakis [\textit{23}] also approached
+ a similar type of problem. In this case, the manufacturing system is composed of a
+ production phase - stated as a single machine or a set of identical parallel machines
+ - and a distribution phase - composed of one or multiple capacitated vehicles that
+ deliver products to multiple (up to 160) clients geographically dispersed. Inspired
+ by real-world applications such as adhesive chemicals manufacturing, a zero-inventory
+ policy between the production and the distribution phases is stated. The objective
+ function is composed of a weighted sum of the service level and the distribution
+ cost. The customer service level is measured by the maximum delivery time or by the
+ average delivery time. Those definitions - two manufacturing environments, two fleet
+ specifications (single and multiple vehicles) and two different definitions of the
+ objective functions - generate a set of eight different problems. Exact algorithms
+ are stated for the following cases: single machine, one or multiple vehicles,
+ minimizing average distribution time and total distribution costs; parallel machine,
+ one vehicle, minimizing average distribution time and total distribution costs. The
+ remaining problems are solved by heuristics proposed in the paper. A comparison of
+ the solutions obtained by the integrated approach and sequential approaches for the
+ problems is then performed. The authors realize that, for problems with an objective
+ function composed of the average delivery time, the integrated approach generates a
+ gain of 5\% on the fitness value. It is also realized that when the number of clients
+ increases, this difference tends to increase. When analyzing problems that minimize
+ the maximum delivery time, the gain is more than 5\% for problems with more than three
+ vehicles and where the weight factor of the objective function emphasizes the
+ delivery time.\par Armstrong et al. [\textit{2}] consider an integrated
+ problem composed of a single machine that produces a product with a limited lifespan.
+ The production is delivered by a single capacitated vehicle under a fixed client
+ delivery sequence subject to a time windows constraint. This problem is stated as
+ NP-Hard. The authors present an MIP model, as well as a heuristic to determine a
+ lower bound for the problem. Furthermore, a B\&B procedure is presented to obtain
+ the optimal value. According to the results presented by Armstrong et al., the time
+ required to solve the 100 clientsproblem using the B\&B approach was significantly
+ lower than the time required by a commercial solver to solve the MIP model: in the
+ best case, the time of the B\&B approach was close to 1.5\% of the commercial
+ solver time; in larger instances - e.g., with 50 customers - the MIP model could not
+ be solved, but the B\&B approach found the result in less than two minutes.\par Li et al. [\textit{39}], approach a single
+ manufacturing facility with distribution accomplished by a set of one or infinite
+ bounded capacity vehicles to a set of one or multiple clients. The goal is to
+ minimize the total arrival time of the orders. The authors prove that this is an
+ NP-Hard problem in the strong sense for the multiple clients case, and
+ \textit{O} (\textit{n \textsuperscript{2}}) for the single client case. To
+ solve this problem, the authors derive a dynamic programming approach that shows a
+ complexity of a polynomial function of the number of clients when the number of
+ clients is greater than one, and with lower complexity if the vehicle is
+ uncapacitated.\par A similar problem is approached by Devapriya [\textit{26}]. The author approaches two different sets of problems: a single plant
+ problem (solved by three different heuristics) and a multi-plant problem (solved by
+ five heuristics). Sets of 40, 60 and 80 clients are considered. When several
+ production facilities are considered, the vehicle fleet of each facility is
+ independent, and a vehicle is not allowed to visit more than one production site. The
+ developed heuristics are based on the concept of first applying a routing algorithm
+ and then a cluster algorithm.\par Two different approaches for the transportation problem were used by Li \&
+ Vairaktarakis [\textit{38}]. In their specific case,
+ the production stage is represented as a 2-machine flowshop environment, that
+ produces up to 80 orders. The distribution phase is carried by a third party carrier,
+ with an unlimited number of vehicles. The orders are delivered to up to five
+ different locations, where each location contains several customers. The objective is
+ to minimize the sum of the client waiting costs and transportation costs. In this
+ specific problem, the transportation is modelled as direct deliveries or as a
+ milk-run. To solve those problems, the authors develop a polynomialtime approximation
+ scheme for the problem. Further heuristics with guaranteed lower bounds are also
+ developed.\par A bi-objective planning of a single-machine production site and a capacitated vehicle
+ transportation system is presented by Leung \& Chen [\textit{37}]. In their paper, the problem of minimizing maximum lateness
+ is extended to determine an algorithm that allows one, given a minimum/maximum
+ lateness, to obtain the minimum fleet size. Moreover, an algorithm to minimize the
+ weighted sum of the maximum lateness and the number of used vehicles is presented.
+ Although no numerical examples are presented, proofs of optimality and complexity of
+ the proposed algorithm are discussed in the paper.\section*{FINAL REMARKS AND POTENTIAL FOR FUTURE RESEARCH}4\par The objective of this paper was to present a review of integrated production and
+ distribution planning models which include routing decisions. In order to provide a
+ structured and clear survey, the research results have been classified according to
+ their decision level, into tactical and operational problems.\par In conclusion, the integrated planning of production and distribution operations is
+ critical in today's business. In order to achieve optimal performance, mathematical
+ optimization models might deliver decisive information if the functions are integrated
+ and jointly planned. Such models of IPDS including routing aspects have gained an
+ increasing research interest especially in the last few years. However, the research
+ results show that a wide range of problems remain open for future research. Concerning
+ the transportation part of the model, aspects such as delivery time windows, split
+ deliveries or backhauls could be considered. With respect to the production part, the
+ study of multi-machine and multi-product problems or combinations of tactical and
+ operational problems is suggested. Apart from that, models including multiple production
+ sites and stochastic assumptions need to be investigated to a larger extent. With regard
+ to the solution approaches faster and more robust algorithms need to be developed to
+ treat complex IPDS arising in real-world applications.
+\section*{ACKNOWLEDGMENTS}
+\par Roberto F. Tavares Neto thanks FAPESP/Brazil for its financial support (process
+ 2011/14800-3).
+
+\medskip\par\noindent
+\footnotesize{\textit{Keywords}: integrated production and distribution problems, lot-sizing, routing, scheduling}
+\medskip\par\noindent
+\footnotesize{\textit{Received}: 31/12/2012.} \par \noindent
+\footnotesize{\textit{Accepted}: 01/12/2013.} \medskip\par\noindent
+\footnotesize{*
+				Corresponding author.
+}
+\balance
+\pagebreak\onecolumn
+\begin{biblio}[REFERENCES]
+\tit{ ADULYASAK Y,} CORDEAU J-F \& JANS R. 2012. Optimization-based
+ adaptive large neighborhood search for the production routing problem.
+ \textit{Transportation Science}.
+\tit{ ARMSTRONG R,} GAO S \& LEI L. 2008. A zero-inventory production
+ and distribution problem with a fixed customer sequence. \textit{Annals of Operations
+ Research} , \textbf{159}(1):395-414.
+\tit{ }AVERBAKH I. 2010. On-line integrated production-distribution
+ scheduling problems with capacitated deliveries. \textit{European Journal of
+ Operational Research} , \textbf{200}:377-384.
+\tit{ }AVERBAKH I \& XUE Z. 2007. On-line supply chain scheduling
+ problems with preemption. \textit{European Journal of Operational Research} ,
+ \textbf{181}:500-504.
+\tit{ AYDINEL M,} SOWLATI T, CERDA X, COPE E \& GERSCHMAN M. 2008.
+ Optimization of production allocation and transportation of customer orders for a
+ leading forest products company. \textit{Mathematical and Computer
+ Modelling} , \textbf{48}:1158-1169.
+\tit{ }BARBAROSOĞLU G \& ÖZGÜR D. 1999. Hierarchical design of an
+ integrated production and 2- echelon distribution system. \textit{European Journal of
+ Operational Research} , \textbf{118}(3):464-484.
+\tit{ }BARD JF \& NANANUKUL N. 2009. The integrated
+ production-inventory-distribution-routing problem. \textit{Journal of
+ Scheduling} , \textbf{12}:257-280.
+\tit{[8] }BARD JF \& NANANUKUL N. 2009. Heuristics for a multiperiod
+ inventory routing problem with production decisions. \textit{Computers \&
+ Industrial Engineering} , \textbf{57}:713-723.
+\tit{ }BARD JF \& NANANUKUL N. 2010. A branch-and-price algorithm for an
+ integrated production and inventory routing problem. \textit{Computers \&
+ Operations Research} , \textbf{37}:2202-2217.
+\tit{ BÖHNLEIN D,} SCHWEIGER K \& TUMA A. 2011. Multi-agent-based
+ transport planning in the newspaper industry. \textit{International Journal of
+ Production} Economics, \textbf{131}:146-157.
+\tit{ BONFILL A,} ESPUÑA A \& PUIGJANER L. 2008. Decision support
+ framework for coordinated production and transport scheduling in scm.
+ \textit{Computers \& Chemical Engineering} ,
+ \textbf{32}:1206-1224.
+\tit{ }BOUDIA M \& PRINS C. 2009. A memetic algorithm with dynamic
+ population management for an integrated production-distribution problem.
+ \textit{European Journal of Operational Research} ,
+ \textbf{195}:703-715.
+\tit{ BOUDIA M,} LOULY MAO \& PRINS C. 2007. A reactive grasp and path
+ relinking for a combined production-distribution problem. \textit{Computers \&
+ Operations Research} , \textbf{34}:3402-3419.
+\tit{ BOUDIA M,} LOULY MAO \& PRINS C. 2008. Fast heuristics for a
+ combined production planning and vehicle routing problem. \textit{Production Planning
+ \& Control} , \textbf{19}(2):85-96.
+\tit{ }BREDSTRÖM D \& RÖNNQVIST M. 2002. Integrated production planning
+ and route scheduling in pulp mill industry. In \textit{HICSS '02: Proceedings of the
+ 35th Annual Hawaii International Conference on System Sciences (HICSS'02)-Volume
+ 3} , Washington, DC, 2002. IEEE Computer Society.
+\tit{ }CANTON J. 2003. \textit{Integrated support system for planning and
+ scheduling of batch chemical plants}. PhD thesis, Universitat Politecnia
+ de Catalunya.
+\tit{ }CHANDRA P \& FISHER ML. 2004. Coordination of production and
+ distribution planning. \textit{European Journal of Operational Research} ,
+ \textbf{72}:503-517.
+\tit{ }CHANG Y-C \& LEE C-Y. 2004. Machine scheduling with job delivery
+ coordination. \textit{European Journal of Operational Research} ,
+ \textbf{158}(1):470-487.
+\tit{ }CHEN B \& LEE C-Y. 2008. Logistics scheduling with batching and
+ transportation. \textit{European Journal of Operational Research} ,
+ \textbf{189}:871-876.
+\tit{ CHEN H-K,} HSUEH C-F \& CHANG M-S. 2009. Production scheduling
+ and vehicle routing with time windows for perishable food products. \textit{Computers
+ \& Operations Research} , \textbf{36}:2311-2319.
+\tit{ }CHEN Z-L. 2004. Integrated production and distribution operations:
+ Taxonomy, models, and review. In: D. Simchi-Levi, S.D. Wu, and Z.-J. Shen, editors,
+ \textit{Handbook of Quantitative Supply Chain Analysis: Modeling in the E-Business
+ Era}. Kluwer Academic Publishers.
+\tit{ }CHEN Z-L. 2010. Integrated production and outbound distribution
+ scheduling: Review and extensions. \textit{Operations Research} ,
+ \textbf{58}(1):130-148.
+\tit{ }CHEN Z-L \& VAIRAKTARAKIS GL. 2005. Integrated scheduling of
+ production and distribution operations. \textit{Management Science} ,
+ \textbf{51}(4):614-628.
+\tit{ }CHERN C-C \& HSIEH J-S. 2007. A heuristic algorithm for master
+ planning that satisfies multiple objectives. \textit{Computers \& Operations
+ Research} , \textbf{34}:3491-3513.
+\tit{ CHIANG W,} RUSSELL R, XU X \& ZEPEDA D. 2009. A
+ simulation/metaheuristic approach to newspaper production and distribution supply
+ chain problems. \textit{International Journal of Production Economics} ,
+ \textbf{121}:752-767.
+\tit{ }DEVAPRIYA P. 2008. \textit{Optimal feet size of an integrated
+ production and distribution scheduling problem for a single perishable
+ product}. PhD thesis, Clemson University.
+\tit{ DONDO R,} MÉNDEZ CA \& CERDÁ J. 2003. An optimal approach to the
+ multiple-depot heterogeneous vehicle routing problem with time window and capacity
+ constraints. \textit{Latin American Applied Research} ,
+ \textbf{33}:129-134.
+\tit{ ERENGÜ¸ SS,} SIMPSON NC \& VAKHARIA AJ. 1999. Integrated
+ production/distribution planning in supply chains: An invited review.
+ \textit{European Journal of Operational Research} ,
+ \textbf{115}:219-236.
+\tit{ FARAHANI P,} GRUNOW M \& GÜNTHER H. 2012. Integrated production
+ and distribution planning for perishable food products. \textit{Flexible Services and
+ Manufacturing} , \textbf{24}:28-51.
+\tit{ }FUMERO F \& VERCELLIS C. 1999. Synchronized development of
+ production, inventory, and distribution schedules. \textit{Transportation
+ Science} , \textbf{33}:330-340.
+\tit{ GEISMAR HN,} LAPORTE G, LEI L \& SRISKANDARAJAH C. 2008. The
+ integrated production and transportation scheduling problem for a product with a
+ short life span and non-instantaneous transportation time. \textit{INFORMS Journal on
+ Computing} , \textbf{20}(1):21-33.
+\tit{ HUANG GQ,} LAUJSK \& MAK KL. 2003. The impacts of sharing
+ production information on supply chain dynamics: a review of the literature.
+ \textit{International Journal of Production Research} ,
+ \textbf{41}(7):1483-1517.
+\tit{ }HURTER AP \& VAN BUER MG. 1996. The newspaper
+ productiondistribution problem. \textit{Journal of Business Logistics} ,
+ \textbf{17}(1):85-107.
+\tit{ }JAYARAMAN V \& PIRKUL H. 2001. Planning and coordination of
+ production and distribution facilities for multiple commodities. \textit{European
+ Journal of Operational Research} ,
+ \textbf{133}(2):394-408.
+\tit{ }KESKIN BB \& ÜSTER H. 2007. Meta-heuristic approaches with
+ memory and evolution for a multiproduct production/distribution system design
+ problem. \textit{European Journal of Operational Research} ,
+ \textbf{182}:663-682.
+\tit{ LEI L,} LIU S, RUSZCZYNSKI A \& PARK S. 2006. On the integrated
+ production, inventory, and distribution routing problem. \textit{IIE
+ Transactions} , \textbf{38}:955-970.
+\tit{ }LEUNG JYT \& CHEN Z-L. 2013. Integrated production and
+ distribution with fixed delivery departure dates. \textit{Operations Research
+ Letters} , \textbf{41}:290-293.
+\tit{ }LI C-L \& VAIRAKTARAKISGL. 2007. Coordinating production and
+ distribution of jobs with bundling operations. \textit{IIE Transactions} ,
+ \textbf{39}(2):203-215.
+\tit{ LI C-L,} VAIRAKTARAKIS GL \& LEE C-Y. 2005. Machine scheduling
+ with deliveries to multiple customer locations. \textit{European Journal of
+ Operational Research} , \textbf{164}(1):39-51.
+\tit{ }MANTEL RJ \& FONTEIN M. 1993. A practical solution to a
+ newspaper distribution problem. \textit{International Journal of Production
+ Economics} , \textbf{30}:591-599.
+\tit{ MÉNDEZ C,} BONFILL A, ESPUÑA A \& PUIGJANER L. 2006. A rigorous
+ approach to coordinate production and transport scheduling in a multi-site system.
+ In: MARQUARDT W \& PANTELIDES C, editors, \textit{16th European Symposium on
+ Computer Aided Process Engineering and 9th International Symposium on Process
+ Systems Engineering, volume 21 of Computer Aided Chemical Engineering} ,
+ pages 2171-2176. Elsevier.
+\tit{ MULA J,} PEIDROD, DÍAZ-MADROÑERO M \& VICENS E. 2010.
+ Mathematical programming models for supply chain production and transport planning.
+ \textit{European Journal of Operational Research} ,
+ \textbf{204}:377-390.
+\tit{ }OWEN SH \& DASKIN MS. 1998. Strategic facility location: A
+ review. \textit{European Journal of Operational Research} ,
+ \textbf{111}(3):423-447.
+\tit{ RUSSELL R,} CHIANG W \& ZEPEDA D. 2008. Integrating multi-product
+ production and distribution in newspaper logistics. \textit{Computers \&
+ Operations Research} , \textbf{35}:1578-1588.
+\tit{ }SARMIENTO AM \& NAGI R. 1999. A review of integrated analysis of
+ production-distribution systems. Technical report, Department of Industrial
+ Engineering, State University of New York and Buffalo, Buffalo, NY
+ 14260.
+\tit{ }STECKE KE \& ZHAO X. 2007. Production and transportation
+ integration for a make-to-order manufacturing company with a commit-to-delivery
+ business mode. \textit{Manufacturing \& Service Operations Management} ,
+ \textbf{9}:206-224.
+\tit{ }ULRICH CA. 2013. Integrated machine scheduling and vehicle routing
+ with time windows. \textit{European Journal of Operational Research} ,
+ \textbf{227}:152-165.
+\tit{ VAN BUER MG,} WOODRUFF DL \& OLSON RT. 1999. Solving the medium
+ newspaper production/distribution problem. \textit{European Journal of Operational
+ Research} , \textbf{115}:237-253.
+\tit{ }VIDAL CJ \& GOETSCHALCKX M. 1997. Strategic
+ production-distribution models: A critical review with emphasis on global supply
+ chain models. \textit{European Journal of Operational Research} ,
+ \textbf{98}:1-18.
+\tit{ }WANG H \& LEE C-Y. 2005. Production and transport logistics
+ scheduling with two transport mode choices. \textit{Naval Research
+ Logistics} , \textbf{52}:796-809.
+\end{biblio}
+
+\medskip\par\noindent
+\footnotesize{\#\par This work was initiated, while E. Bogendorfer was doing her MSc dissertation at the
+ University of Graz.
+}
+
+\medskip\par\noindent
+\footnotesize{This is an Open Access article distributed under the terms of the Creative
+ Commons Attribution Non-Commercial License which permits unrestricted
+ non-commercial use, distribution, and reproduction in any medium, provided the
+ original work is properly cited. }
