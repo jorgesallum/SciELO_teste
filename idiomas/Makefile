@@ -4,6 +4,8 @@ all:
 	latexmk -xelatex LIVRO.tex
 scielo:
 	latexmk -quiet -interaction=nonstopmode -xelatex LIVRO.tex
+	-rm LIVRO.pdf
+	latexmk -quiet -interaction=nonstopmode -xelatex LIVRO.tex
 lua:
 	lualatex  LIVRO.tex
 	lualatex  LIVRO.tex

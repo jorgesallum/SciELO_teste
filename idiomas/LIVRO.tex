@@ -10,29 +10,60 @@
               fontsize=11pt,%
               twocolumn]{scrartcl}            % KOMA-article class
 
-\usepackage{lipsum}                         % Package to create dummy text
-\usepackage{abstract}                       % Package to create dummy text
+% chinese fonts
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{FangSong}
+
+\usepackage{lipsum}
+\usepackage{abstract}
 \usepackage{penalidades, biblio}
 \usepackage[xetex,chicagofootnotes]{tipografia}
 \usepackage{metadados}
 
-
-
 \usepackage{amsmath,amsfonts,amsthm}          % Math packages
-%\usepackage[pdftex]{graphicx}                  % Enable pdflatex
 \usepackage[svgnames]{xcolor}                 % Enabling colors by their 'svgnames'
-\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption}  % Custom captions under/above floats
+\usepackage[hang, small,labelfont=bf,up,textfont=up]{caption}  % Custom captions under/above floats
 \usepackage{epstopdf}                       % Converts .eps to .pdf
 \usepackage{subfig}                         % Subfigures
 \usepackage{booktabs}                       % Nicer tables
 \usepackage{fix-cm}                         % Custom fontsizes
 %
-%% scielo graphics
+%% scielo
 \usepackage{graphicx}
 \usepackage{ctable}
-\usepackage{array,multirow}
+\usepackage{balance}
+\usepackage{verse}
+\usepackage{seqsplit}
+\usepackage{pdflscape}
+\usepackage{afterpage}
+
+% START packages do ctable + longtable
+% http://tex.stackexchange.com/questions/88304/multipage-tables-with-ctable-package
+\usepackage[utf8]{inputenc}
+\usepackage{libertine}
+%\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[backend=bibtex8, style=authoryear]{biblatex}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{rotating}
+\usepackage{multirow}
 \usepackage{pbox}
 \usepackage{longtable}
+% END packages do ctable + longtable
+
+% mathml to tex
+\usepackage{bm} % bold
+\usepackage{pmml-new} % math template
+\usepackage{unicode-math}
+\setmathfont{XITS Math}
 
 %
 %%% Custom sectioning (sectsty package)
@@ -45,7 +76,13 @@
 
 \makeatletter
 
-% start ctable + long
+% attrib verse
+\newcommand{\attrib}[1]{%
+\nopagebreak{\raggedleft\footnotesize #1\par}}
+\renewcommand{\poemtitlefont}{\normalfont\large\itshape\centering}
+
+% START ctable + longtable
+% http://tex.stackexchange.com/questions/88304/multipage-tables-with-ctable-package
 \newif\if@ctbl@long
 \define@key{ctbl}{long}[]{\@ctbl@longtrue}
 
@@ -53,16 +90,12 @@
 \long\expandafter\def\csname\string\ctable\endcsname[##1]##2##3##4{%
 #1\if@ctbl@long\ctbl@long\fi\sbox#2}}
 
-
-
 \expandafter\expandafter\expandafter\foo
 \csname\string\ctable\endcsname[#1]{#2}{#3}{#4}!!
-
 
 \def\ctbl@long\fi\sbox#1#2#3\@ctblend{\fi
 \ctbl@@long#2%
 }
-
 
 \long\def\ctbl@@long#1#2#3#4#5#6{%
 \ctbl@@@long#6%
@@ -78,7 +111,13 @@
 \caption*{\@ctblcaption\space(continued)}%
 \endhead
 #4\end{longtable}}
-% end start ctable + long
+% END ctable + longtable
+
+% remove label automatico das tabelas
+\captionsetup[table]{labelformat=empty}
+
+% remove padding entre colunas da tabela
+\setlength\tabcolsep{0.005\textwidth}
 
 % includegraphics maxwidth
 \def\maxwidth#1{\ifdim\Gin@nat@width>#1 #1\else\Gin@nat@width\fi}
@@ -121,9 +160,9 @@
 \chead{}
 \rhead{}
 % Footer (you may change this to your own needs)
-\lfoot{\footnotesize \texttt{\scieloAbbrevJournalTitle } \textbullet ~2014;\scieloVolume(\scieloIssue):\scieloFpage-\scieloLpage}
+\lfoot{\scieloFooterText \ifnum\thepage=1{\\\scieloArticleId}\fi }
 \cfoot{}
-\rfoot{\footnotesize page \thepage\ of \pageref{LastPage}}  % "Page 1 of 2"
+\rfoot{\footnotesize \scieloFooterRight}  % "Page 1 of 2"
 \renewcommand{\headrulewidth}{0.0pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
@@ -145,7 +184,9 @@
                       \rule{\linewidth}{1pt}%
                     }
 
-\pretitle{\vspace{-30pt} \begin{flushleft} \HorRule 
+\pretitle{\vspace{-30pt} 
+        \begin{flushright}{\small\scieloArticleType \\\HorRule}\end{flushright} 
+        \begin{flushleft}
         \fontsize{\scieloTitleFontSize}{\scieloTitleFontSize} 
         \usefont{\encodingdefault}{phv}{b}{n} 
         \color{DarkRed} 
@@ -160,7 +201,6 @@
 \postauthor{\footnotesize \color{Black} 
 
 \scieloContributorNotes
-\scieloArticleId - Editorial %University of Examples % Institution of author
 \par\end{flushleft}\HorRule}
 
 \date{}                                       % No date
