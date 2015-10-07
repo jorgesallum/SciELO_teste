@@ -1,0 +1,6 @@
+  OK Tamanho da fonte no título
+        Alterar linha 106 em LIVRO.tex
+  OK Nota de rodapé com nome dos autores
+        É preciso usar \thanks no lugar de \footnote
+        Reescrevi uma parte do código que chama os
+  OK Abstract
