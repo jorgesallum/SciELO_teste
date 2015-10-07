@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  6 OCT 2015 22:07
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  6 OCT 2015 22:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,22 +346,22 @@ Class memoir Warning: \marginparsep is zero or negative on input line 164.
 
 
 ******************************************************
-Stock height and width: 794.96999pt by 614.295pt
+Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
-Page height and width: 794.96999pt by 614.295pt
-Text height and width: 548.5pt by 383pt
-Spine and edge margins: 92.26999pt and 139.02501pt
-Upper and lower margins: 124.64378pt and 121.8262pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 592pt by 383pt
+Spine and edge margins: 85.26999pt and 129.23788pt
+Upper and lower margins: 128.64378pt and 124.40306pt
 Headheight and headsep: 14.5pt and 19.8738pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
 Marginparsep and marginparwidth: 0pt and 95.75pt
-Sidecapsep and sidecapwidth: 7pt and 102pt
-Sidebarhsep and sidebarwidth: 7pt and 102pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
 Sidebarvsep and sidebartopsep: 14.5pt and 0pt
-Sidebarheight: 546.64995pt
-Sidefoothsep and sidefootwidth: 7pt and 102pt
-Sidefootvsep and sidefootheight: 14.5pt and 546.64995pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
 ) (/home/hipatia/texmf/tex/hedrastyles.sty
@@ -1171,7 +1171,7 @@ Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
 \TPVertModule=\dimen279
 \TP@margin=\dimen280
 \TP@absmargin=\dimen281
-Grid set 16 x 16 = 38.39343pt x 49.68562pt
+Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TPboxrulesize=\dimen282
 \TP@tbargs=\toks29
 \TP@prevdepth=\dimen283
@@ -1481,10 +1481,10 @@ No file INPUTS.tex.
 AED: lastpage setting LastPage
 (./LIVRO.aux (./INPUTS.aux)) ) 
 Here is how much of TeX's memory you used:
- 24840 strings out of 493727
- 456926 string characters out of 6147891
- 662070 words of memory out of 5000000
- 27796 multiletter control sequences out of 15000+600000
+ 24842 strings out of 493727
+ 456954 string characters out of 6147891
+ 662094 words of memory out of 5000000
+ 27797 multiletter control sequences out of 15000+600000
  5815 words of font info for 37 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  64i,11n,64p,10356b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
