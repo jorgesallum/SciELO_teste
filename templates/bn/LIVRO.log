@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  6 OCT 2015 22:02
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  6 OCT 2015 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -340,9 +340,9 @@ Package verse [2008/07/23] emulated by memoir.
 (/usr/share/texlive/texmf-dist/tex/latex/memoir/mempatch.sty
 Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
 )) (./hedra.sty)
-(/home/hipatia/texmf/tex/hedraoptions.sty
+(./hedraoptions.sty
 
-Class memoir Warning: \marginparsep is zero or negative on input line 152.
+Class memoir Warning: \marginparsep is zero or negative on input line 165.
 
 
 ******************************************************
@@ -1487,10 +1487,10 @@ No file INPUTS.tex.
 AED: lastpage setting LastPage
 (./LIVRO.aux (./INPUTS.aux)) ) 
 Here is how much of TeX's memory you used:
- 24839 strings out of 493727
- 456963 string characters out of 6147891
- 659632 words of memory out of 5000000
- 27795 multiletter control sequences out of 15000+600000
+ 24840 strings out of 493727
+ 456926 string characters out of 6147891
+ 659626 words of memory out of 5000000
+ 27796 multiletter control sequences out of 15000+600000
  5815 words of font info for 37 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  64i,11n,64p,10356b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
