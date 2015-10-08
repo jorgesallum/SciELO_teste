@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2014.12.9)  8 OCT 2015 12:34
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2014.12.9)  8 OCT 2015 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -340,23 +340,22 @@ Package verse [2008/07/23] emulated by memoir.
 (/usr/share/texlive/texmf-dist/tex/latex/memoir/mempatch.sty
 Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
 ))
-(/home/editorial/texmf/tex/hedra.sty)
-(/home/editorial/texmf/tex/hedraoptions.sty
+(/home/editorial/texmf/tex/hedra.sty) (./hedraoptions.sty
 
-Class memoir Warning: \marginparsep is zero or negative on input line 166.
+Class memoir Warning: \marginparsep is zero or negative on input line 167.
 
 
 ******************************************************
-Stock height and width: 845.04684pt by 597.50787pt
-Top and edge trims: 56.9055pt and 109.5431pt
-Page height and width: 597.50787pt by 378.42165pt
-Text height and width: 476pt by 275pt
-Spine and edge margins: 51.2299pt and 51.20001pt
-Upper and lower margins: 47.53113pt and 73.97675pt
+Stock height and width: 1195.01575pt by 845.04684pt
+Top and edge trims: 56.9055pt and 115.37592pt
+Page height and width: 794.96999pt by 614.295pt
+Text height and width: 534pt by 400pt
+Spine and edge margins: 76.7908pt and 136.50998pt
+Upper and lower margins: 88.32999pt and 172.64pt
 Headheight and headsep: 14.5pt and 14.22636pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
-Marginparsep and marginparwidth: 0pt and 68.99792pt
+Marginparsep and marginparwidth: 0pt and 100.24855pt
 Sidecapsep and sidecapwidth: 7pt and 102pt
 Sidebarhsep and sidebarwidth: 7pt and 102pt
 Sidebarvsep and sidebartopsep: 14.5pt and 0pt
@@ -1175,7 +1174,7 @@ Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
 \TPVertModule=\dimen277
 \TP@margin=\dimen278
 \TP@absmargin=\dimen279
-Grid set 16 x 16 = 23.65135pt x 37.34424pt
+Grid set 16 x 16 = 38.39343pt x 49.68562pt
 \TPboxrulesize=\dimen280
 \TP@tbargs=\toks29
 \TP@prevdepth=\dimen281
@@ -1563,6 +1562,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
 Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
 Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
+Unknown feature `protrusion=default' in font `Linux Libertine O'.
+Unknown feature `expansion=default' in font `Linux Libertine O'.
 [6
 
 
@@ -1571,12 +1572,9 @@ Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
 
 
 ]
-Unknown feature `protrusion=default' in font `Linux Libertine O'.
-Unknown feature `expansion=default' in font `Linux Libertine O'.
- [7]
 Unknown feature `protrusion=default' in font `Linux Libertine O Italic'.
 Unknown feature `expansion=default' in font `Linux Libertine O Italic'.
-
+ [7]
 Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
@@ -1586,7 +1584,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 9.
  [10
 
-
 ]
 \tf@toc=\write5
 \openout5 = `LIVRO.toc'.
@@ -1594,11 +1591,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  (./LIVRO.aux (./INPUTS.aux) (./PUBLICIDADE.aux)) ) 
 Here is how much of TeX's memory you used:
  24768 strings out of 493918
- 457295 string characters out of 6150563
- 659455 words of memory out of 5000000
+ 457245 string characters out of 6150563
+ 661455 words of memory out of 5000000
  27589 multiletter control sequences out of 15000+600000
  13733 words of font info for 78 fonts, out of 8000000 for 9000
  1168 hyphenation exceptions out of 8191
- 64i,11n,57p,10381b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,11n,57p,10381b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on LIVRO.pdf (10 pages).
