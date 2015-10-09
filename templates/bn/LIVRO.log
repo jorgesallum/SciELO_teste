@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  9 OCT 2015 10:43
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  9 OCT 2015 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1562,17 +1562,30 @@ Unknown feature `protrusion=default' in font `Times New Roman'.
 Unknown feature `expansion=default' in font `Times New Roman'.
 Unknown feature `protrusion=default' in font `Times New Roman Bold'.
 Unknown feature `expansion=default' in font `Times New Roman Bold'.
+Unknown feature `protrusion=default' in font `Times New Roman'.
+Unknown feature `expansion=default' in font `Times New Roman'.
+
+LaTeX Font Warning: Font shape `EU1/TimesNewRoman(0)/m/sc' undefined
+(Font)              using `EU1/TimesNewRoman(0)/m/n' instead on input line 67.
+
 [1
 
-] [2] [3] [4] 
+]
+Unknown feature `protrusion=default' in font `Times New Roman Italic'.
+Unknown feature `expansion=default' in font `Times New Roman Italic'.
+ [2] [3] [4] 
 AED: lastpage setting LastPage
-[5] (./LIVRO.aux) ) 
+[5] (./LIVRO.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 25135 strings out of 493727
- 462391 string characters out of 6147891
- 667201 words of memory out of 5000000
- 28038 multiletter control sequences out of 15000+600000
- 11053 words of font info for 65 fonts, out of 8000000 for 9000
+ 25148 strings out of 493727
+ 462883 string characters out of 6147891
+ 668201 words of memory out of 5000000
+ 28049 multiletter control sequences out of 15000+600000
+ 11069 words of font info for 67 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  64i,14n,64p,10375b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
 
