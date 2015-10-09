@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  9 OCT 2015 19:38
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  9 OCT 2015 19:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -349,10 +349,10 @@ Class memoir Warning: \marginparsep is zero or negative on input line 167.
 Stock height and width: 1195.01575pt by 845.04684pt
 Top and edge trims: 56.9055pt and 123.76949pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 693.5pt by 426pt
+Text height and width: 751.5pt by 426pt
 Spine and edge margins: 79.6677pt and 91.04884pt
-Upper and lower margins: 62.36267pt and 89.18417pt
-Headheight and headsep: 14.5pt and 42.67912pt
+Upper and lower margins: 40.48157pt and 53.06528pt
+Headheight and headsep: 14.5pt and 14.22636pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
 Marginparsep and marginparwidth: 0pt and 106.69783pt
@@ -1562,21 +1562,22 @@ Unknown feature `protrusion=default' in font `Times New Roman'.
 Unknown feature `expansion=default' in font `Times New Roman'.
 Unknown feature `protrusion=default' in font `Times New Roman Bold'.
 Unknown feature `expansion=default' in font `Times New Roman Bold'.
+Unknown feature `protrusion=default' in font `Times New Roman'.
+Unknown feature `expansion=default' in font `Times New Roman'.
+Unknown feature `protrusion=default' in font `Times New Roman Bold'.
+Unknown feature `expansion=default' in font `Times New Roman Bold'.
 [1
 
-]
-Unknown feature `protrusion=default' in font `Times New Roman Italic'.
-Unknown feature `expansion=default' in font `Times New Roman Italic'.
- [2] [3] [4] [5] 
+] [2] [3] [4] 
 AED: lastpage setting LastPage
-[6] (./LIVRO.aux) ) 
+[5] (./LIVRO.aux) ) 
 Here is how much of TeX's memory you used:
- 25141 strings out of 493727
- 462605 string characters out of 6147891
- 667176 words of memory out of 5000000
- 28043 multiletter control sequences out of 15000+600000
- 11061 words of font info for 66 fonts, out of 8000000 for 9000
+ 25144 strings out of 493727
+ 462759 string characters out of 6147891
+ 668177 words of memory out of 5000000
+ 28045 multiletter control sequences out of 15000+600000
+ 11069 words of font info for 67 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  64i,13n,64p,10375b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on LIVRO.pdf (6 pages).
+Output written on LIVRO.pdf (5 pages).
