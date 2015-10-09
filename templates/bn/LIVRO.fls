@@ -35,8 +35,8 @@ INPUT hedra.sty
 INPUT hedra.sty
 INPUT hedraoptions.sty
 INPUT hedraoptions.sty
-INPUT /home/hipatia/texmf/tex/hedrastyles.sty
-INPUT /home/hipatia/texmf/tex/hedrastyles.sty
+INPUT hedrastyles.sty
+INPUT hedrastyles.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty

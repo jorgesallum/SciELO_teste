@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  9 OCT 2015 10:25
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  9 OCT 2015 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -349,9 +349,9 @@ Class memoir Warning: \marginparsep is zero or negative on input line 167.
 Stock height and width: 1195.01575pt by 845.04684pt
 Top and edge trims: 56.9055pt and 123.76949pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 766pt by 426pt
+Text height and width: 751.5pt by 426pt
 Spine and edge margins: 79.6677pt and 91.04884pt
-Upper and lower margins: 29.54102pt and 49.50583pt
+Upper and lower margins: 40.48157pt and 53.06528pt
 Headheight and headsep: 14.5pt and 14.22636pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
@@ -364,7 +364,7 @@ Sidefoothsep and sidefootwidth: 7pt and 102pt
 Sidefootvsep and sidefootheight: 14.5pt and 546.64995pt
 ******************************************************
 
-) (/home/hipatia/texmf/tex/hedrastyles.sty
+) (./hedrastyles.sty
 (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 LaTeX Info: Redefining \MakeTextUppercase on input line 47.
@@ -1533,11 +1533,11 @@ File: ccbynp.jpg Graphic file (type QTm)
 Unknown feature `protrusion=default' in font `Times New Roman'.
 Unknown feature `expansion=default' in font `Times New Roman'.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 17.
+(Font)              <12> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 17.
+(Font)              <8> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 17.
+(Font)              <6> on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1546,14 +1546,14 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 File: logo2.jpg Graphic file (type QTm)
 
 <use  "logo2.jpg" >
-Overfull \hbox (0.71918pt too wide) in paragraph at lines 11--21
+Overfull \hbox (0.71918pt too wide) in paragraph at lines 12--22
 [] [] $[][][]$  []
  []
 
 Unknown feature `protrusion=default' in font `Times New Roman Bold'.
 Unknown feature `expansion=default' in font `Times New Roman Bold'.
 
-Overfull \hbox (50.86342pt too wide) in paragraph at lines 37--40
+Overfull \hbox (50.86342pt too wide) in paragraph at lines 38--41
 \EU1/TimesNewRoman(0)/m/n/12 pica. 14(1): 1-20. http://www.biotaneotropica.org.
 br/v14n1/en/abstract?inventory+bn00414012014 
  []
@@ -1562,26 +1562,18 @@ Unknown feature `protrusion=default' in font `Times New Roman'.
 Unknown feature `expansion=default' in font `Times New Roman'.
 Unknown feature `protrusion=default' in font `Times New Roman Bold'.
 Unknown feature `expansion=default' in font `Times New Roman Bold'.
-
-LaTeX Font Warning: Font shape `EU1/TimesNewRoman(0)/m/sc' undefined
-(Font)              using `EU1/TimesNewRoman(0)/m/n' instead on input line 67.
-
 [1
 
-] 
+] [2] [3] [4] 
 AED: lastpage setting LastPage
-[2] (./LIVRO.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
+[5] (./LIVRO.aux) ) 
 Here is how much of TeX's memory you used:
- 25133 strings out of 493727
- 462463 string characters out of 6147891
- 666120 words of memory out of 5000000
- 28036 multiletter control sequences out of 15000+600000
+ 25135 strings out of 493727
+ 462391 string characters out of 6147891
+ 667201 words of memory out of 5000000
+ 28038 multiletter control sequences out of 15000+600000
  11053 words of font info for 65 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
- 64i,13n,64p,10375b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,14n,64p,10375b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on LIVRO.pdf (2 pages).
+Output written on LIVRO.pdf (5 pages).
