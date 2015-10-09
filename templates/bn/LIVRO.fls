@@ -240,6 +240,8 @@ INPUT /home/hipatia/texmf/tex/versos.sty
 INPUT /home/hipatia/texmf/tex/versos.sty
 INPUT scielo.sty
 INPUT scielo.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
 INPUT LIVRO.aux
 INPUT LIVRO.aux
 OUTPUT LIVRO.aux
