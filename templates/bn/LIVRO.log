@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  9 OCT 2015 09:44
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  9 OCT 2015 09:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1291,8 +1291,8 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: xetex.def on input line 137.
 ))
-(/home/hipatia/texmf/tex/fichatecnica.sty) (./aparatos.sty
-(/home/hipatia/texmf/tex/listingx.sty)) (/home/hipatia/texmf/tex/tabelas.sty
+(./fichatecnica.sty) (./aparatos.sty (/home/hipatia/texmf/tex/listingx.sty))
+(/home/hipatia/texmf/tex/tabelas.sty
 (/usr/share/texlive/texmf-dist/tex/latex/xtab/xtab.sty
 Package: xtab 2011/07/31 v2.3f Extended supertabular package
 \c@tracingst=\count282
@@ -1523,12 +1523,39 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: xtab package is loaded.
 Package caption Info: End \AtBeginDocument code.
+File: logo1.jpg Graphic file (type QTm)
+ <use  "logo1.jpg" >
+Unknown feature `protrusion=default' in font `Times New Roman'.
+Unknown feature `expansion=default' in font `Times New Roman'.
+File: ccbynp.jpg Graphic file (type QTm)
+
+<use  "ccbynp.jpg" >
+Unknown feature `protrusion=default' in font `Times New Roman'.
+Unknown feature `expansion=default' in font `Times New Roman'.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 17.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+File: logo2.jpg Graphic file (type QTm)
+
+<use  "logo2.jpg" >
+Overfull \hbox (15.01926pt too wide) in paragraph at lines 11--21
+[] [] $[][][]$  []
+ []
+
 Unknown feature `protrusion=default' in font `Times New Roman Bold'.
 Unknown feature `expansion=default' in font `Times New Roman Bold'.
 
-Overfull \hbox (126.84584pt too wide) in paragraph at lines 39--45
+Overfull \hbox (126.84584pt too wide) in paragraph at lines 37--40
 \EU1/TimesNewRoman(0)/m/n/12 ota Neotropica. 14(1): 1-20. http://www.biotaneotr
-opica.org.br/v14n1/en/abstract?inventory+bn00414012014
+opica.org.br/v14n1/en/abstract?inventory+bn00414012014 
  []
 
 Unknown feature `protrusion=default' in font `Times New Roman'.
@@ -1537,7 +1564,7 @@ Unknown feature `protrusion=default' in font `Times New Roman Bold'.
 Unknown feature `expansion=default' in font `Times New Roman Bold'.
 
 LaTeX Font Warning: Font shape `EU1/TimesNewRoman(0)/m/sc' undefined
-(Font)              using `EU1/TimesNewRoman(0)/m/n' instead on input line 72.
+(Font)              using `EU1/TimesNewRoman(0)/m/n' instead on input line 67.
 
 [1
 
@@ -1549,11 +1576,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 24976 strings out of 493727
- 459525 string characters out of 6147891
- 664382 words of memory out of 5000000
- 27909 multiletter control sequences out of 15000+600000
- 5830 words of font info for 46 fonts, out of 8000000 for 9000
+ 25133 strings out of 493727
+ 462463 string characters out of 6147891
+ 666130 words of memory out of 5000000
+ 28036 multiletter control sequences out of 15000+600000
+ 11053 words of font info for 65 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  64i,13n,64p,10375b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
 
