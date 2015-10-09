@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  9 OCT 2015 09:58
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  9 OCT 2015 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -342,20 +342,20 @@ Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
 )) (./hedra.sty)
 (./hedraoptions.sty
 
-Class memoir Warning: \marginparsep is zero or negative on input line 166.
+Class memoir Warning: \marginparsep is zero or negative on input line 167.
 
 
 ******************************************************
 Stock height and width: 1195.01575pt by 845.04684pt
-Top and edge trims: 56.9055pt and 115.37592pt
-Page height and width: 794.96999pt by 614.295pt
-Text height and width: 534pt by 400pt
-Spine and edge margins: 76.7908pt and 136.50998pt
-Upper and lower margins: 88.32999pt and 172.64pt
+Top and edge trims: 56.9055pt and 123.76949pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 766pt by 426pt
+Spine and edge margins: 79.6677pt and 91.04884pt
+Upper and lower margins: 29.54102pt and 49.50583pt
 Headheight and headsep: 14.5pt and 14.22636pt
 Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
-Marginparsep and marginparwidth: 0pt and 100.24855pt
+Marginparsep and marginparwidth: 0pt and 106.69783pt
 Sidecapsep and sidecapwidth: 7pt and 102pt
 Sidebarhsep and sidebarwidth: 7pt and 102pt
 Sidebarvsep and sidebartopsep: 14.5pt and 0pt
@@ -1223,7 +1223,7 @@ Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
 \TPVertModule=\dimen279
 \TP@margin=\dimen280
 \TP@absmargin=\dimen281
-Grid set 16 x 16 = 38.39343pt x 49.68562pt
+Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TPboxrulesize=\dimen282
 \TP@tbargs=\toks29
 \TP@prevdepth=\dimen283
@@ -1546,16 +1546,16 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 File: logo2.jpg Graphic file (type QTm)
 
 <use  "logo2.jpg" >
-Overfull \hbox (15.01926pt too wide) in paragraph at lines 11--21
+Overfull \hbox (0.71918pt too wide) in paragraph at lines 11--21
 [] [] $[][][]$  []
  []
 
 Unknown feature `protrusion=default' in font `Times New Roman Bold'.
 Unknown feature `expansion=default' in font `Times New Roman Bold'.
 
-Overfull \hbox (126.84584pt too wide) in paragraph at lines 37--40
-\EU1/TimesNewRoman(0)/m/n/12 ota Neotropica. 14(1): 1-20. http://www.biotaneotr
-opica.org.br/v14n1/en/abstract?inventory+bn00414012014 
+Overfull \hbox (50.86342pt too wide) in paragraph at lines 37--40
+\EU1/TimesNewRoman(0)/m/n/12 pica. 14(1): 1-20. http://www.biotaneotropica.org.
+br/v14n1/en/abstract?inventory+bn00414012014 
  []
 
 Unknown feature `protrusion=default' in font `Times New Roman'.
@@ -1568,9 +1568,9 @@ LaTeX Font Warning: Font shape `EU1/TimesNewRoman(0)/m/sc' undefined
 
 [1
 
-] [2] 
+] 
 AED: lastpage setting LastPage
-[3] (./LIVRO.aux)
+[2] (./LIVRO.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1578,10 +1578,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  25133 strings out of 493727
  462463 string characters out of 6147891
- 666130 words of memory out of 5000000
+ 666120 words of memory out of 5000000
  28036 multiletter control sequences out of 15000+600000
  11053 words of font info for 65 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  64i,13n,64p,10375b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on LIVRO.pdf (3 pages).
+Output written on LIVRO.pdf (2 pages).
