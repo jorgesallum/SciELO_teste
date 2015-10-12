@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  12 OCT 2015 06:55
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  12 OCT 2015 08:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -339,41 +339,7 @@ Package verse [2008/07/23] emulated by memoir.
 
 (/usr/share/texlive/texmf-dist/tex/latex/memoir/mempatch.sty
 Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
-)) (./hedra.sty)
-(./hedraoptions.sty
-
-Class memoir Warning: \marginparsep is zero or negative on input line 167.
-
-
-******************************************************
-Stock height and width: 1195.01575pt by 845.04684pt
-Top and edge trims: 56.9055pt and 123.76949pt
-Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 693.5pt by 426pt
-Spine and edge margins: 79.6677pt and 91.04884pt
-Upper and lower margins: 62.36267pt and 89.18417pt
-Headheight and headsep: 14.5pt and 42.67912pt
-Footskip: 30pt
-Columnsep and columnseprule: 10pt and 0pt
-Marginparsep and marginparwidth: 0pt and 106.69783pt
-Sidecapsep and sidecapwidth: 7pt and 102pt
-Sidebarhsep and sidebarwidth: 7pt and 102pt
-Sidebarvsep and sidebartopsep: 14.5pt and 0pt
-Sidebarheight: 546.64995pt
-Sidefoothsep and sidefootwidth: 7pt and 102pt
-Sidefootvsep and sidefootheight: 14.5pt and 546.64995pt
-******************************************************
-
-) (./hedrastyles.sty
-(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-LaTeX Info: Redefining \MakeTextUppercase on input line 47.
-LaTeX Info: Redefining \MakeTextLowercase on input line 50.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-\etb@tempcnta=\count139
-))
+)) (./scielo.sty
 (/home/hipatia/texmf/tex/tipografia.sty
 (/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2014/09/16 v1.70 (Daniel Flipo)
@@ -382,15 +348,15 @@ File: lettrine.sty 2014/09/16 v1.70 (Daniel Flipo)
 Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
 )
-\c@DefaultLines=\count140
-\c@DefaultDepth=\count141
+\c@DefaultLines=\count139
+\c@DefaultDepth=\count140
 \DefaultFindent=\dimen147
 \DefaultNindent=\dimen148
 \DefaultSlope=\dimen149
 \L@lbox=\box29
 \L@tbox=\box30
-\c@L@lines=\count142
-\c@L@depth=\count143
+\c@L@lines=\count141
+\c@L@depth=\count142
 \L@Pindent=\dimen150
 \L@Findent=\dimen151
 \L@Nindent=\dimen152
@@ -411,7 +377,7 @@ Loading lettrine.cfg
 \UL@skip=\skip185
 \UL@hook=\toks23
 \UL@height=\dimen161
-\UL@pe=\count144
+\UL@pe=\count143
 \UL@pixel=\dimen162
 \ULC@box=\box33
 Package: ulem 2012/05/18
@@ -423,7 +389,7 @@ Package: ulem 2012/05/18
 Excluding comment 'comment')
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count145
+\c@lips@count=\count144
 )
 (/usr/share/texlive/texmf-dist/tex/latex/adforn/adforn.sty
 Package: adforn 2010/07/25 v1.0 adforn CFR
@@ -463,7 +429,7 @@ Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 LaTeX Warning: Command \@makecol  has changed.
                Check if current package is valid.
 
-\c@pp@next@reset=\count146
+\c@pp@next@reset=\count145
 
 LaTeX Warning: Command \@footnotemark  has changed.
                Check if current package is valid.
@@ -476,7 +442,16 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
 Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
-) (/usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+LaTeX Info: Redefining \MakeTextUppercase on input line 47.
+LaTeX Info: Redefining \MakeTextLowercase on input line 50.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+\etb@tempcnta=\count146
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2009/04/17 v1.3 Extended ifthen features
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
@@ -1075,7 +1050,7 @@ Package: titletoc 2011/12/15 v1.6 TOC entries
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 ))
-(/home/hipatia/texmf/tex/hedraextra.sty
+(./hedrastyles.sty) (/home/hipatia/texmf/tex/hedraextra.sty
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
@@ -1223,7 +1198,7 @@ Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
 \TPVertModule=\dimen279
 \TP@margin=\dimen280
 \TP@absmargin=\dimen281
-Grid set 16 x 16 = 37.34424pt x 52.81541pt
+Grid set 16 x 16 = 38.39343pt x 49.68562pt
 \TPboxrulesize=\dimen282
 \TP@tbargs=\toks29
 \TP@prevdepth=\dimen283
@@ -1395,7 +1370,7 @@ e .
 \@ctbloldrule=\dimen317
 \ctbl@t=\box55
 \@ctblcurftwidth=\dimen318
-)) (/home/hipatia/texmf/tex/versos.sty) (./scielo.sty
+)) (/home/hipatia/texmf/tex/versos.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip270
@@ -1518,8 +1493,31 @@ Package: fix-cm 2014/09/29 v1.1s fixes to LaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 42.
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
+))
+
+Class memoir Warning: \marginparsep is zero or negative on input line 55.
+
+
+******************************************************
+Stock height and width: 1195.01575pt by 845.04684pt
+Top and edge trims: 56.9055pt and 123.76949pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 693.5pt by 426pt
+Spine and edge margins: 79.6677pt and 91.04884pt
+Upper and lower margins: 62.36267pt and 89.18417pt
+Headheight and headsep: 14.5pt and 42.67912pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 0pt and 106.69783pt
+Sidecapsep and sidecapwidth: 7pt and 102pt
+Sidebarhsep and sidebarwidth: 7pt and 102pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 546.64995pt
+Sidefoothsep and sidefootwidth: 7pt and 102pt
+Sidefootvsep and sidefootheight: 14.5pt and 546.64995pt
+******************************************************
+
+) (/usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
 Package: flushend 2014/04/24 v2.2 Balancing columns in twocolumn mode
 \flushend@@lastskip@a=\skip281
 \flushend@@lastskip@b=\skip282
@@ -1674,7 +1672,7 @@ Unknown feature `expansion=default' in font `Times New Roman'.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1682,7 +1680,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1693,14 +1691,14 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: logo2.jpg Graphic file (type QTm)
 
 <use  "logo2.jpg" >
-Overfull \hbox (0.71918pt too wide) in paragraph at lines 19--29
+Overfull \hbox (0.71918pt too wide) in paragraph at lines 16--16
 [] [] $[][][]$  []
  []
 
 Unknown feature `protrusion=default' in font `Times New Roman Bold'.
 Unknown feature `expansion=default' in font `Times New Roman Bold'.
 
-Overfull \hbox (50.86342pt too wide) in paragraph at lines 45--48
+Overfull \hbox (50.86342pt too wide) in paragraph at lines 16--17
 \EU1/TimesNewRoman(0)/m/n/12 pica. 14(1): 1-20. http://www.biotaneotropica.org.
 br/v14n1/en/abstract?inventory+bn00414012014 
  []
@@ -1713,19 +1711,19 @@ Unknown feature `expansion=default' in font `Times New Roman'.
 Unknown feature `protrusion=default' in font `Times New Roman Italic'.
 Unknown feature `expansion=default' in font `Times New Roman Italic'.
 
-Underfull \hbox (badness 1430) in paragraph at lines 84--84
+Underfull \hbox (badness 1430) in paragraph at lines 43--43
 []\EU1/TimesNewRoman(0)/m/it/10.95 Subeção: Species list, Atlantic Forest,
  []
 
 [2
 
 ]
-Underfull \hbox (badness 3849) in paragraph at lines 88--88
+Underfull \hbox (badness 3849) in paragraph at lines 47--47
 []\EU1/TimesNewRoman(0)/m/n/12 Quisque ullamcorper placerat ipsum.
  []
 
 [3]
-Underfull \hbox (badness 1546) in paragraph at lines 88--88
+Underfull \hbox (badness 1546) in paragraph at lines 47--47
 \EU1/TimesNewRoman(0)/m/n/12 Vestibulum condimentum rutrum mauris.
  []
 
@@ -1890,61 +1888,126 @@ Underfull \hbox (badness 1314) in paragraph at lines 131--135
 \EU1/TimesNewRoman(0)/m/n/12 natoque penatibus et magnis dis parturi-
  []
 
-File: temp.png Graphic file (type QTm)
-<use  "temp.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 139--140
- [][] 
- []
 
-
-Underfull \hbox (badness 6542) in paragraph at lines 144--151
+Underfull \hbox (badness 6542) in paragraph at lines 136--143
 []\EU1/TimesNewRoman(0)/m/n/12 Lorem ipsum dolor sit amet, con-
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 144--151
+Underfull \hbox (badness 2245) in paragraph at lines 136--143
 \EU1/TimesNewRoman(0)/m/n/12 sectetuer adipiscing elit. Aenean com-
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 144--151
+Underfull \hbox (badness 1496) in paragraph at lines 136--143
 \EU1/TimesNewRoman(0)/m/n/12 dis parturient montes, nascetur ridiculus
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 144--151
+Underfull \hbox (badness 1077) in paragraph at lines 136--143
 \EU1/TimesNewRoman(0)/m/n/12 fringilla vel, aliquet nec, vulputate eget,
  []
 
-File: temp.png Graphic file (type QTm)
-<use  "temp.png" >
-Overfull \hbox (5.0pt too wide) in paragraph at lines 164--165
- [][] 
- []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-)
-Underfull \hbox (badness 2376) in paragraph at lines 169--92
+Underfull \hbox (badness 2376) in paragraph at lines 153--158
 \EU1/TimesNewRoman(0)/m/n/12 nean leo ligula, porttitor eu, consequat
  []
 
+[8]
+Underfull \hbox (badness 6542) in paragraph at lines 159--159
+[]\EU1/TimesNewRoman(0)/m/n/12 Lorem ipsum dolor sit amet, con-
+ []
 
+
+Underfull \hbox (badness 1552) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 sectetuer adipiscing elit. Ut purus elit,
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 vehicula augue eu neque. Pellentesque
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 ante. Phasellus adipiscing semper elit.
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 159--159
+[]\EU1/TimesNewRoman(0)/m/n/12 Quisque ullamcorper placerat ipsum.
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 Cras nibh. Morbi vel justo vitae lacus
+ []
+
+[9]
+Underfull \hbox (badness 3058) in paragraph at lines 159--159
+[]\EU1/TimesNewRoman(0)/m/n/12 Pellentesque habitant morbi tristique
+ []
+
+
+Underfull \hbox (badness 4144) in paragraph at lines 159--159
+[]\EU1/TimesNewRoman(0)/m/n/12 Morbi luctus, wisi viverra faucibus
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 Aliquam auctor, pede consequat laoreet
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 Morbi ultrices rutrum lorem. Nam ele-
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 Aliquam non quam. Aliquam porttitor
+ []
+
+[10]
+Underfull \hbox (badness 1348) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 lum rhoncus molestie odio. Sed lobor-
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 dictumst. Etiam condimentum facilisis
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 Vestibulum condimentum rutrum mauris.
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 159--159
+[]\EU1/TimesNewRoman(0)/m/n/12 Nulla non mauris vitae wisi posuere
+ []
+
+[11]
+Underfull \hbox (badness 1472) in paragraph at lines 159--159
+\EU1/TimesNewRoman(0)/m/n/12 lus eu quam vitae turpis viverra pellen-
+ []
+
+) 
 AED: lastpage setting LastPage
 - LAST -
-Extra skip:76.46284pt
-Left:712.45456pt/2.58983pt
-Right:635.99171pt/2.56639pt
-Output:712.45456pt
-[8] [9] (./LIVRO.aux) ) 
+Extra skip:0.0pt
+Left:113.5pt/2.58983pt
+Right:113.5pt/2.56639pt
+Output:113.5pt
+[12] (./LIVRO.aux) ) 
 Here is how much of TeX's memory you used:
- 26462 strings out of 493727
- 484295 string characters out of 6147891
- 705673 words of memory out of 5000000
- 29280 multiletter control sequences out of 15000+600000
+ 26429 strings out of 493727
+ 483876 string characters out of 6147891
+ 692265 words of memory out of 5000000
+ 29252 multiletter control sequences out of 15000+600000
  17469 words of font info for 98 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
- 64i,15n,79p,10375b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,15n,79p,10421b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on LIVRO.pdf (9 pages).
+Output written on LIVRO.pdf (12 pages).

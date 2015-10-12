@@ -31,16 +31,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/mempatch.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/mempatch.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/mempatch.sty
-INPUT hedra.sty
-INPUT hedra.sty
-INPUT hedraoptions.sty
-INPUT hedraoptions.sty
-INPUT hedrastyles.sty
-INPUT hedrastyles.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT scielo.sty
+INPUT scielo.sty
 INPUT /home/hipatia/texmf/tex/tipografia.sty
 INPUT /home/hipatia/texmf/tex/tipografia.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.sty
@@ -78,6 +70,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/ncctools/nccfoots.sty
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/arkandis/adforn/OrnementsADF.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
@@ -164,6 +160,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+INPUT hedrastyles.sty
+INPUT hedrastyles.sty
 INPUT /home/hipatia/texmf/tex/hedraextra.sty
 INPUT /home/hipatia/texmf/tex/hedraextra.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
@@ -238,8 +236,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 INPUT /home/hipatia/texmf/tex/versos.sty
 INPUT /home/hipatia/texmf/tex/versos.sty
-INPUT scielo.sty
-INPUT scielo.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -337,8 +333,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT temp.png
-INPUT temp.png
 INPUT temp.png
 INPUT temp.png
 INPUT LIVRO.aux
