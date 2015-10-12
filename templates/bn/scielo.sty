@@ -30,9 +30,11 @@
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \let\l@subsection\l@section
 \let\l@section\l@chapter}
-\ProcessOptions
 %% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%BJ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareOption{bj}{%
 %%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \setbinding{3mm}
   \stockaiii 
@@ -45,12 +47,6 @@
 %  \setheaderspaces{*}{*}{0}
   \headsep=15mm
 \newcommand{\marcadecorte}{}
-\DeclareOption{trimframe}{\renewcommand{\marcadecorte}{\trimFrame}}
-\DeclareOption{sembinding}{\setbinding{0mm}}
-\DeclareOption{semcabeco}{
-      \setulmargins{*}{*}{1.9}
-      \headsep=0pt}
-\ProcessOptions
 \setlength{\trimtop}{20mm}
 \setlength{\trimedge}{\stockwidth} 
 \addtolength{\trimedge}{-\paperwidth}
@@ -119,6 +115,100 @@
 \noindent 
 \refbiblio
 \medskip}
+}
+%BN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%BN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareOption{bn}{%
+%%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \setbinding{3mm}
+  \stockaiii 
+  \settrimmedsize{297mm}{210mm}{*}
+%  \settrimmedsize{191mm}{127mm}{*}
+  \settypeblocksize{240mm}{150mm}{*}
+  \setlrmargins{25mm}{*}{*}
+  \setulmargins{*}{*}{1.6}
+%  \setheadfoot{5mm}{10mm}
+%  \setheaderspaces{*}{*}{0}
+  \headsep=15mm
+\newcommand{\marcadecorte}{}
+\setlength{\trimtop}{20mm}
+\setlength{\trimedge}{\stockwidth} 
+\addtolength{\trimedge}{-\paperwidth}
+\setlength{\trimedge}{0.5\trimedge}
+\quarkmarks
+\marcadecorte
+\setmarginnotes{0pt}{.25\textwidth}{-3cm}
+\checkandfixthelayout
+%%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Estilo de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makepagestyle{estilo}
+\makeevenfoot{plain}{}{\footnotesize\thepage}{}{}
+\makeoddfoot{plain}{}{\footnotesize\thepage}{}{}
+\renewcommand{\thefigure}{\arabic{figure}}
+\epigraphtextposition{flushleft}
+\epigraphsourceposition{flushright}
+\epigraphfontsize{\footnotesize}
+\setlength{\epigraphrule}{0pt}
+\setlength{\epigraphwidth}{.7\textwidth}
+% cabeços e rodapé
+  \pagestyle{estilo}
+  \makeevenhead{estilo}{\tiny\thepage}{\vspace{-5mm}\tiny\autorabrev}{\tiny\revista}
+  \makeevenfoot{estilo}{\tiny\textcolor{blue}{\site}}{}{\tiny\textcolor{blue}{\urlartigo}}
+  \makeoddhead{estilo}{\tiny\revista}{\vspace{-5mm}\tiny\titulo}{\tiny\thepage}
+  \makeoddfoot{estilo}{\tiny\textcolor{blue}{\urlartigo}}{}{\tiny\textcolor{blue}{\site}}
+%seção
+  \setbeforesecskip{1\onelineskip}%
+  \setaftersecskip{\onelineskip}%
+  \setsecheadstyle{\bfseries\flushleft}%
+  \setsubsecheadstyle{\small\itshape\flushleft}%
+  \setsubsubsecheadstyle{\small\centering\itshape}%
+% abstract
+  \renewenvironment{abstract}{\noindent\textbf{\abstractname}:\quad}{}
+%%% Estilos de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Abertura %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AtBeginDocument{%
+\thispagestyle{plain}
+\hspace{-25mm}\noindent\includegraphics[width=.25\textwidth]{logo1.jpg}
+\begin{minipage}{4cm}
+\vspace{-1cm}
+\tiny\revista\par\site\par
+\vspace{-1ex}\rule{4cm}{1pt}
+\includegraphics[width=15mm]{ccbynp.jpg}
+\end{minipage}
+\hspace{60mm}\includegraphics[width=.2\textwidth]{logo2.jpg}
+\vspace{2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\titulo
+
+\medskip
+
+\begin{bfseries}
+\subtit
+\end{bfseries}
+
+\medskip
+
+\autor
+\end{center}
+\medskip
+
+\noindent 
+\refbiblio
+\medskip}
+}
+%BN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareOption{trimframe}{\renewcommand{\marcadecorte}{\trimFrame}}
+\DeclareOption{sembinding}{\setbinding{0mm}}
+\DeclareOption{semcabeco}{
+      \setulmargins{*}{*}{1.9}
+      \headsep=0pt}
+\ProcessOptions
 
 %%% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand*{\@fnsymbol}[1]{%
