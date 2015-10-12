@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  12 OCT 2015 18:19
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  12 OCT 2015 18:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1861,6 +1861,8 @@ Unknown feature `protrusion=default' in font `Arial Bold'.
 Unknown feature `expansion=default' in font `Arial Bold'.
 Unknown feature `protrusion=default' in font `Arial Bold'.
 Unknown feature `expansion=default' in font `Arial Bold'.
+Unknown feature `protrusion=default' in font `Arial Italic'.
+Unknown feature `expansion=default' in font `Arial Italic'.
 Unknown feature `protrusion=default' in font `Arial'.
 Unknown feature `expansion=default' in font `Arial'.
 
@@ -1885,10 +1887,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
  [1
 
-]
-Unknown feature `protrusion=default' in font `Arial Italic'.
-Unknown feature `expansion=default' in font `Arial Italic'.
- [2] [3] [4]
+] [2] [3] [4]
 (./ORIGINAL.tex
 Unknown feature `protrusion=default' in font `WenQuanYi Micro Hei'.
 Unknown feature `expansion=default' in font `WenQuanYi Micro Hei'.
@@ -1976,6 +1975,6 @@ Here is how much of TeX's memory you used:
  30185 multiletter control sequences out of 15000+600000
  17121 words of font info for 98 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
- 66i,15n,79p,10400b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,15n,79p,10400b,776s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on LIVRO.pdf (9 pages).
