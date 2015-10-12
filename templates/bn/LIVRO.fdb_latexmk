@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1444686875 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1444686877
+["pdflatex"] 1444691201 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1444691201
   "/etc/texmf/web2c/texmf.cnf" 1430923412 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/hipatia/texmf/tex/aparatos.sty" 1440093267 23579 937b555443871f6a05a2e6a886db39d4 ""
   "/home/hipatia/texmf/tex/graficos.sty" 1436211615 4791 e1e32ad9d1214c208964aaf5cd0d306f ""
@@ -190,18 +190,18 @@
   "/usr/share/texmf/tex/latex/tipa/t3enc.def" 1414244106 26483 c461a68c34040cb0d96c43e86c012a6d ""
   "/usr/share/texmf/web2c/texmf.cnf" 1424169028 31088 8e088e958dd0258cc5414842768a3a00 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1430923819 3443264 3ddffc3ace6908757499220f375f22af ""
-  "LIVRO.aux" 1444686876 1915 1cb39d73f03cca4593ef8e04c068fad0 ""
-  "LIVRO.out" 1444686876 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "LIVRO.tex" 1444686874 2111 bf48f97d97ec7d224aa7a174339e2c06 ""
+  "LIVRO.aux" 1444687741 1213 976356bfc0fe0587cab82257e5c05b4e ""
+  "LIVRO.out" 0 -1 0 ""
+  "LIVRO.tex" 1444691199 2131 d0a3e9a3be817c3ab8c8e231e8c7b48f ""
   "ORIGINAL.tex" 1444647588 7574 15b2486911a5267eb28275ddad39efb1 ""
   "ccbynp.jpg" 1444647588 8739 6d25af6e36438e953d579a57529f2961 ""
   "logo1.jpg" 1444647588 2369 2cff5428cc9c81c19f27951188668613 ""
   "logo2.jpg" 1444647588 42212 f0300483553572eee7a968438d9f14bc ""
-  "metadados.sty" 1444685449 3114 e6a84e0fd5032ed112a03b565937fe43 ""
+  "metadados.sty" 1444687715 3125 fce2bac71d99dcec2990b8a10ba9655e ""
   "scielo.sty" 1444686187 8126 a6dacc42f45017ee63191a9bfdfe5f74 ""
   "temp.png" 1444649841 33011 1dfcdbc9f562518aa0a25bf896ba56da ""
   (generated)
-  "LIVRO.log"
-  "LIVRO.aux"
   "LIVRO.out"
+  "LIVRO.aux"
+  "LIVRO.log"
   "LIVRO.pdf"
