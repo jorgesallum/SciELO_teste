@@ -1,6 +1,6 @@
 \documentclass[numberinsection,showtrims,times,12pt,trimframe,spreadimages]{memoir}
 \usepackage[bn]{scielo}
-
+\usepackage[hyphens]{url}
 
 \begin{document}
 

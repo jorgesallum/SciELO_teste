@@ -23,7 +23,6 @@
 \RequirePackage{flushend}
 \RequirePackage{mdframed}
 \RequirePackage{multicol}
-\RequirePackage[hyphens]{url}
 
 %% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \DeclareOption{numberinsection}{%
