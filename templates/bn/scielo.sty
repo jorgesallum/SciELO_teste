@@ -1,4 +1,3 @@
-%\RequirePackage{hedraoptions} %% << %%%%%%%%%%%%%%%%
 \RequirePackage[xetex,chicagofootnotes]{tipografia}
 \RequirePackage[standart,sempontinhos]{toc}
 \RequirePackage{hedraextra}
@@ -22,6 +21,8 @@
 \RequirePackage{textcase}
 \RequirePackage{etoolbox}
 \RequirePackage{flushend}
+\RequirePackage{mdframed}
+\RequirePackage{multicol}
 
 %% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \DeclareOption{numberinsection}{%
@@ -35,7 +36,7 @@
 
 %BJ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \DeclareOption{bj}{%
-%%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \setbinding{3mm}
   \stockaiii 
   \settrimmedsize{297mm}{210mm}{*}
@@ -55,9 +56,9 @@
 \marcadecorte
 \setmarginnotes{0pt}{.25\textwidth}{-3cm}
 \checkandfixthelayout
-%%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%% Estilo de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Estilo de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makepagestyle{estilo}
 \makeevenfoot{plain}{}{\footnotesize\thepage}{}{}
 \makeoddfoot{plain}{}{\footnotesize\thepage}{}{}
@@ -69,54 +70,47 @@
 \setlength{\epigraphwidth}{.7\textwidth}
 % cabeços e rodapé
   \pagestyle{estilo}
-  \makeevenhead{estilo}{\tiny\thepage}{\vspace{-5mm}\tiny\autorabrev}{\tiny\revista}
-  \makeevenfoot{estilo}{\tiny\textcolor{blue}{\site}}{}{\tiny\textcolor{blue}{\urlartigo}}
-  \makeoddhead{estilo}{\tiny\revista}{\vspace{-5mm}\tiny\titulo}{\tiny\thepage}
-  \makeoddfoot{estilo}{\tiny\textcolor{blue}{\urlartigo}}{}{\tiny\textcolor{blue}{\site}}
+  \makeoddhead{estilo}{\tiny\thepage}{}{\tiny\autorabrev}
+  \makeoddfoot{estilo}{\tiny\revista}{}{\tiny\site}
+  \makeevenhead{estilo}{\tiny\titabrev}{}{\tiny\thepage}
+  \makeevenfoot{estilo}{\tiny\site}{}{\tiny\revista}
 %seção
   \setbeforesecskip{1\onelineskip}%
   \setaftersecskip{\onelineskip}%
+  \setbeforesubsecskip{1\onelineskip}%
+  \setaftersubsecskip{\onelineskip}%
+  \setbeforesubsubsecskip{1\onelineskip}%
+  \setaftersubsubsecskip{\onelineskip}%
   \setsecheadstyle{\bfseries\flushleft}%
   \setsubsecheadstyle{\small\itshape\flushleft}%
   \setsubsubsecheadstyle{\small\centering\itshape}%
+\makepagestyle{abertura}
+\makeoddhead{abertura}{\tiny\revista\par\vspace{-3pt} \issn}{}{}
+\makeoddfoot{abertura}{\tiny\revista}{}{\tiny\site}
+%fita cinza
+\renewcommand{\makeheadrule}[3]{%
+  \mem@ps@safe@change{#1}%
+  \@namedef{#1headrule}{%
+\@nameuse{#1headruleprefix}\color{gray!40}\hrule\@width #2\@height #3 \vskip-#3}}
+\makeheadrule{abertura}{\textwidth}{4pt}{}%
+\makeheadrule{estilo}{\textwidth}{4pt}{}%
 % abstract
-  \renewenvironment{abstract}{\noindent\textbf{\abstractname}:\quad}{}
+\absleftindent=0pt 
+\absrightindent=0pt
+\renewcommand{\absnamepos}{flushleft}
 %%% Estilos de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% Abertura %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\AtBeginDocument{%
-\thispagestyle{plain}
-\hspace{-25mm}\noindent\includegraphics[width=.25\textwidth]{logo1.jpg}
-\begin{minipage}{4cm}
-\vspace{-1cm}
-\tiny\revista\par\site\par
-\vspace{-1ex}\rule{4cm}{1pt}
-\includegraphics[width=15mm]{ccbynp.jpg}
-\end{minipage}
-\hspace{60mm}\includegraphics[width=.2\textwidth]{logo2.jpg}
-\vspace{2cm}
+\AtBeginDocument{%  
+  \thispagestyle{abertura}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\hfill\begin{minipage}{.8\textwidth}\begin{flushright}\Huge\titulo\end{flushright}\end{minipage}}
 
-\begin{center}
-\titulo
+\begin{mdframed}[backgroundcolor=gray!40,roundcorner=0pt,linecolor=gray!40]
+    \begin{flushright}\large\autor\end{flushright}
+\end{mdframed}}
+} %BN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\medskip
-
-\begin{bfseries}
-\subtit
-\end{bfseries}
-
-\medskip
-
-\autor
-\end{center}
-\medskip
-
-\noindent 
-\refbiblio
-\medskip}
-}
-%BN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %BN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \DeclareOption{bn}{%
@@ -161,6 +155,10 @@
 %seção
   \setbeforesecskip{1\onelineskip}%
   \setaftersecskip{\onelineskip}%
+  \setbeforesubsecskip{1\onelineskip}%
+  \setaftersubsecskip{\onelineskip}%
+  \setbeforesubsubsecskip{1\onelineskip}%
+  \setaftersubsubsecskip{\onelineskip}%
   \setsecheadstyle{\bfseries\flushleft}%
   \setsubsecheadstyle{\small\itshape\flushleft}%
   \setsubsubsecheadstyle{\small\centering\itshape}%
