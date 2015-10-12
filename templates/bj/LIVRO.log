@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  12 OCT 2015 09:02
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  12 OCT 2015 09:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1514,7 +1514,7 @@ Package: flushend 2014/04/24 v2.2 Balancing columns in twocolumn mode
 \atColsEnd=\toks46
 )
 
-Class memoir Warning: \marginparsep is zero or negative on input line 213.
+Class memoir Warning: \marginparsep is zero or negative on input line 215.
 
 
 ******************************************************
@@ -1703,6 +1703,10 @@ Overfull \hbox (50.86342pt too wide) in paragraph at lines 5--6
 br/v14n1/en/abstract?inventory+bn00414012014 
  []
 
+Unknown feature `protrusion=default' in font `Times New Roman'.
+Unknown feature `expansion=default' in font `Times New Roman'.
+Unknown feature `protrusion=default' in font `Times New Roman Bold'.
+Unknown feature `expansion=default' in font `Times New Roman Bold'.
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
@@ -1715,8 +1719,6 @@ Package microtype Info: Loading generic settings for font family
  [1
 
 ]
-Unknown feature `protrusion=default' in font `Times New Roman'.
-Unknown feature `expansion=default' in font `Times New Roman'.
 Unknown feature `protrusion=default' in font `Times New Roman Italic'.
 Unknown feature `expansion=default' in font `Times New Roman Italic'.
  [2
@@ -1739,19 +1741,19 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 2662) in paragraph at lines 3--7
-\EU1/TimesNewRoman(0)/m/n/12 וְהָיוּ הַדְּבָרִים הָאֵלֶּה, אֲשֶׁר Cirero dixit 
-Мы
+Underfull \hbox (badness 4899) in paragraph at lines 4--7
+\EU1/TimesNewRoman(0)/m/n/10.95 отрасли, где зависимость от импортных
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-\EU1/TimesNewRoman(0)/m/n/12 от импортных комплектующих уже
+Overfull \hbox (12.03014pt too wide) in paragraph at lines 4--7
+\EU1/TimesNewRoman(0)/m/n/10.95 комплектующих уже почти как два десятилетия
  []
 
 
-Overfull \hbox (1.9043pt too wide) in paragraph at lines 3--7
-\EU1/TimesNewRoman(0)/m/n/12 почти как два десятилетия назад достигла
+Overfull \hbox (33.45593pt too wide) in paragraph at lines 4--7
+\EU1/TimesNewRoman(0)/m/n/10.95 назад достигла своего предельного значения.[]Lo
+rem
  []
 
 Unknown feature `protrusion=default' in font `Times New Roman'.
@@ -1791,6 +1793,10 @@ Underfull \hbox (badness 1077) in paragraph at lines 25--32
 \EU1/TimesNewRoman(0)/m/n/12 fringilla vel, aliquet nec, vulputate eget,
  []
 
+
+Overfull \vbox (4.94481pt too high) has occurred while \output is active []
+
+
 [6]
 File: temp.png Graphic file (type QTm)
  <use  "temp.png" >
@@ -1808,9 +1814,6 @@ File: temp.png Graphic file (type QTm)
 Overfull \hbox (5.0pt too wide) in paragraph at lines 49--50
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 6542) in paragraph at lines 62--73
@@ -1852,7 +1855,7 @@ Underfull \hbox (badness 1496) in paragraph at lines 87--91
 \EU1/TimesNewRoman(0)/m/n/12 dis parturient montes, nascetur ridiculus
  []
 
-[7]
+
 Underfull \hbox (badness 1077) in paragraph at lines 92--100
 \EU1/TimesNewRoman(0)/m/n/12 rhoncus ut, imperdiet a, venenatis vitae,
  []
@@ -1867,7 +1870,7 @@ Underfull \hbox (badness 2158) in paragraph at lines 92--100
 \EU1/TimesNewRoman(0)/m/n/12 viverra quis, feugiat a, tellus. Phasel-
  []
 
-
+[7]
 Underfull \hbox (badness 6542) in paragraph at lines 103--114
 []\EU1/TimesNewRoman(0)/m/n/12 Lorem ipsum dolor sit amet, con-
  []
@@ -1917,7 +1920,7 @@ Underfull \hbox (badness 2376) in paragraph at lines 153--158
 \EU1/TimesNewRoman(0)/m/n/12 nean leo ligula, porttitor eu, consequat
  []
 
-[8]
+
 Underfull \hbox (badness 6542) in paragraph at lines 159--159
 []\EU1/TimesNewRoman(0)/m/n/12 Lorem ipsum dolor sit amet, con-
  []
@@ -1932,7 +1935,7 @@ Underfull \hbox (badness 1533) in paragraph at lines 159--159
 \EU1/TimesNewRoman(0)/m/n/12 vehicula augue eu neque. Pellentesque
  []
 
-
+[8]
 Underfull \hbox (badness 2538) in paragraph at lines 159--159
 \EU1/TimesNewRoman(0)/m/n/12 ante. Phasellus adipiscing semper elit.
  []
@@ -1972,7 +1975,7 @@ Underfull \hbox (badness 2050) in paragraph at lines 159--159
 \EU1/TimesNewRoman(0)/m/n/12 Aliquam non quam. Aliquam porttitor
  []
 
-[10]
+
 Underfull \hbox (badness 1348) in paragraph at lines 159--159
 \EU1/TimesNewRoman(0)/m/n/12 lum rhoncus molestie odio. Sed lobor-
  []
@@ -1982,7 +1985,7 @@ Underfull \hbox (badness 2418) in paragraph at lines 159--159
 \EU1/TimesNewRoman(0)/m/n/12 dictumst. Etiam condimentum facilisis
  []
 
-
+[10]
 Underfull \hbox (badness 1546) in paragraph at lines 159--159
 \EU1/TimesNewRoman(0)/m/n/12 Vestibulum condimentum rutrum mauris.
  []
@@ -1992,25 +1995,25 @@ Underfull \hbox (badness 1248) in paragraph at lines 159--159
 []\EU1/TimesNewRoman(0)/m/n/12 Nulla non mauris vitae wisi posuere
  []
 
-[11]
+
 Underfull \hbox (badness 1472) in paragraph at lines 159--159
 \EU1/TimesNewRoman(0)/m/n/12 lus eu quam vitae turpis viverra pellen-
  []
 
-) 
+[11]) 
 AED: lastpage setting LastPage
 - LAST -
-Extra skip:0.0pt
-Left:113.5pt/2.58983pt
-Right:113.5pt/2.56639pt
-Output:113.5pt
+Extra skip:14.5pt
+Left:70.0pt/2.56639pt
+Right:55.5pt/2.56639pt
+Output:70.0pt
 [12] (./LIVRO.aux) ) 
 Here is how much of TeX's memory you used:
- 26398 strings out of 493727
- 483869 string characters out of 6147891
- 692292 words of memory out of 5000000
- 29216 multiletter control sequences out of 15000+600000
- 17485 words of font info for 100 fonts, out of 8000000 for 9000
+ 26418 strings out of 493727
+ 484416 string characters out of 6147891
+ 693341 words of memory out of 5000000
+ 29235 multiletter control sequences out of 15000+600000
+ 19662 words of font info for 109 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
  66i,15n,79p,10400b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 

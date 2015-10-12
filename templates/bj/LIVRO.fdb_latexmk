@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1444651323 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1444651325
+["pdflatex"] 1444651503 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1444651504
   "/etc/texmf/web2c/texmf.cnf" 1430923412 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/hipatia/texmf/tex/aparatos.sty" 1440093267 23579 937b555443871f6a05a2e6a886db39d4 ""
   "/home/hipatia/texmf/tex/graficos.sty" 1436211615 4791 e1e32ad9d1214c208964aaf5cd0d306f ""
@@ -36,6 +36,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -170,16 +171,16 @@
   "/usr/share/texmf/tex/latex/tipa/t3enc.def" 1414244106 26483 c461a68c34040cb0d96c43e86c012a6d ""
   "/usr/share/texmf/web2c/texmf.cnf" 1424169028 31088 8e088e958dd0258cc5414842768a3a00 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1430923819 3443264 3ddffc3ace6908757499220f375f22af ""
-  "LIVRO.aux" 1444651325 1972 dc28a8b02a67c5eaaa86e257d986ccf5 ""
+  "LIVRO.aux" 1444651504 1972 3f1317bcb9dd92856a6950322949d5f9 ""
   "LIVRO.tex" 1444651206 2058 6b72e1010e8b952370b872fb0aadfdb9 ""
   "ORIGINAL.tex" 1444650863 7574 15b2486911a5267eb28275ddad39efb1 ""
   "ccbynp.jpg" 1444650863 8739 6d25af6e36438e953d579a57529f2961 ""
   "logo1.jpg" 1444650863 2369 2cff5428cc9c81c19f27951188668613 ""
   "logo2.jpg" 1444650863 42212 f0300483553572eee7a968438d9f14bc ""
   "metadados.sty" 1444650863 3114 e6a84e0fd5032ed112a03b565937fe43 ""
-  "scielo.sty" 1444651320 7708 8fb2b59bbc045c7951d8a937fbefa76f ""
+  "scielo.sty" 1444651501 7717 3bdb3b4dbec3086219e541e3da5c3db6 ""
   "temp.png" 1444650863 33011 1dfcdbc9f562518aa0a25bf896ba56da ""
   (generated)
-  "LIVRO.aux"
   "LIVRO.log"
   "LIVRO.pdf"
+  "LIVRO.aux"
