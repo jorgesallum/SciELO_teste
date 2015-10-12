@@ -81,7 +81,7 @@
   \setbeforesecskip{1\onelineskip}%
   \setaftersecskip{\onelineskip}%
   \setsecheadstyle{\bfseries\flushleft}%
-  \setsubsecheadstyle{\small\itshape\flushleft}%
+  \setsubsecheadstyle{\small\itshape}%
   \setsubsubsecheadstyle{\small\centering\itshape}%
 % abstract
   \renewenvironment{abstract}{\noindent\textbf{\abstractname}:\quad}{}

@@ -5,8 +5,8 @@ INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/xetex/xelatex.fmt
 INPUT LIVRO.tex
 OUTPUT LIVRO.log
-INPUT memoir.cls
-INPUT memoir.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
@@ -160,8 +160,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
-INPUT hedrastyles.sty
-INPUT hedrastyles.sty
 INPUT /home/hipatia/texmf/tex/hedraextra.sty
 INPUT /home/hipatia/texmf/tex/hedraextra.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
@@ -210,8 +208,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-INPUT fichatecnica.sty
-INPUT fichatecnica.sty
+INPUT metadados.sty
+INPUT metadados.sty
 INPUT aparatos.sty
 INPUT aparatos.sty
 INPUT /home/hipatia/texmf/tex/listingx.sty
