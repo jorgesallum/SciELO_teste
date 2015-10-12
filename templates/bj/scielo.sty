@@ -1,5 +1,5 @@
 \RequirePackage[xetex,chicagofootnotes]{tipografia}
-\RequirePackage[standart,sempontinhos]{toc}
+%\RequirePackage[standart,sempontinhos]{toc}
 \RequirePackage{hedraextra}
 \RequirePackage{penalidades}
 \RequirePackage{graficos}
@@ -23,6 +23,7 @@
 \RequirePackage{flushend}
 \RequirePackage{mdframed}
 \RequirePackage{multicol}
+\RequirePackage[hyphens]{url}
 
 %% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \DeclareOption{numberinsection}{%
@@ -155,6 +156,10 @@
 %seção
   \setbeforesecskip{1\onelineskip}%
   \setaftersecskip{\onelineskip}%
+  \setbeforesubsecskip{1\onelineskip}%
+  \setaftersubsecskip{\onelineskip}%
+  \setbeforesubsubsecskip{1\onelineskip}%
+  \setaftersubsubsecskip{\onelineskip}%
   \setsecheadstyle{\bfseries\flushleft}%
   \setsubsecheadstyle{\small\itshape\flushleft}%
   \setsubsubsecheadstyle{\small\centering\itshape}%
