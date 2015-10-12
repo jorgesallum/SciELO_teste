@@ -36,7 +36,7 @@
 
 %BJ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \DeclareOption{bj}{%
-%%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \setbinding{3mm}
   \stockaiii 
   \settrimmedsize{297mm}{210mm}{*}
@@ -56,9 +56,9 @@
 \marcadecorte
 \setmarginnotes{0pt}{.25\textwidth}{-3cm}
 \checkandfixthelayout
-%%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%% Estilo de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%% Estilo de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makepagestyle{estilo}
 \makeevenfoot{plain}{}{\footnotesize\thepage}{}{}
 \makeoddfoot{plain}{}{\footnotesize\thepage}{}{}
@@ -75,6 +75,10 @@
   \makeevenhead{estilo}{\tiny\titabrev}{}{\tiny\thepage}
   \makeevenfoot{estilo}{\tiny\site}{}{\tiny\revista}
 %seção
+  \setbeforesecskip{1\onelineskip}%
+  \setaftersecskip{\onelineskip}%
+  \setbeforesubsecskip{1\onelineskip}%
+  \setaftersubsecskip{\onelineskip}%
   \setbeforesecskip{1\onelineskip}%
   \setaftersecskip{\onelineskip}%
   \setsecheadstyle{\bfseries\flushleft}%

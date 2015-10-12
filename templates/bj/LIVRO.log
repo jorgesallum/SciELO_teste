@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  12 OCT 2015 11:27
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/dev/Debian) (preloaded format=xelatex 2015.5.6)  12 OCT 2015 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1683,7 +1683,7 @@ Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
 \mc@col@check@num=\count325
 )
 
-Class memoir Warning: \marginparsep is zero or negative on input line 202.
+Class memoir Warning: \marginparsep is zero or negative on input line 206.
 
 
 ******************************************************
@@ -1972,7 +1972,7 @@ AED: lastpage setting LastPage
 Here is how much of TeX's memory you used:
  27386 strings out of 493727
  501889 string characters out of 6147891
- 733595 words of memory out of 5000000
+ 732613 words of memory out of 5000000
  30185 multiletter control sequences out of 15000+600000
  17121 words of font info for 98 fonts, out of 8000000 for 9000
  1352 hyphenation exceptions out of 8191
