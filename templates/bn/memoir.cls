@@ -4808,13 +4808,16 @@
   \setup@bstract
   \if@bsrunin\else
     \ifnumber@bs \num@bs \else
-      \begin{\absnamepos}\abstractnamefont\abstractname\end\absnamepos%
-      \vspace{\abstitleskip}%
+      %\begin{\absnamepos}
+        \noindent\abstractnamefont\abstractname:\quad
+      %\end\absnamepos%
+      % \vspace{\abstitleskip}%
     \fi
   \fi
   \put@bsintoc%
   \begin{@bstr@ctlist}\if@bsrunin\@bsrunintitle\fi\abstracttextfont}%
-  {\par\end{@bstr@ctlist}}
+  {%\par
+    \end{@bstr@ctlist}}
 
 \newenvironment{onecolabstract}{%
   \begin{@twocolumnfalse}\begin{abstract}}{%

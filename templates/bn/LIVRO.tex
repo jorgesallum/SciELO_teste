@@ -1,13 +1,19 @@
-\documentclass[article,scielo,showtrims,times,12pt,trimframe,conselho,spreadimages]{memoir}
+\documentclass[scielo,showtrims,times,12pt,trimframe,conselho,spreadimages]{memoir}
 \usepackage[largepost]{hedra}
 \usepackage{scielo}
 \usepackage{flushend}
 
-%\newcommand{\revista}{a}
+\setcounter{secnumdepth}{4}
+
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\makeatletter
+\let\l@subsection\l@section
+\let\l@section\l@chapter
+\makeatother
 
 \begin{document}
-
-
 %AJUSTAR
 \thispagestyle{plain}
 \hspace{-25mm}\noindent\includegraphics[width=.25\textwidth]{logo1.jpg}
@@ -41,9 +47,14 @@
 \medskip
 
 
+
 %para mais mudanças ver página 70 do memman
 \absleftindent=0pt 
 \absrightindent=0pt
+
+\makeatletter
+\renewenvironment{abstract}{\noindent\textbf{\abstractname}:\quad}{}
+\makeatother
 
 \begin{abstract}
 A list of zooplankton species identified during ten years of studies in the lake system of

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1444433025 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1444433026
+["pdflatex"] 1444643733 "LIVRO.tex" "LIVRO.pdf" "LIVRO" 1444643734
   "/etc/texmf/web2c/texmf.cnf" 1430923412 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/hipatia/texmf/tex/graficos.sty" 1436211615 4791 e1e32ad9d1214c208964aaf5cd0d306f ""
   "/home/hipatia/texmf/tex/hedraextra.sty" 1423741480 6390 65a9b8588c7612c4e2512564697fa8c1 ""
@@ -35,7 +35,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -168,9 +167,9 @@
   "/usr/share/texmf/tex/latex/tipa/t3enc.def" 1414244106 26483 c461a68c34040cb0d96c43e86c012a6d ""
   "/usr/share/texmf/web2c/texmf.cnf" 1424169028 31088 8e088e958dd0258cc5414842768a3a00 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1430923819 3443264 3ddffc3ace6908757499220f375f22af ""
-  "LIVRO.aux" 1444433026 2125 fcdf1e06a5036314a04c30e64460b1db ""
-  "LIVRO.tex" 1444433021 2765 341c34466aa9322ae8e9e2dbd95310a1 ""
-  "ORIGINAL.tex" 1444432968 7847 b4fc4dfe73854792ab6033ce04c3ef17 ""
+  "LIVRO.aux" 1444643734 2286 61082fa94c46c29b21ae8d9da9635e47 ""
+  "LIVRO.tex" 1444643732 3045 3a23efa20b95bfb760046e124d04d12f ""
+  "ORIGINAL.tex" 1444433649 7846 07a852bf7e91546a88636486531007c9 ""
   "aparatos.sty" 1444395196 23707 f0c72a822666e5876e1b4b473d185710 ""
   "ccbynp.jpg" 1444391338 8739 6d25af6e36438e953d579a57529f2961 ""
   "fichatecnica.sty" 1444397686 3144 db1b3a7173b746f3dcd5e6c9277c293f ""
@@ -179,10 +178,10 @@
   "hedrastyles.sty" 1444430853 8418 c223eebfefbe243988fb014019b7aed2 ""
   "logo1.jpg" 1444390635 2369 2cff5428cc9c81c19f27951188668613 ""
   "logo2.jpg" 1444390695 42212 f0300483553572eee7a968438d9f14bc ""
-  "memoir.cls" 1444393042 400289 051856bb5caecda62f30f0538219cd0c ""
+  "memoir.cls" 1444643450 400330 e42510972920af1276f7a5aab5ed21e2 ""
   "scielo.sty" 1444432850 1000 a9ca6956c038dd651a6ecb5cb5366ecc ""
   "temp.png" 1444432989 33011 1dfcdbc9f562518aa0a25bf896ba56da ""
   (generated)
-  "LIVRO.aux"
-  "LIVRO.log"
   "LIVRO.pdf"
+  "LIVRO.log"
+  "LIVRO.aux"
