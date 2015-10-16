@@ -9,14 +9,14 @@
 \RequirePackage{aparatos}
 \RequirePackage{tabelas}
 \RequirePackage{versos}
-\RequirePackage{abstract}												% Package to create dummy text
-%\RequirePackage{biblio}
-\RequirePackage{amsmath,amsfonts,amsthm}					% Math packages
-%\RequirePackage[hang, small,labelfont=bf,up,textfont=it,up]{caption}	% Custom captions under/above floats
-\RequirePackage{epstopdf}												% Converts .eps to .pdf
-\RequirePackage{subfig}													% Subfigures
-\RequirePackage{booktabs}												% Nicer tables
-\RequirePackage{fix-cm}													% Custom fontsizes
+\RequirePackage{abstract}                       % Package to create dummy text
+\RequirePackage{biblio}
+\RequirePackage{amsmath,amsfonts,amsthm}          % Math packages
+%\RequirePackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats
+\RequirePackage{epstopdf}                       % Converts .eps to .pdf
+\RequirePackage{subfig}                         % Subfigures
+\RequirePackage{booktabs}                       % Nicer tables
+\RequirePackage{fix-cm}                         % Custom fontsizes
 \RequirePackage{ctable}
 \RequirePackage{textcase}
 \RequirePackage{etoolbox}
@@ -25,6 +25,26 @@
 \RequirePackage{multicol}
 \RequirePackage[hyphens]{url}
 
+\RequirePackage{xeCJK}
+\RequirePackage{caption}
+\RequirePackage{verse}
+\RequirePackage{seqsplit}
+\RequirePackage{pdflscape}
+\RequirePackage{amssymb}
+\RequirePackage{mathtools}
+\RequirePackage{enumitem}
+\RequirePackage{array}
+\RequirePackage{multirow}
+\RequirePackage{pbox}
+\RequirePackage{longtable}
+%\RequirePackage[pdfpagelabels,implicit=false,hidelinks]{hyperref} % configurar pagina inicial do pdf
+
+% mathml to tex
+\RequirePackage{bm} % bold
+\RequirePackage{pmml-new} % math template
+\RequirePackage{unicode-math}
+
+
 %% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \DeclareOption{numberinsection}{%
 \setcounter{secnumdepth}{4}
@@ -32,7 +52,71 @@
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \let\l@subsection\l@section
 \let\l@section\l@chapter}
+
+% fontes chinesas
+\setCJKmainfont{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{FangSong}
+
+% math
+\setmathfont{XITS Math}
+
+% remove label automatico das tabelas
+\captionsetup[table]{labelformat=empty}
+
+% remove padding entre colunas da tabela
+\setlength\tabcolsep{0.005\textwidth}
+
+% includegraphics maxwidth
+\def\maxwidth#1{\ifdim\Gin@nat@width>#1 #1\else\Gin@nat@width\fi}
+
+% table columns
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% attrib verse
+%\newcommand{\attrib}[1]{%
+%\nopagebreak{\raggedleft\footnotesize #1\par}}
+\renewcommand{\poemtitlefont}{\normalfont\large\itshape\centering}
+
 %% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%% ctable + longtable %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% http://tex.stackexchange.com/questions/88304/multipage-tables-with-ctable-package
+\newif\if@ctbl@long
+\define@key{ctbl}{long}[]{\@ctbl@longtrue}
+
+\long\def\foo#1\sbox#2!!{%
+\long\expandafter\def\csname\string\ctable\endcsname[##1]##2##3##4{%
+#1\if@ctbl@long\ctbl@long\fi\sbox#2}}
+
+\expandafter\expandafter\expandafter\foo
+\csname\string\ctable\endcsname[#1]{#2}{#3}{#4}!!
+
+\def\ctbl@long\fi\sbox#1#2#3\@ctblend{\fi
+\ctbl@@long#2%
+}
+
+\long\def\ctbl@@long#1#2#3#4#5#6{%
+\ctbl@@@long#6%
+}
+
+\def\ctbl@@@long#1\begin#2#3#4\end#5{%
+\def\@tempa{#5}%
+\def\@tempb{tabular}%
+\ifx\@tempa\@tempb\else\show\@tempa\ERROR\fi
+\begin{longtable}{#3}%
+%\caption{\@ctblcaption\ifx\@ctbllabel\empty\else\label{\@ctbllabel}\fi}%
+\caption{\@ctblcaption}
+\endfirsthead
+\caption*{\@ctblcaption\space(continued)}%
+\endhead
+#4\end{longtable}}
+%% ctable + longtable %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 %BJ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -164,7 +248,7 @@
   \setsubsecheadstyle{\small\itshape\flushleft}%
   \setsubsubsecheadstyle{\small\centering\itshape}%
 % abstract
-  \renewenvironment{abstract}{\noindent\textbf{\abstractname}:\quad}{}
+  \renewenvironment{abstract}{\noindent\textbf{\abstractname}:\quad}{\bigskip}
 %%% Estilos de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% Abertura %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -182,23 +266,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{center}
-\titulo
-
-\medskip
 
 \begin{bfseries}
-\subtit
+\tituloLatex
+
+\makeatletter
+\@ifundefined{tituloTraducoes}
+{}{
+    \medskip\tituloTraducoes
+}
+\makeatother
+
 \end{bfseries}
 
 \medskip
 
 \autor
+
+\makeatletter
+\@ifundefined{autorNotes}
+{}{
+    \medskip\textit{\autorNotes}
+}
+\makeatother
+
 \end{center}
 \medskip
-
-\noindent 
-\refbiblio
-\medskip}
+}
 }
 %BN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

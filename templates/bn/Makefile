@@ -1,9 +1,13 @@
 all:
-	latexmk -xelatex -interaction=nonstopmode LIVRO.tex
-	evince LIVRO.pdf
-erros:
-	-grep --color=auto "LaTeX Error" LIVRO.log
-	-grep --color=auto -A 3 "Undefined" LIVRO.log
+	-rm LIVRO.pdf
+	make clean
+	sh ~/templates/scielo/mathml/run mathml/
+	latexmk -xelatex LIVRO.tex
+scielo:
+	sh ~/templates/scielo/mathml/run mathml/
+	latexmk -quiet -interaction=nonstopmode -xelatex LIVRO.tex
+	-rm LIVRO.pdf
+	latexmk -quiet -interaction=nonstopmode -xelatex LIVRO.tex
 lua:
 	lualatex  LIVRO.tex
 	lualatex  LIVRO.tex
@@ -11,9 +15,6 @@ test:
 	xelatex LIVRO.tex
 	xelatex LIVRO.tex
 	evince LIVRO.pdf
-pdftex:
-	pdflatex --halt-on-error LIVRO.tex
-	pdflatex --halt-on-error LIVRO.tex
 mobi:	
 	tex4ebook -i -f mobi -c tex4ht EBOOK.tex 	
 epub3:
@@ -25,16 +26,8 @@ EBOOK-pdf:
 	pdflatex -halt-on-error EBOOK.tex
 EBOOK-check:
 	epubcheck EBOOK.epub
-rubber:
-	rubber --module xelatex LIVRO.tex
-rubber-test:
-	rubber --clean LIVRO.tex
-	rubber --module xelatex LIVRO.tex
-	rubber --clean LIVRO.tex
-rubber-clean:
-	rubber --clean LIVRO.tex
 clean:
-	-rm *aux *log *tui *toc *.4ct *.4tc *.html *.css *.dvi *.epub *.lg *.ncx *.xref *.tmp *.idv *.opf *.fls *_latexmk LIVRO.pdf
+	-rm *aux *log *tui *toc *.4ct *.4tc *.html *.css *.dvi *.epub *.lg *.ncx *.xref *.tmp *.idv *.opf  
 	-rm -rf EBOOK-epub
 	-rm -rf EBOOK-epub3
 	-rm -rf EBOOK-mobi
@@ -42,3 +35,12 @@ git:
 		git add .
 		git commit -m "direto na linha de comando"
 		git push
+imageaccess:
+		ssh deploy@162.243.216.130
+imagepull:
+		mkdir img
+	  echo "senha: teste13"
+		scp deploy@162.243.216.130:~/IMAGENS/1964/* img/
+imagepush:
+	  echo "senha: teste13"
+		scp img/* deploy@162.243.216.130:~/IMAGENS/1964/
