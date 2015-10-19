@@ -172,6 +172,8 @@
 \makepagestyle{abertura}
 \makeoddhead{abertura}{\tiny\revista\par\vspace{-3pt} \issn}{}{}
 \makeoddfoot{abertura}{\tiny\revista}{}{\tiny\site}
+\makeevenhead{abertura}{\tiny\revista\par\vspace{-3pt} \issn}{}{}
+\makeevenfoot{abertura}{\tiny\revista}{}{\tiny\site}
 %fita cinza
 \renewcommand{\makeheadrule}[3]{%
   \mem@ps@safe@change{#1}%
@@ -189,10 +191,35 @@
 \AtBeginDocument{%  
   \thispagestyle{abertura}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{\hfill\begin{minipage}{.8\textwidth}\begin{flushright}\Huge\titulo\end{flushright}\end{minipage}}
+{
+\hfill
+\begin{minipage}{.8\textwidth}
+  \begin{flushright}
+    \Huge\tituloLatex
+
+    \makeatletter
+    \@ifundefined{tituloTraducoes}
+    {}{
+        \medskip\normalsize\tituloTraducoes
+    }
+    \makeatother
+
+  \end{flushright}
+\end{minipage}
+}
 
 \begin{mdframed}[backgroundcolor=gray!40,roundcorner=0pt,linecolor=gray!40]
-    \begin{flushright}\large\autor\end{flushright}
+    \begin{flushright}
+      \large\autor
+
+      \makeatletter
+      \@ifundefined{autorNotes}
+      {}{
+          \medskip\footnotesize\textit{\autorNotes}
+      }
+      \makeatother
+
+    \end{flushright}
 \end{mdframed}}
 } %BN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
