@@ -1,0 +1,341 @@
+%\RequirePackage[xetex,chicagofootnotes]{tipografia} % desabilitado chicagofootnotes para customizar as notas de rodape
+\RequirePackage[xetex]{tipografia}
+%\RequirePackage[standart,sempontinhos]{toc}
+
+
+\RequirePackage{anyfontsize}
+\RequirePackage{changepage}
+
+\RequirePackage{hedraextra}
+\RequirePackage{penalidades}
+\RequirePackage{graficos}
+\RequirePackage{hedralogo}
+\RequirePackage{hifensextras}
+\RequirePackage{metadados}
+\RequirePackage{aparatos}
+\RequirePackage{tabelas}
+\RequirePackage{versos}
+\RequirePackage{abstract}                       % Package to create dummy text
+\RequirePackage{amsmath,amsfonts,amsthm}          % Math packages
+%\RequirePackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats
+\RequirePackage{epstopdf}                       % Converts .eps to .pdf
+\RequirePackage{subfig}                         % Subfigures
+\RequirePackage{booktabs}                       % Nicer tables
+\RequirePackage{fix-cm}                         % Custom fontsizes
+\RequirePackage{ctable}
+\RequirePackage{textcase}
+\RequirePackage{etoolbox}
+\RequirePackage{flushend}
+\RequirePackage{mdframed}
+\RequirePackage{multicol}
+\RequirePackage[hyphens]{url}
+
+\RequirePackage{xeCJK}
+\RequirePackage{caption}
+\RequirePackage{hyphenat}
+\RequirePackage{verse}
+\RequirePackage{seqsplit}
+\RequirePackage{lscape}
+\RequirePackage{amssymb}
+\RequirePackage{mathtools}
+\RequirePackage{enumitem}
+\RequirePackage{array}
+\RequirePackage{multirow}
+\RequirePackage{pbox}
+\RequirePackage{longtable}
+\RequirePackage[pdfpagelabels,implicit=false,hidelinks,hyperfootnotes=false]{hyperref} % configurar pagina inicial do pdf
+
+% mathml to tex
+\RequirePackage{bm} % bold
+\RequirePackage{pmml-new} % math template
+\RequirePackage{unicode-math}
+
+
+%% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareOption{numberinsection}{%
+\setcounter{secnumdepth}{4}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\let\l@subsection\l@section
+\let\l@section\l@chapter}
+
+% fontes chinesas
+\setCJKmainfont{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{FangSong}
+
+% math
+\setmathfont{XITS Math}
+
+% remove label automatico das tabelas
+\captionsetup{justification=raggedright, singlelinecheck=false}
+\captionsetup[table]{labelformat=empty}
+
+% remove padding entre colunas da tabela
+\setlength\tabcolsep{0.005\textwidth}
+
+% includegraphics maxwidth
+\def\maxwidth#1{\ifdim\Gin@nat@width>#1 #1\else\Gin@nat@width\fi}
+
+% table columns
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% attrib verse
+%\newcommand{\attrib}[1]{%
+%\nopagebreak{\raggedleft\footnotesize #1\par}}
+\renewcommand{\poemtitlefont}{\normalfont\large\itshape\centering}
+
+%% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%% ctable + longtable %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% http://tex.stackexchange.com/questions/88304/multipage-tables-with-ctable-package
+\newif\if@ctbl@long
+\define@key{ctbl}{long}[]{\@ctbl@longtrue}
+
+\long\def\foo#1\sbox#2!!{%
+\long\expandafter\def\csname\string\ctable\endcsname[##1]##2##3##4{%
+#1\if@ctbl@long\ctbl@long\fi\sbox#2}}
+
+\expandafter\expandafter\expandafter\foo
+\csname\string\ctable\endcsname[#1]{#2}{#3}{#4}!!
+
+\def\ctbl@long\fi\sbox#1#2#3\@ctblend{\fi
+\ctbl@@long#2%
+}
+
+\long\def\ctbl@@long#1#2#3#4#5#6{%
+\ctbl@@@long#6%
+}
+
+\def\ctbl@@@long#1\begin#2#3#4\end#5{%
+\def\@tempa{#5}%
+\def\@tempb{tabular}%
+\ifx\@tempa\@tempb\else\show\@tempa\ERROR\fi
+\begin{longtable}{#3}%
+%\caption{\@ctblcaption\ifx\@ctbllabel\empty\else\label{\@ctbllabel}\fi}%
+\caption{\@ctblcaption}
+\endfirsthead
+\caption*{\@ctblcaption\space(continued)}%
+\endhead
+#4\end{longtable}}
+%% ctable + longtable %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%Template MR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareOption{mr}{%
+%%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setstocksize{265mm}{180mm} % page 9
+\settrimmedsize{\stockheight}{\stockwidth}{*} % page 9
+\settrims{0mm}{0mm} % page 12
+
+%\settypeblocksize{265mm}{153mm}{*} % page 16
+%\setlrmargins{*}{10mm}{*} % page 17
+
+% com o comando "setlrmarginsandblock" ao especificiar a largura do spine e fore-edge margin a largura do blocksize é calculado automaticamente
+\setlrmarginsandblock{15mm}{12mm}{*} % page 18 => left / right margins
+
+% com o comando "setulmarginsandblock" ao especificiar a margem top e bottom a altura do blocksize é calculado automaticamente
+\setulmarginsandblock{22mm}{12mm}{*} % page 19 => upper / lower magins # a altura de 22mm = margin top 10mm + header height 12mm
+%\setulmarginsandblock{10mm}{12mm}{*}
+  
+% altura headheight / footskip
+\setheadfoot {10mm}{5mm} % 5
+
+% headdrop / headsep / ratio
+\setheaderspaces {*}{8mm}{*} % 10
+
+\setlength{\marginparwidth}{0mm}
+\setlength{\marginparsep}{0mm}
+
+\checkandfixthelayout
+
+%%% Opções de tamanho de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Estilo de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makepagestyle{estilo}
+  
+\makeevenfoot{plain}{}{\footnotesize\thepage}{}{}
+\makeoddfoot{plain}{}{\footnotesize\thepage}{}{}
+\renewcommand{\thefigure}{\arabic{figure}}
+
+\epigraphtextposition{flushleft}
+\epigraphsourceposition{flushright}
+\epigraphfontsize{\footnotesize}
+\setlength{\epigraphrule}{0pt}
+\setlength{\epigraphwidth}{.7\textwidth}
+
+% cabeços e rodapé
+\pagestyle{estilo}
+\makeevenhead{estilo}{\fontsize{7}{8.4}\selectfont\thepage}{\fontsize{7}{8.4}\selectfont\scieloHeaderAuthorAbbrev}{\fontsize{7}{8.4}\selectfont\textit{\scieloArticleType}}
+\makeoddhead{estilo}{\fontsize{7}{8.4}\selectfont{\scieloHeaderArticleRef}}{\fontsize{7}{8.4}\selectfont{\scieloHeaderArticleTitle}}{\fontsize{7}{8.4}\selectfont\thepage}
+
+\setbeforesecskip{1\onelineskip}%
+\setaftersecskip{\onelineskip}%
+\setbeforesubsecskip{1\onelineskip}%
+\setaftersubsecskip{\onelineskip}%
+\setbeforesubsubsecskip{1\onelineskip}%
+\setaftersubsubsecskip{\onelineskip}%
+\setsecheadstyle{\bfseries\flushleft}%
+\setsubsecheadstyle{\small\itshape\flushleft}%
+\setsubsubsecheadstyle{\small\centering\itshape}%
+
+% override footnotes (tipografia.sty)
+\setlength{\footnotemargin}{1mm}
+\renewcommand*{\footnoterule}{
+  \vfill %
+  \kern 3mm %
+  \hrule width \columnwidth %
+  \kern 0.4mm %
+}
+
+% remove abstract title
+\newcommand{\removeabstracttitle} {
+  \renewcommand{\abstractname}{}
+  \renewcommand{\absnamepos}{empty}  
+}
+
+% abstract font size
+\renewcommand{\abstracttextfont}{\fontsize{9}{10.8}\selectfont}
+
+
+% bibliografia
+\newcommand{\bibliotitle}[1]{\item #1~}%\MakeTextLowercase{\textsc{#1}}]}
+\newcommand{\bibliotitidem}{\item[\line(1,0){25}].\ }
+
+\newenvironment{biblio}[1][Bibliografia]{%
+  
+  \ifthenelse{\equal{#1}{}}%
+        {\relax}{\section*{{#1}}\vspace{0mm}}
+        \fontsize{8}{9.6}\selectfont
+        \begin{enumerate}[itemindent=0mm,labelsep=0mm,leftmargin=5mm,labelwidth=5mm,align=left,itemsep=0mm]{
+
+    }
+  }%
+{\end{enumerate} \normalsize}
+
+% font das seções
+\setsecheadstyle{\noindent\fontsize{11}{13.2}\selectfont\textbf}
+\setsecindent{0mm}
+\setaftersecskip{1.8mm}
+
+%%% Estilos de página %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Abertura %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\AtBeginDocument{%
+
+% abstract margins
+\setlength{\absleftindent}{12.25mm}
+\setlength{\absrightindent}{12.25mm}
+
+% primeira pagina nao tem header
+\thispagestyle{empty}
+
+% sobe a altura do header (headsep + headheight)
+\vspace*{-17mm}
+
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+
+  {\fontsize{7}{8.4}\selectfont{\textit{\scieloArticleType}. \scieloArticleRef}}
+  \vspace*{-0.5mm}
+  \\\noindent{\fontsize{7}{8.4}\selectfont{\scieloArticlePubIdType: \scieloArticleUrl  }}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+
+  \raggedleft
+  \fontsize{7}{8.4}\selectfont{\copyright ~ \scieloYear}
+
+\end{minipage}
+
+\vspace{9.4mm}
+
+\begin{adjustwidth}{12.25mm}{12.25mm}
+\begin{center}
+
+\begin{bfseries}
+
+% titulo do artigo
+{\fontsize{11}{13.2}\selectfont{\scieloArticleTitle}}
+
+\vspace{6mm}
+
+% traducoes dos titulos
+\ifdef\scieloArticleTitleTranslation
+{
+  {\fontsize{11}{13.2}\selectfont{\scieloArticleTitleTranslation}}
+  \vspace{6mm}
+}{}
+
+% autores
+{\fontsize{9}{10.8}\selectfont{\textit{\scieloAuthor}}}
+\vspace{6mm}
+
+\end{bfseries}
+
+% notas dos autores
+\ifdef\scieloAuthorNotes
+{
+    {\fontsize{9}{10.8}\selectfont{\textit{\scieloAuthorNotes}}}
+    \vspace{6mm}
+}{}
+
+% received / revised
+\ifdef\scieloDates
+{
+  {\fontsize{8}{9.6}\selectfont{\scieloDates}}
+  \vspace{6mm}
+}{}
+
+\end{center}
+
+\end{adjustwidth}
+
+
+} % AtBeginDocument
+
+} % \DeclareOption{mr}{
+
+
+%END MR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\DeclareOption{trimframe}{\renewcommand{\marcadecorte}{\trimFrame}}
+\DeclareOption{sembinding}{\setbinding{0mm}}
+\DeclareOption{semcabeco}{
+      \setulmargins{*}{*}{1.9}
+      \headsep=0pt}
+\ProcessOptions
+
+%%% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand*{\@fnsymbol}[1]{%
+  % Änderungen:
+  % * Symbol "**" an Position 2 verschoben.
+  % * Symbol "***" eingefügt.
+  % * Symbole mit \dagger entfernt.
+  \ensuremath{%
+    \ifcase#1%
+    \or
+      {*}%
+    \or
+      \ddagger
+    \or
+      \mathsection
+    \or
+      \mathparagraph
+    \or
+      \ddagger\ddagger
+    \else
+      \@ctrerr
+    \fi
+  }%
+}
+%%% Gerais %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

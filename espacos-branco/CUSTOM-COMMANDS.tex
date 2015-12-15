@@ -1,0 +1,22 @@
+\def\@fnsymbol#1{
+     \ensuremath{
+         \ifcase#1
+\or a
+\or b
+\or c
+\or d
+\or e
+\or f
+\or c
+\or g
+\or g
+\or h
+\or i
+\or d
+\or d
+\or h
+         \fi
+     }
+}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
