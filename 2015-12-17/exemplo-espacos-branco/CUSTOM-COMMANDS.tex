@@ -1,0 +1,11 @@
+\def\@fnsymbol#1{
+     \ensuremath{
+         \ifcase#1
+\or *\allowbreak{}1
+\or 1
+         \fi
+     }
+}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\setcounter{page}{152}
+
